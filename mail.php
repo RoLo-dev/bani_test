@@ -8,7 +8,7 @@ if (isset($_POST['submit'])) {
     $message = $_POST['message'];
 
     $formcontent=" From: $name \n Email: $email \n Phone: $phone \n Servings: $servings \n Message: $message";
-    $mailTo = "rolando@rolandolopantzi.com";
+    $mailTo = "bakery@banibakery.com";
     $subject = "Contact Form";
     $mailheader = "From: ".$email;
 
