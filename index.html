@@ -1,305 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Bani Bakery specializes in Custom cakes, Wedding cakes and delicious pastries using fine ingredients and everything made fresh and with love by order. Never compromising quality over quantity. Located in Santa Ana California and cater all of Orange County and Los Angeles County.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bani Bakery | Custom Cakes</title>
 
-  <meta name="keywords" content="cakes,custom,wedding cakes,desserts,pastries,Orange County,OC,bakery,french,macarons,pastel,pan dulce,wedding,cookies,fresh,love,delivery, smash cake,asian,high end,Santa ana,California,Orange,Southern California,local bakery, pastry chef, wedding venue, custom cakes">
-
-  <title>Bani Bakery | Custom Cakes and more</title>
-
-
-  <link rel="stylesheet" type="text/css" href="vendors/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <link rel="stylesheet" type="text/css" href="css/queries.css">
-  <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Quicksand:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <script type="text/javascript" src="js/lightbox-plus-jquery.min.js" ></script>
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="images/bani_favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/queries.css">
+    <link rel="stylesheet" type="text/html" href="gallery.html">
 
 </head>
 <body>
+    <header class="display">
 
-  <header>
-    <div class="wrapper mainHeader">
-      <div class="logo">
-         <a href="index.html"><img src="imgs/bani.logo.horizontal.svg" alt="Bani bakery"></a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#recent">Recent</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <div class="banner"></div>
-
-  <section id="intro">
-    <div class="wrapper introContainer">
-
-      <figure class="introImg1">
-        <img src="imgs/sweet_table.jpg" class="pic" alt="sweet table">
-      </figure>
-      <div class="textIntro introText1">
-        <h3>Welcome to Bani Bakery</h3>
-        <p>We provide a wide variety of high quality custom cakes and pastries using fine ingredients all freshly made by order</p>
-      </div>
-
-      <figure class="introImg2">
-          <img src="imgs/mini_cupcakes.jpg" class="pic" alt="Mini cupcakes">
-      </figure>
-      <div class="textIntro introText2">
-          <h3>Less sugar, healthy you</h3>
-          <p>Our sweets contain a low amount of sugar and we always provide fresh fruit</p>
-        </div>
-      <figure class="introImg3">
-          <img src="imgs/mini_cheesecake.jpg" class="pic" alt="Mini cheesecake">
-      </figure>
-
-      <div class="textIntro introText3">
-          <h3>Character themes</h3>
-          <p>Get creative with your cake, make it unique, give a big surprise and you'll leave behind a big impression</p>
-        </div>
-      <figure class="introImg4">
-          <img src="imgs/mex_cake.jpg" class="pic" alt="Hispanic theme cake">
-      </figure>
-      <figure class="introImg5">
-          <img src="imgs/7tiers.jpg" class="pic" alt="Seven tiered cake">
-      </figure>
-
-      <figure class="introImg6">
-          <img src="imgs/cream_puffs.jpg" class="pic" alt="Cream pufss">
-      </figure>
-      <figure class="introImg7">
-          <img src="imgs/mini_fruittart.jpg" class="pic" alt="Mini fruit tarts">
-      </figure>
-      <div class="textIntro introText4">
-          <h3>Need a Sweet table</h3>
-          <p>Catering is available for all Orange County. Ask about our Sweet Table packages and cake stand rentals</p>
+        <div id="desktop-header" class="wrapper">  <!-- Desktop Nav -->
+            <div class="logo">
+                <a href="index.html"><img src="images/bani_logo_hor.svg" alt="bakery logo" class="pics"></a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#flv-fill">Flavors & Fillings</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
 
-    </div>
-  </section>
+        <div id="mobile-header" class="wrapper">   <!-- Mobile Nav -->
+            <div class="logo">
+                <a href="index.html"><img src="images/bani_logo_hor.svg" alt="bakery logo" class="pics"></a>
+            </div>
+            <span id="open" class="open mobile">&#9776</span>
+            <div id="nav" class="mobile-nav">
+                <ul>
+                    <li><a href="javascript:void(0)" id="close" class="close">&times</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#flv-fill">Flavors & Fillings</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
 
-  <section id="recent">
-    <div class="wrapper">
-      <h2>Recent Cakes</h2>
-      <div class="recentGallery">
+        <div class="mobile-HeaderTxt wrapper">
+            <h1>Welcome</h1>
+            <p>We provide a wide variety of high quality custom cakes and pastries using fine ingredients all freshly made by order</p>
+        </div>
         
-        <figure>
-          <a href="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/44787629_2469278813098848_6507474352269688832_n.jpg?_nc_cat=110&_nc_ht=scontent-lax3-1.xx&oh=51630592eccb0e807fbd036e0710376e&oe=5C44B162" data-lightbox="recent"><img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/44787629_2469278813098848_6507474352269688832_n.jpg?_nc_cat=110&_nc_ht=scontent-lax3-1.xx&oh=51630592eccb0e807fbd036e0710376e&oe=5C44B162" class="pic recentPic"></a>
-        </figure>
-        <figure>
-          <a href="https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/43622177_2449514485075281_9117656055428415488_n.jpg?_nc_cat=106&_nc_ht=scontent-lax3-2.xx&oh=9e1c6541e125592411685a93840396e0&oe=5C45C8F4" data-lightbox="recent"><img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/43622177_2449514485075281_9117656055428415488_n.jpg?_nc_cat=106&_nc_ht=scontent-lax3-2.xx&oh=9e1c6541e125592411685a93840396e0&oe=5C45C8F4" class="pic recentPic"></a>
-        </figure>
-        <figure>
-          <a href="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/42509401_2427950337231696_8856111406303412224_n.jpg?_nc_cat=110&oh=267949f9c5b9b65ec6a0efac28c3c554&oe=5C44A8C1" data-lightbox="recent"><img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/42509401_2427950337231696_8856111406303412224_n.jpg?_nc_cat=110&oh=267949f9c5b9b65ec6a0efac28c3c554&oe=5C44A8C1" class="pic recentPic"></a>
-        </figure>
-        <figure>
-          <a href="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/42940185_2436878356338894_8168906288072228864_n.jpg?_nc_cat=100&oh=d3c547aefc7d48e76ce9da4247091800&oe=5C5CAAC1" data-lightbox="recent"><img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/42940185_2436878356338894_8168906288072228864_n.jpg?_nc_cat=100&oh=d3c547aefc7d48e76ce9da4247091800&oe=5C5CAAC1" class="pic recentPic"></a>
-        </figure>
-        <figure>
-          <a href="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/42286587_2423596624333734_3177011111559954432_n.jpg?_nc_cat=102&oh=f6bf2d3903e71cc33c2b6f0f34c2105b&oe=5C163216" data-lightbox="recent"><img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/42286587_2423596624333734_3177011111559954432_n.jpg?_nc_cat=102&oh=f6bf2d3903e71cc33c2b6f0f34c2105b&oe=5C163216" class="pic recentPic"></a>
-        </figure>
-        <figure>
-          <a href="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/42591478_2433320486694681_811647556500062208_n.jpg?_nc_cat=101&oh=828ff4a08d2983613c3310c6b6868b7d&oe=5C5D8BD2" data-lightbox="recent"><img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/42591478_2433320486694681_811647556500062208_n.jpg?_nc_cat=101&oh=828ff4a08d2983613c3310c6b6868b7d&oe=5C5D8BD2" class="pic recentPic"></a>
-        </figure>
-         
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <section id="about">
-    <div class="wrapper">
-      <h2>About</h2>
-      <div class="aboutContent">
-        <div class="aboutImg">
-          <img src="imgs/bani2.JPG" class="pic" alt="Bani Dao">
+    <section id="intro">
+        <div class="lessSugar display">
+            <div class="secOneImg">
+                <img src="images/mini_cheesecake.jpg" alt="mini cheesecake" class="pics">
+            </div>
+            <div class="secOneTxt">
+                <h2>Less Sugar, healthy you</h2>
+                <p>Our sweets contain a low amount of sugar and we always provide fresh fruit</p>
+            </div>
+            <div class="secOneImg">
+                <img src="images/mini_cupcakes.jpg" alt="mini cupcakes" class="pics">
+            </div>
         </div>
-        <div class="aboutText">
-          <p>
-              My name is Bani Dao, I enjoy doing several things such as crafts, cooking and gardening. Above all, I mostly enjoy cake decorating, it is my passion. I started cake decorating in 2009, searching on YouTube. After 2 years being a home baker making cakes for family and friends, I decided to take it further by turning it to a profession. In 2011, I graduated from Le Cordon Bleu in Baking and Patisserie. Since then, I’ve been working in several places as a pastry cook and cake decorator to gain real-life experience and knowledge about my field. From hobby to business, I continue baking cakes, pastries and now catering to the Orange County residents. Cake design has become my passion in life, so I always keep up to date with new and upcoming trends and try out new techniques to continue to improve and refine my skills.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="wrapper">
-
-      <h2>Contact</h2>
-      <p class="contactP">Have any questions? Please feel free to leave any questions or comments. Place your cake orders <span class="boldTxt">7-5 days</span> prior from due date, also please provide detailed information about your cake (cake flavor, cake theme, and servings). For Sweet table events, place your orders <span class="boldTxt">1 week</span> prior from due date including events with floral arrangements. Pastry and cookie orders should be placed at least <span class="boldTxt">4 days</span> prior from due date. We do require a <span class="boldTxt">50% deposit</span> for any order over $75.</p>
-
-      <div class="bakeryInfo">
-        <div class="storeHours">
-          <ul>
-            <li><h3>Store Hours</h3></li>
-            <li>Monday Closed</li>
-            <li>Tues - Fri: 9am - 6pm</li>
-            <li>Sat - Sun: 8am - 3pm</li>
-          </ul>
-        </div>
-
-        <div class="contactInfo">
-          <ul>
-            <li><i class="ion-android-mail"></i> banibakery@gmail.com</li>
-            <li><i class="ion-android-call"></i> (657) 231-6211</li>
-          </ul>
-        </div>
-
-        <div class="address">
-          <p><i class="ion-android-pin"></i> 3710 Westminster Ave. Ste. E,<br>Santa Ana, Ca, 92703</p>
-        </div>
-      </div>
-
-      <div class="flavorFilling">
-        <h3>Cake flavors and fillings</h3>
-
-        <div class="listContainer">
-          <div class="cake">
-            <h4>Cake</h4>
-            <ul>
-              <li>- Vanilla</li>
-              <li>- Chocolate</li>
-              <li>- Marble</li>
-              <li class="boldTxt">- Red Velvet *</li>
-              <li>- Strawberry</li>
-              <li>- Lemon</li>
-              <li class="boldTxt">- Coconut *</li>
-              <li>- Peanut Butter</li>
-              <li class="boldTxt">- Banana *</li>
-              <li class="boldTxt">- Carrot *</li>
-              <li>- Spices</li>
-              <li>- Lemon Blueberry</li>
-              <li>- Almond</li>
-              <li>- Funfetti</li>
-              <li>- Cookies & Cream</li>
-              <li class="boldTxt">- Pandan *</li>
-            </ul>
-          </div>
-
-          <div class="fillings">
-            <h4>Fillings</h4>
-            <ul>
-              <li>- Lemon mousse</li>
-              <li>- Whipped cream</li>
-              <li>- Pineapple cream</li>
-              <li>- Chocolate buttercream</li>
-              <li>- Tiramisu cream</li>
-              <li>- Strawberry mousse</li>
-              <li>- Raspberry mousse</li>
-              <li>- Mango mousse</li>
-              <li class="boldTxt">- Creamcheese *</li>
-              <li>- Bailey's buttercream</li>
-              <li>- Cappucino mousse</li>
-              <li>- Chocolate mousse</li>
-              <li>- Coconut cream</li>
-              <li>- Cookies and cream</li>
-              <li class="boldTxt">- Chocolate ganache *</li>
-              <li>- Mocha Buttercream</li>
-              <li>- Passion fruit cream</li>
-              <li>- Green tea cream</li>
-              <li>- Peanut butter cream</li>
-              <li>- Hazelnut buttercream</li>
-              <li>- Banana cream</li>
-            </ul>
-          </div>
-
-        </div>
-
-        <p>* Items come with an additional charge *</p>
-
-      </div>
-
-      <div class="contactForm">
-        <form action="mail.php" method="POST">
-          <p>
-            <label for="">Name:</label>
-            <input type="text" name="name">
-          </p>
-          <p>
-            <label for="">Email address:</label>
-            <input type="text" name="email">
-          </p>
-          <p>
-            <label for="">Phone number:</label>
-            <input type="text" name="phone">
-          </p>
-          <p>
-            <label for="">Servings/Guests:</label>
-            <input type="text" name="servings">
-          </p>
-          <p class="full">
-            <label for="">Message:</label>
-            <textarea name="message" rows="7"></textarea>
-          </p>
-          <p class="full">
-            <button type="button" value="Send" name="submit">Submit</button>
-          </p>
-        </form>
-      </div>
-
-    </div>
-  </section>
+        <div class="themeCakes display"></div>
+        <div class="sweetTable display"></div>
+    </section>
+    
 </body>
-
-<footer id="indexFooter">
-  <div class="wrapper">
-    <div class="ftContent">
-
-      <figure class="award">
-        <img src="imgs/best.png" class="pic" alt="Award">
-      </figure>
-
-      <div class="contactInfo">
-        <ul>
-          <li><i class="ion-android-mail"></i> banibakery@gmail.com</li>
-          <li><i class="ion-android-call"></i> (657) 231-6211</li>
-        </ul>
-      </div>
-
-      <div class="address">
-        <p><i class="ion-android-pin"></i> 3710 Westminster Ave. Ste. E,<br>Santa Ana, Ca, 92703</p>
-      </div>
-
-      <div class="storeHours">
-          <ul>
-            <li><h3>Store Hours</h3></li>
-            <li>Monday Closed</li>
-            <li>Tues - Fri: 9am - 6pm</li>
-            <li>Sat - Sun: 8am - 3pm</li>
-          </ul>
-        </div>
-
-      <div class="socialLinks">
-        <ul class="box">
-          <li><h3>Follow us on social media</h3></li>
-          <li><a href="https://www.instagram.com/banihouseofcakes/" target="_blank"><i class="ion-social-instagram"></i></a></li>
-          <li><a href="https://www.facebook.com/banibakery/?ref=aymt_homepage_panel" target="_blank"><i class="ion-social-facebook"></i></a></li>
-          <li><a href="https://www.pinterest.com/banibunny/" target="_blank"><i class="ion-social-pinterest"></i></a></li>
-          <li><a href="https://www.youtube.com/channel/UCtIt6ulLUdTKn6PvSA7xYsw" target="_blank"><i class="ion-social-youtube"></i></a></li>
-        </ul>
-      </div>
-
-      <div class="siteLinks">
-        <ul>
-          <li><a href="#recent">Recent</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-
-    </div>
-
-    <p class="copy">&copy Copyright 2018 www.banibakery.com</p>
-
-  </div>
-</footer>
 </html>
