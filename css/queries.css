@@ -1,426 +1,91 @@
-/* -- MEDIA QUERIES -- */
-
-@media only screen and (max-width: 1350px) {
-  /* Header */
-  .logo {
-    width: 28%;
-  }
-
-  /* -- Intro -- */
-  .introContainer {
-    display: grid;
-    grid-template: 550px 375px 650px 375px / repeat(5, 1fr);
-    grid-template-areas:  
-    "A A A B B"
-    "C C D E E"
-    "F G G H H"
-    "I I J J K"
-  }
-
-  /* ----- Gallery site ----- */
-
-  /* Body */
-  .gllryContainer {
-    grid-template-rows: repeat(10, 475px); 
-}
+@media only screen and (max-width: 991px) {}
+@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 640px) {
+    /* Universal Styles */
+    html {
+        font-size: 15px;
+    }
+    .wrapper {
+        width: 95%;
+    }
 
 
+    /* Header */
+    #desktop-header {
+        display: none;
+    }
+    /* header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
+   #mobile-header {
+       display: block;
+       padding-top: 1rem;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+    .logo {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+    .open {
+        color: #F7ACB8;
+        display: block;
+        cursor: pointer;
+        text-align: center;
+        font-size: 3.5rem;
+    }
+    #nav {
+        width: 0;
+        z-index: 5;
+        height: 55vh;
+        display: block;
+        position: fixed;
+        transition: 0.5s;
+        overflow-x: hidden;
+        background-color: rgba(255, 255, 255, 0.95);
+    }
+    .mobile-nav ul {
+        list-style: none;
+        text-align: center;
+    }
+    .mobile-nav ul li a {
+        text-decoration: none;
+        color: #F7ACB8;
+    }
+    .mobile-nav ul li {
+        padding-bottom: 0.75rem;
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    .mobile-nav ul li:first-child {
+        font-size: 3.75rem;
+    }
+    .mobile-HeaderTxt {
+        width: 85%;
+        margin-top: 5rem;
+        text-align: center;
+    }
+    .mobile-HeaderTxt h1 {
+        font-size: 2.75rem;
+    }
+    .mobile-HeaderTxt p {
+        font-size: 1.5rem;
+    }
 
-@media only screen and (max-width: 1150px) {
-  
-  /* -- Recent Cakes -- */
-  .recentGallery {
-    grid-template: repeat(2, 300px) / repeat(3, 1fr);
-  }
-
-  /* -- About -- */
-  .aboutContent .aboutImg {
-    width: 35%;
-  }
-
-  /* -- Contact -- */
-  .contactForm > * {        /* -- Contact Form -- */
-    padding: 0 3rem;
-  }
-
-  /* ----- Gallery site ----- */
-  .gllryContainer {
-    grid-template-rows: repeat(10, 380px);
-  }
-}
-
-
-
-
-@media only screen and (max-width: 1135px) {
-  /* -- Intro -- */
-  .introContainer {
-    display: grid;
-    grid-template: 520px 355px 570px 355px / repeat(5, 1fr);
-    grid-template-areas:  
-    "A A A B B"
-    "C C D E E"
-    "F G G H H"
-    "I I J J K"
-  }
-
-  /* Recent Cakes */
-  .recentGallery .recentPic {
-    opacity: 1;
-  }
-
-  /* -- Contact -- */
-  .flavorFilling .listContainer .cake h4 {
-    padding-right: 100px;
-  }
-
-}
-
-
-
-
-@media only screen and (max-width: 991px) {
-  html {
-    font-size: 16px;
-  }
-
-  /* Banner */
-  .banner {
-    height: 70vh;
-  }
-
-  /* -- Intro -- */
-  .introContainer {
-    grid-template: 400px 225px 520px 225px / repeat(5, 1fr);
-    grid-template-areas: 
-    "A A A B B"
-    "D D D E E"
-    "H H H F F"
-    "K K K J J"
-  }
-  .introImg2 {    /* - Row 2 - */
-    display: none;
-  }
-  .introImg4 {   /* - Row 3 - */
-    display: none;
-  }
-  .introImg6 {    /* - Row 4 - */
-    display: none;
-  }
-
-  /* -- Recent Cakes -- */
-  .recentGallery {
-    grid-template: repeat(2, 225px) / repeat(3, 1fr);
-  }
-
-  /* -- Contact -- */
-  .flavorFilling .listContainer {
-    width: 70%;
-  }
-  .flavorFilling .listContainer .cake h4 {
-    padding-right: 80px;
-  }
-  .flavorFilling .listContainer .fillings h4 {
-    padding-right: 110px;
-  }
-
-
-  /* ----- Gallery site ----- */
-
-  /* Banner */
-  .gallery_banner {
-    height: 70vh;
-  }
-
-  /* ----- Gallery site ----- */
-  /* Banner */
-  .bannText h2 {
-    font-size: 5.25em;
-    border-width: 6px;
-  }
-  .bannText p {
-    font-size: 1.25em;
-  }
-  /* body */
-  .gllryContainer {
-    grid-template-rows: repeat(10, 280px);
-  }
-}
-
-
-
-
-@media only screen and (max-width: 767px) {
-  /* -- Header -- */
-  .logo {
-    width: 30%;
-  }
-
-  /* Banner */
-  .banner {
-    height: 50vh;
-  }
-
-  /* -- Recent Cakes -- */
-  .recentGallery {
-    grid-gap: 0;
-  }
-  .recentGallery .recentPic {
-    opacity: 1;
-  }
-
-  /* -- About -- */
-  .aboutContent .aboutImg {
-    width: 45%;
-  }
-  .aboutContent .aboutText {
-    width: 50%;
-    margin-left: 15px;
-  }
-
-  /* -- Contact -- */
-  /* .flavorFilling .listContainer .cake h4 {
-    padding-right: ;
-  }
-  .flavorFilling .listContainer .fillings h4 {
-    padding-right: ;
-  } */
-  .bakeryInfo {
-    flex-direction: column;
-  }
-  .storeHours ul,
-  .contactInfo ul {
-    padding: 0;
-    text-align: center;
-  }
-  .contactForm > * {      /* -- Contact Form -- */
-    padding: 0;
-  }
-  /* -- Footer -- */
-  .ftContent {
-    display: grid;
-    grid-template: repeat(3, 175px) / repeat(5, 1fr);
-    align-items: center;
-    justify-content: center;
-  }
-  .award {
-    grid-column: 1 / 3;
-    grid-row: 1 / 3;
-  }
-  .storeHours {
-    grid-column: 3 / 5;
-    grid-row: 2;
-  }
-  .contactInfo {
-    grid-column: 3 / 5;
-    grid-row: 3;
-  }
-  .address {
-    grid-column: 1 / 3;
-    text-align: center;
-    grid-row: 3;
-  }
-  .socialLinks {
-    grid-column: 3 / 6;
-    grid-row: 1;
-  }
-  .siteLinks {
-    grid-column: 5 / 6;
-    grid-row: 2 / 4;
-  }
-
-  /* ----- Gallery site ----- */
-
-  /* Banner */
-  .gallery_banner {
-    height: 50vh;
-  }
-  .gllryContainer {
-    grid-gap: 0.75em;
-    grid-template: repeat(14, 300px) / repeat(3, 1fr);
-    grid-template-areas: 
-    'a b b'
-    'c d e'
-    'f g g'
-    'f h i'
-    'j j k'
-    'l m n'
-    'o p n'
-    'q r r'
-    's s t'
-    'u v w'
-    'u x y'
-    'z aa aa'
-    'bb bb cc'
-    'dd dd dd';
-  }
-  
-  
-}
-
-
-
-
-@media only screen and (max-width: 568px) {
-  .wrapper {
-    width: 95%;
-  }
-  body {
-    line-height: 1.45;
-  }
-
-  /* -- Header -- */
-  header {
-    position: static;
-    box-shadow: none;
-  }
-  .mainHeader {
-    flex-direction: column;
-  }
-  .logo {
-    width: 80%;
-    padding: 15px 0;
-  }
-  nav ul {
-    text-align: center;
-    padding: 0;
-  }
-  nav ul li {
-    display: list-item;
-    padding: 0 0 15px 0;
-  }
-  nav ul li:last-child {
-    padding: 0;
-  }
-  nav ul li a {
-    padding: 0;
-    font-size: 1.5em;
-  }
-  
-  /* -- Banner -- */
-  .banner {
-    display: none;
-  }
-
-  /* -- Intro -- */
-  #intro {
-    margin: 0;
-  }
-  .introContainer {
-    grid-template: 150px 350px 150px 270px 150px 500px 150px 270px / repeat(3, 1fr);
-    grid-template-areas: 
-    "B B B"
-    "A A A"
-    "D D D"
-    "E E E"
-    "F F F"
-    "H H H"
-    "K K K"
-    "J J J"
-  }
-  .textIntro {
-    text-align: center;
-  }
-
-  /* -- Recent Cakes -- */
-  .recentGallery {
-    grid-template: repeat(6, 270px) / 1fr;
-  }
-
-  /* -- About -- */
-  .aboutContent {
-    flex-direction: column;
-  }
-  .aboutContent .aboutImg {
-    width: 60%;
-    margin: 0 auto;
-  }
-  .aboutContent .aboutText {
-    width: 100%;
-    margin: 25px 0 0 0;
-    text-align: justify;
-    padding: 0 15px;
-  }
-
-  /* -- Contact -- */
-  #contact .contactP {
-    margin: 0 0 32px 0;
-    text-align: justify;
-    padding: 0 15px;
-  }
-  .flavorFilling .listContainer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    align-items: center;
-  }
-  .flavorFilling .listContainer .cake {
-    margin: 0 0 15px 0;
-  }
-  .flavorFilling .listContainer .cake,
-  .flavorFilling .listContainer .fillings {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .flavorFilling .listContainer .cake h4,
-  .flavorFilling .listContainer .fillings h4 {
-    padding-left: 10px;
-  }
-  .bakeryInfo {
-    font-size: 1.15em;
-  }
-  .contactForm > * {      /* -- Contact Form -- */
-    padding: 0 .5rem;
-  }
-  .contactForm form p {
-    grid-column: 1 / 3;
-  }
-
-  /* -- Footer -- */
-  .ftContent {
-    padding: 15px 0 0 0;
-    display: flex;
-    flex-direction: column;
-  }
-  .award {
-    width: 60%;
-  }
-  .ftContent .socialLinks .box li a i {
-    font-size: 2.5em;
-  }
-  .ftContent .siteLinks ul li a {
-    font-size: 1.2em;
-  }
-
-
-  /* ----- Gallery site ----- */
-  .gallery_banner {
-    display: none;
-  }
-  .gllryContainer {
-    grid-gap: 0.5em;
-    grid-template: repeat(18, 225px) / repeat(2, 1fr);
-    grid-template-areas: 
-    'a b'
-    'a c'
-    'd e'
-    'f f'
-    'g h'
-    'i j'
-    'k j'
-    'l l'
-    'm n'
-    'o p'
-    'q r'
-    's r'
-    't u'
-    'v w'
-    'x y'
-    'x z'
-    'aa bb'
-    'cc dd';
-  }
+    /* Introduction */
+    .secOneImg {
+        height: 40vh;
+    }
+    .secOneTxt {
+        background-color: #814d3b;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 }
