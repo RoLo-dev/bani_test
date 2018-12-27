@@ -77,15 +77,29 @@
 
     /* Introduction */
     .secOneImg {
-        height: 40vh;
+        height: 44vh;
     }
     .secOneTxt {
         background-color: #814d3b;
-        height: 20vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+        height: 12vh;
+    }
+    .secTwoImg {
+        height: 85vh;
+    }
+    .secTwoTxt {
+        height: 15vh;
+        background-color: #F7ACB8;
+        color: #fff; 
+    }
+    .secTwoImages {
+        display: none;
+    }
+    .secThreeImg {
+        height: 85vh;
+    }
+    .secThreeTxt {
+        height: 15vh;
+        background-color: #814d3b;
+        color: #eedfd1;
     }
 }
