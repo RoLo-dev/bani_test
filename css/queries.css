@@ -4,9 +4,14 @@
     /* Universal Styles */
     html {
         font-size: 15px;
+        line-height: 1.3
     }
     .wrapper {
         width: 95%;
+    }
+    .mobilePicWrap {
+        width: 95%;
+        margin: 0 auto;
     }
 
 
@@ -14,11 +19,10 @@
     #desktop-header {
         display: none;
     }
-    /* header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    } */
+    header {
+        background-attachment: inherit;
+        background-position: bottom, right;
+    }
    #mobile-header {
        display: block;
        padding-top: 1rem;
@@ -28,7 +32,7 @@
    }
     .logo {
         width: 90%;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
     .open {
         color: #F7ACB8;
@@ -76,30 +80,58 @@
     }
 
     /* Introduction */
+    #lessSugar {
+        background-color: #814d3b;
+        padding-top: 1rem;
+    }
     .secOneImg {
-        height: 44vh;
+        height: 40vh;
     }
     .secOneTxt {
         background-color: #814d3b;
-        height: 12vh;
+        height: 16vh;
+    }
+    #themeCakes {
+        background-color: #F7ACB8;
+        padding-top: 1rem;
     }
     .secTwoImg {
-        height: 85vh;
+        height: 80vh;
     }
     .secTwoTxt {
-        height: 15vh;
+        height: 16vh;
         background-color: #F7ACB8;
         color: #fff; 
     }
     .secTwoImages {
         display: none;
     }
+    #sweetTable {
+        background-color: #814d3b;
+        padding-top: 1rem;
+    }
     .secThreeImg {
-        height: 85vh;
+        height: 80vh;
     }
     .secThreeTxt {
-        height: 15vh;
+        height: 16vh;
         background-color: #814d3b;
         color: #eedfd1;
+    }
+
+
+    /* About */
+    .aboutTxt {
+        width: 80%;
+        margin: 1.5rem auto;
+        color: #814d3b;
+    }
+    .aboutTxt h2 {
+        font-size: 2.75rem;
+        margin-bottom: 1rem;
+    }
+    .baniImg {
+        height: 50vh;
+        margin: 0 auto;
     }
 }
