@@ -7,11 +7,18 @@
         line-height: 1.3
     }
     .wrapper {
-        width: 95%;
+        width: 90%;
     }
-    .mobilePicWrap {
+    /* .mobilePicWrap {
         width: 95%;
         margin: 0 auto;
+    } */
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 1.25rem;
+    }
+    h3 {
+        font-size: 1.35rem;
     }
 
 
@@ -80,58 +87,118 @@
     }
 
     /* Introduction */
-    #lessSugar {
-        background-color: #814d3b;
-        padding-top: 1rem;
+    #intro {
+        color: #814d3b;
+        margin-top: 2rem;
+    }
+    #intro h2 {
+        margin-bottom: 1.25rem;
+    }
+    #lessSugar,
+    #themeCakes,
+    #sweetTable {
+        height: auto;
     }
     .secOneImg {
-        height: 40vh;
+        height: 38vh;
     }
-    .secOneTxt {
-        background-color: #814d3b;
-        height: 16vh;
-    }
-    #themeCakes {
-        background-color: #F7ACB8;
-        padding-top: 1rem;
+    .secOneTxt,
+    .secTwoTxt,
+    .secThreeTxt {
+        margin: 1.9rem auto;
     }
     .secTwoImg {
-        height: 80vh;
-    }
-    .secTwoTxt {
-        height: 16vh;
-        background-color: #F7ACB8;
-        color: #fff; 
+        margin-top: 1.25rem;
     }
     .secTwoImages {
         display: none;
     }
-    #sweetTable {
-        background-color: #814d3b;
-        padding-top: 1rem;
-    }
-    .secThreeImg {
-        height: 80vh;
-    }
-    .secThreeTxt {
-        height: 16vh;
-        background-color: #814d3b;
-        color: #eedfd1;
-    }
 
 
     /* About */
+    .baniImg {
+        height: 45vh;
+        margin: 0 auto;
+    }
     .aboutTxt {
-        width: 80%;
+        width: 90%;
         margin: 1.5rem auto;
         color: #814d3b;
     }
-    .aboutTxt h2 {
-        font-size: 2.75rem;
+    .aboutTxt p {
+        line-height: 1.7;
+    }
+
+
+    /* Cake & Fillings */
+    #cakeFill {
+        background-color: #814d3b;
+        padding: 1.5rem 0;
+    }
+    #flavors,
+    #fillings {
+        margin-bottom: 1.1rem;
+        cursor: pointer;
+    }
+    .ffStyles {
+        background-color: #F7ACB8;
+        padding: 1em 0;
+        border-radius: 30px;
+        box-shadow: 1px 2px 5px #1B1C1B;
+        text-align: center;
+        color: #fff;
+    }
+    .ffStyles:active {
+        background-color: #e1c5ac;
+        color: #814d3b;
+        
+    }
+    .listStyles li {
+        list-style: none;
+        text-align: center;
+        margin-bottom: 0.5rem;
+        font-size: 1.1rem;
+    }
+    .listStyles li:last-child {
+        margin-bottom: 0;
+        margin-top: 1.25rem;
+    }
+    #listFlv {
         margin-bottom: 1rem;
     }
-    .baniImg {
-        height: 50vh;
-        margin: 0 auto;
+    #listFlv, #listFill {
+        display: none;
     }
+    #listFlv:active, #listFill:active {
+        transition: 0.3s ease-in;
+    }
+
+
+    /* Contanct */
+    #contact {
+        padding: 1.5rem 0;
+        color: #814d3b;
+    }
+    #contact p {
+        line-height: 1.7;
+        margin-bottom: 2rem;
+    }
+    .cntctInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .cntctInfo div {
+        margin-bottom: 1rem;
+    }
+    .cntctInfo li {
+        list-style: none;
+        padding-bottom: 0.25rem;
+    }
+    .cntctInfo li a {
+        text-decoration: none;
+        color: #814d3b;
+    }
+
 }
