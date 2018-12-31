@@ -32,14 +32,14 @@
     }
    #mobile-header {
        display: block;
-       padding-top: 1rem;
+       padding-top: 2rem;
        display: flex;
        flex-direction: column;
        align-items: center;
    }
     .logo {
         width: 90%;
-        margin-bottom: 2rem;
+        margin-bottom: 3.5rem;
     }
     .open {
         color: #F7ACB8;
@@ -76,7 +76,7 @@
     }
     .mobile-HeaderTxt {
         width: 85%;
-        margin-top: 5rem;
+        margin-top: 6rem;
         text-align: center;
     }
     .mobile-HeaderTxt h1 {
@@ -196,9 +196,23 @@
         list-style: none;
         padding-bottom: 0.25rem;
     }
+    .webPhone li:first-child {
+        padding-bottom: 0.5rem;
+    }
     .cntctInfo li a {
         text-decoration: none;
         color: #814d3b;
+    }
+    .socialM h4 {
+        margin-bottom: 0.75rem;
+    }
+    .socialM .icons {
+        display: flex;
+        justify-content: center;
+    }
+    .socialM .icons li {
+        padding: 0 1rem;
+        font-size: 2.5rem;
     }
 
 }
