@@ -48,7 +48,7 @@
         text-align: center;
         font-size: 3.5rem;
     }
-    #nav {
+    #mobileNav {
         width: 0;
         z-index: 5;
         height: 55vh;
@@ -56,7 +56,7 @@
         position: fixed;
         transition: 0.5s;
         overflow-x: hidden;
-        background-color: rgba(255, 255, 255, 0.95);
+        background-color: rgba(66, 42, 23, 0.9);
     }
     .mobile-nav ul {
         list-style: none;
@@ -192,6 +192,9 @@
     .cntctInfo div {
         margin-bottom: 1rem;
     }
+    .cntctInfo div:last-child {
+        margin-bottom: 0;
+    }
     .cntctInfo li {
         list-style: none;
         padding-bottom: 0.25rem;
@@ -209,10 +212,49 @@
     .socialM .icons {
         display: flex;
         justify-content: center;
+        margin-bottom: 0;
     }
     .socialM .icons li {
         padding: 0 1rem;
         font-size: 2.5rem;
+    }
+    .award {
+        width: 60%;
+    }
+
+
+    /* Footer */
+    footer {
+        background-color: #e1c5ac;
+        color: #814d3b;
+    }
+    .ftContent {
+        padding-top: 1rem;
+    }
+    .ftLogo {
+        width: 60%;
+        margin: 0 auto 1rem auto;
+    }
+    .ftLinks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .ftLinks li {
+        list-style: none;
+        padding-bottom: 0.75rem;
+    }
+    .ftLinks li:last-child {
+        padding-bottom: 0;
+    }
+    .ftLinks li a {
+        text-decoration: none;
+        color: #814d3b;
+    }
+    .copyRight {
+        text-align: center;
+        padding-bottom: 0.35rem;
     }
 
 }
