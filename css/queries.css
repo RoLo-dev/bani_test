@@ -9,10 +9,6 @@
     .wrapper {
         width: 90%;
     }
-    /* .mobilePicWrap {
-        width: 95%;
-        margin: 0 auto;
-    } */
     h2 {
         font-size: 2rem;
         margin-bottom: 1.25rem;
@@ -20,6 +16,7 @@
     h3 {
         font-size: 1.35rem;
     }
+
 
 
     /* Header */
@@ -51,28 +48,34 @@
     #mobileNav {
         width: 0;
         z-index: 5;
-        height: 55vh;
+        height: 100vh;
         display: block;
+        top: 0;
         position: fixed;
         transition: 0.5s;
         overflow-x: hidden;
         background-color: rgba(66, 42, 23, 0.9);
     }
     .mobile-nav ul {
+        height: 100%;
         list-style: none;
         text-align: center;
-    }
-    .mobile-nav ul li a {
-        text-decoration: none;
-        color: #F7ACB8;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
     }
     .mobile-nav ul li {
-        padding-bottom: 0.75rem;
+        padding-bottom: 1.5rem;
         font-weight: 600;
         font-size: 1.5rem;
     }
     .mobile-nav ul li:first-child {
         font-size: 3.75rem;
+    }
+    .mobile-nav ul li a {
+        text-decoration: none;
+        color: #F7ACB8;
     }
     .mobile-HeaderTxt {
         width: 85%;
@@ -85,6 +88,8 @@
     .mobile-HeaderTxt p {
         font-size: 1.5rem;
     }
+
+
 
     /* Introduction */
     #intro {
@@ -115,10 +120,13 @@
     }
 
 
+
     /* About */
     .baniImg {
-        height: 45vh;
-        margin: 0 auto;
+        height: 48vh;
+    }
+    .baniImg img {
+        object-position: top;
     }
     .aboutTxt {
         width: 90%;
@@ -128,6 +136,7 @@
     .aboutTxt p {
         line-height: 1.7;
     }
+
 
 
     /* Cake & Fillings */
@@ -143,15 +152,13 @@
     .ffStyles {
         background-color: #F7ACB8;
         padding: 1em 0;
-        border-radius: 30px;
-        box-shadow: 1px 2px 5px #1B1C1B;
+        border-radius: 7px;
         text-align: center;
         color: #fff;
     }
     .ffStyles:active {
         background-color: #e1c5ac;
         color: #814d3b;
-        
     }
     .listStyles li {
         list-style: none;
@@ -172,6 +179,7 @@
     #listFlv:active, #listFill:active {
         transition: 0.3s ease-in;
     }
+
 
 
     /* Contanct */
@@ -223,6 +231,7 @@
     }
 
 
+
     /* Footer */
     footer {
         background-color: #e1c5ac;
@@ -251,10 +260,10 @@
     .ftLinks li a {
         text-decoration: none;
         color: #814d3b;
+        font-weight: 600;
     }
     .copyRight {
         text-align: center;
         padding-bottom: 0.35rem;
     }
-
 }

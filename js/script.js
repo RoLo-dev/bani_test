@@ -1,4 +1,4 @@
-// This is for the mobiel nav
+// This is for the mobile nav
 let mobileOnly = window.matchMedia('(maxwidth: 640px)');
 let open = document.getElementById('open');
 let close = document.getElementById('close');
