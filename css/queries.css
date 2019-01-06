@@ -9,6 +9,10 @@
     .wrapper {
         width: 90%;
     }
+    .mobilePicWrap {
+        width: 90%;
+        margin: 0 auto;
+    }
     h2 {
         font-size: 2rem;
         margin-bottom: 1.25rem;
@@ -94,10 +98,13 @@
     /* Introduction */
     #intro {
         color: #814d3b;
-        margin-top: 2rem;
+        margin-top: 1.5rem;
     }
     #intro h2 {
         margin-bottom: 1.25rem;
+    }
+    #mini-cupcakes {
+        display: none;
     }
     #lessSugar,
     #themeCakes,
@@ -122,8 +129,11 @@
 
 
     /* About */
+    #about {
+        margin-bottom: 1.5rem;
+    }
     .baniImg {
-        height: 48vh;
+        height: 52vh;
     }
     .baniImg img {
         object-position: top;
@@ -182,7 +192,7 @@
 
 
 
-    /* Contanct */
+    /* Contact */
     #contact {
         padding: 1.5rem 0;
         color: #814d3b;
