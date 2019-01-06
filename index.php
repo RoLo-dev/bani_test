@@ -21,7 +21,7 @@
 
         <div id="desktop-header" class="wrapper">  <!-- Desktop Nav -->
             <div class="logo">
-                <a href="index.html"><img src="images/bani_logo_hor.svg" alt="bakery logo" class="pics"></a>
+                <a href="index.php"><img src="images/bani_logo_hor.svg" alt="bakery logo" class="pics"></a>
             </div>
             <div class="nav">
                 <ul>
@@ -35,7 +35,7 @@
 
         <div id="mobile-header" class="wrapper">   <!-- Mobile Nav -->
             <div class="logo">
-                <a href="index.html"><img src="images/bani_logo_hor.svg" alt="bakery logo" class="pics"></a>
+                <a href="index.php"><img src="images/bani_logo_hor.svg" alt="bakery logo" class="pics"></a>
             </div>
             <span id="open" class="open mobile">&#9776</span>
             <div id="mobileNav" class="mobile-nav">
@@ -182,6 +182,18 @@
             </br>
             </br>
             Place your cake and/or sweet table orders 7-10 days prior from due date. Pastry and cookie orders should be placed at least 5 days prior from due date. We do require a 50% deposit for any order over $75.</p>
+
+            <div class="cntctForm">
+                <form action="mail.php" method="POST">
+                    <input type="text" name="name" placeholder="Name">
+                    <input type="text" name="email" placeholder="Email">
+                    <input type="text" name="phone" placeholder="Phone">
+                    <input type="text" name="date" placeholder="Due Date">
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <button type="submit" name="submit">SEND</button>
+                </form>
+            </div>
+
             <div class="cntctInfo">
                 <div class="storehrs">
                     <h4>Store Hours</h4>

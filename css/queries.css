@@ -165,10 +165,13 @@
         border-radius: 7px;
         text-align: center;
         color: #fff;
+        transition: 0.5s;
     }
     .ffStyles:active {
         background-color: #e1c5ac;
         color: #814d3b;
+        border-radius: 30px;
+        transition: 0.3s;
     }
     .listStyles li {
         list-style: none;
@@ -201,6 +204,51 @@
         line-height: 1.7;
         margin-bottom: 2rem;
     }
+    .cntctForm {
+        margin-bottom: 2rem;
+    }
+        form {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 1rem;
+        }
+        form > * {
+            border: 0;
+        }
+        form input {
+            height: 2.25rem;
+            border-radius: 30px;
+        }
+        form input,
+        form textarea {
+            background-color: #814d3b;
+            color: #fff;
+            padding-left: 1rem;
+            font-size: 0.9rem;
+        }
+        form input::placeholder,
+        form textarea::placeholder {
+            color: #e1c5ac;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+        }
+        form textarea {
+            height: 10rem;
+            border-radius: 10px;
+        }
+        form textarea::placeholder {
+            padding-top: 8px;
+        }
+        form button {
+            background-color: #F7ACB8;
+            color: #fff;
+            height: 3rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            width: 70%;
+            border-radius: 30px;
+            margin: 0 auto;
+        }
     .cntctInfo {
         display: flex;
         flex-direction: column;
