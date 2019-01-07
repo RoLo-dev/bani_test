@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Bani Bakery specializes in Custom cakes, Wedding cakes and delicious pastries using fine ingredients and everything made fresh and with love by order. Never compromising quality over quantity. Located in Santa Ana California and cater all of Orange County and Los Angeles County.">
+    <meta name="keywords" content="cakes,custom,wedding cakes,desserts,pastries,Orange County,OC,bakery,french,macarons,pastel,pan dulce,wedding,cookies,fresh,love,delivery, smash cake,asian,high end,Santa ana,California,Orange,Southern California,local bakery">
+
     <title>Bani Bakery | Custom Cakes</title>
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Muli:300,600|Playfair+Display:700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/png" href="images/bani_favicon.png">
@@ -15,9 +16,11 @@
     <link rel="stylesheet" type="text/css" href="css/queries.css">
     <link rel="stylesheet" type="text/html" href="gallery.html">
 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <header class="display">
+    <header class="main-head display">
 
         <div id="desktop-header" class="wrapper">  <!-- Desktop Nav -->
             <div class="logo">
@@ -26,9 +29,9 @@
             <div class="nav">
                 <ul>
                     <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#cakeFill">Flavors & Fillings</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.php#about">About</a></li>
+                    <li><a href="index.php#cakeFill">Flavors & Fillings</a></li>
+                    <li><a href="index.php#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -37,14 +40,15 @@
             <div class="logo">
                 <a href="index.php"><img src="images/bani_logo_hor.svg" alt="bakery logo" class="pics"></a>
             </div>
+            <div class="empty"></div>
             <span id="open" class="open mobile">&#9776</span>
             <div id="mobileNav" class="mobile-nav">
                 <ul>
                     <li><a href="javascript:void(0)" id="close" class="close">&times</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#cakeFill">Flavors & Fillings</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.php#about">About</a></li>
+                    <li><a href="index.php#cakeFill">Flavors & Fillings</a></li>
+                    <li><a href="index.php#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -248,9 +252,9 @@
         </div>
         <div class="ftLinks">
             <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#cakeFill">Flavors & Fillings</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.php#about">About</a></li>
+            <li><a href="index.php#cakeFill">Flavors & Fillings</a></li>
+            <li><a href="index.php#contact">Contact</a></li>
         </div>
         <div class="copyRight">&copy; Copyright 2019 www.banibakery.com</div>
     </div>

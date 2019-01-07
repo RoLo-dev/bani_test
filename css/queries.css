@@ -27,7 +27,7 @@
     #desktop-header {
         display: none;
     }
-    header {
+    .main-head {
         background-attachment: inherit;
         background-position: bottom, right;
     }
@@ -35,19 +35,21 @@
        display: block;
        padding-top: 2rem;
        display: flex;
-       flex-direction: column;
+       justify-content: space-between;
        align-items: center;
    }
     .logo {
-        width: 90%;
-        margin-bottom: 3.5rem;
+        width: 70%;
+    }
+    .empty {
+        width: 10%;
     }
     .open {
         color: #F7ACB8;
         display: block;
         cursor: pointer;
         text-align: center;
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
     #mobileNav {
         width: 0;
@@ -55,6 +57,7 @@
         height: 100vh;
         display: block;
         top: 0;
+        right: 0;
         position: fixed;
         transition: 0.5s;
         overflow-x: hidden;
@@ -221,30 +224,33 @@
         }
         form input,
         form textarea {
-            background-color: #814d3b;
+            background-color: #e1c5ac;
             color: #fff;
             padding-left: 1rem;
             font-size: 0.9rem;
         }
+        form input:focus,
+        form textarea:focus {
+            background-color: #814d3b;
+        }
         form input::placeholder,
         form textarea::placeholder {
-            color: #e1c5ac;
+            color: #814d3b;
             font-size: 0.8rem;
             letter-spacing: 1px;
         }
         form textarea {
             height: 10rem;
             border-radius: 10px;
-        }
-        form textarea::placeholder {
             padding-top: 8px;
         }
         form button {
             background-color: #F7ACB8;
             color: #fff;
             height: 3rem;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             font-weight: 600;
+            letter-spacing: 2px;
             width: 70%;
             border-radius: 30px;
             margin: 0 auto;
@@ -324,4 +330,24 @@
         text-align: center;
         padding-bottom: 0.35rem;
     }
+
+
+
+    /*** These are the styles for the Gallery page ***/
+    .gallery-head {
+        background-attachment: inherit;
+        background-position: center, top;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(../images/gallery_banner.jpg);
+    }
+    .gllryGrid {
+        margin: 2rem auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+        .imgs {
+            height: 200px;
+        }
+
+
 }
