@@ -348,6 +348,28 @@
         .imgs {
             height: 200px;
         }
+    #socialM {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1.25rem;
+    }
+    #socialM h4 {
+        margin-bottom: 0.75rem;
+    }
+    #socialM .icons li {
+        list-style: none;
+        padding: 0 1rem;
+        font-size: 2.5rem;
+    }
+    #socialM .icons a {
+        text-decoration: none;
+        color: #814d3b;
+    }
+    #socialM .icons {
+        display: flex;
+        align-content: center;
+    }
 
 
 }
