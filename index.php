@@ -20,7 +20,7 @@
 
 </head>
 <body>
-    <header class="main-head display">
+    <header class="main-head ">
 
         <div id="desktop-header" class="wrapper">  <!-- Desktop Nav -->
             <div class="logo">
@@ -53,7 +53,7 @@
             </div>
         </div>
 
-        <div class="mobile-HeaderTxt wrapper">
+        <div class="headTxt mobile-HeaderTxt wrapper">
             <h1>Welcome</h1>
             <p>We provide a wide variety of high quality custom cakes and pastries using fine ingredients all freshly made by order</p>
         </div>
@@ -62,7 +62,7 @@
 
     <section id="intro">
         <h2 class="wrapper">WHAT WE OFFER</h2>
-        <div id="lessSugar" class="display">     <!-- Section One -->
+        <div id="lessSugar" class="">     <!-- Section One -->
             <div class="secOneImg">     
                 <img src="images/mini_cheesecake.jpg" alt="mini cheesecake" class="pics mobilePicWrap">
             </div>
@@ -74,7 +74,7 @@
                 <img src="images/mini_cupcakes.jpg" alt="mini cupcakes" class="pics mobilePicWrap">
             </div>
         </div>
-        <div id="themeCakes" class="display">        <!-- Section Two -->
+        <div id="themeCakes" class="">        <!-- Section Two -->
             <div class="secTwoImg">
                 <img src="images/7tiers.jpg" alt="Under the Sea theme cake" class="pics mobilePicWrap">
             </div>
@@ -94,7 +94,7 @@
                 </div>
             </div>
         </div>
-        <div id="sweetTable" class="display">        <!-- Section Three -->
+        <div id="sweetTable" class="">        <!-- Section Three -->
             <div class="secThreeImg">
                 <img src="images/Sweet-table.jpg" alt="Royal theme cupcakes" class="pics mobilePicWrap">
             </div>
@@ -248,7 +248,7 @@
 <footer>
     <div class="wrapper ftContent">
         <div class="ftLogo">
-            <a href="banibakery.com"><img src="images/bani_logo_17.png" alt="Bani bakery logo" class="pics"></a>
+            <a href="index.php"><img src="images/bani_logo_17.png" alt="Bani bakery logo" class="pics"></a>
         </div>
         <div class="ftLinks">
             <li><a href="gallery.html">Gallery</a></li>
