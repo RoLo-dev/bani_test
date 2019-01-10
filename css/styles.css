@@ -47,7 +47,7 @@ html {
 }
 h2 {
     font-family: 'Playfair Display', sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 h3 {
     font-weight: 600;
@@ -63,6 +63,7 @@ h3 {
     display: none;
 }
 header {
+    position: relative;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -101,7 +102,9 @@ header {
 }
 .headTxt {
     width: 60%;
-    margin-top: 21%;
+    position: absolute;
+    top: 45%;
+    left: 20%;
 }
 .headTxt h1 {
     font-size: 3rem;
@@ -113,6 +116,47 @@ header {
 
 
 /* Introduction */
+#intro {    /* This is for mobile */
+    display: none;
+}
+ #introDesktop {
+    color: #814d3b;
+    margin-top: 1.5rem;
+}
+#introDesktop h2 {
+    margin-bottom: 1.5rem;
+}
+#introDesktop #lessSugar,
+#introDesktop #themeCakes,
+#introDesktop #sweetTable {
+    height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+#lessSugar #imgOne-a,
+#lessSugar #imgTwo-a {
+    position: absolute;
+    width: 50%;
+}
+    #imgOne-a {
+        top: 0;
+    }
+    #imgTwo-a {
+        top: 60%;
+        right: 0;
+    }
+    #secOneTxt {
+        top: 32.5%;
+        left: 25%;
+        position: absolute;
+        width: 50%;
+        height: 35%;
+        background-color: #E1C5AC;
+        color: #814d3b;
+        z-index: 2;
+    }
+
 
 
 /* About */

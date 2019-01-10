@@ -36,6 +36,10 @@
 
 
     /* Header */
+    header {
+        background-attachment: inherit;
+        height: 70vh;
+    }
 
 
     /* Introduction */
@@ -156,7 +160,8 @@
     }
     .mobile-HeaderTxt {
         width: 85%;
-        margin-top: 8rem;
+        top: 35%;
+        left: 7.5%;
         text-align: center;
     }
     .mobile-HeaderTxt h1 {
@@ -169,20 +174,21 @@
 
 
     /* Introduction */
-    #intro {
-        color: #814d3b;
-        margin-top: 1.5rem;
+    #introDesktop {
+        display: none;
     }
+    #intro {
+    color: #814d3b;
+    margin-top: 1.5rem;
+}
     #intro h2 {
         margin-bottom: 1.25rem;
     }
-    #mini-cupcakes {
-        display: none;
-    }
-    #lessSugar,
-    #themeCakes,
-    #sweetTable {
+    #intro #lessSugar,
+    #intro #themeCakes,
+    #intro #sweetTable {
         height: auto;
+        width: 100%;
     }
     .secOneImg {
         height: 38vh;
@@ -194,9 +200,6 @@
     }
     .secTwoImg {
         margin-top: 1.25rem;
-    }
-    .secTwoImages {
-        display: none;
     }
 
 

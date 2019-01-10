@@ -20,7 +20,7 @@
 
 </head>
 <body>
-    <header class="main-head ">
+    <header class="main-head display">
 
         <div id="desktop-header" class="wrapper">  <!-- Desktop Nav -->
             <div class="logo">
@@ -60,25 +60,25 @@
         
     </header>
 
-    <section id="intro">
+    <section id="introDesktop">     <!-- This is for desktop only -->
         <h2 class="wrapper">WHAT WE OFFER</h2>
-        <div id="lessSugar" class="">     <!-- Section One -->
-            <div class="secOneImg">     
-                <img src="images/mini_cheesecake.jpg" alt="mini cheesecake" class="pics mobilePicWrap">
+        <div id="lessSugar" class="display">     <!-- Section One -->
+            <div id="imgOne-a">     
+                <img src="images/mini_cheesecake.jpg" alt="mini cheesecake" class="pics">
             </div>
-            <div class="secOneTxt introTxtStyle">
+            <div id="secOneTxt" class="introTxtStyle">
                 <h3 class="introTitle">Less Sugar, healthy you</h3>
                 <p class="wrapper">Our sweets contain a low amount of sugar and we always provide fresh fruit</p>
             </div>
-            <div id="mini-cupcakes" class="secOneImg">
-                <img src="images/mini_cupcakes.jpg" alt="mini cupcakes" class="pics mobilePicWrap">
+            <div id="imgTwo-a">
+                <img src="images/mini_cupcakes.jpg" alt="mini cupcakes" class="pics">
             </div>
         </div>
-        <div id="themeCakes" class="">        <!-- Section Two -->
-            <div class="secTwoImg">
-                <img src="images/7tiers.jpg" alt="Under the Sea theme cake" class="pics mobilePicWrap">
+        <div id="themeCakes" class="display">        <!-- Section Two -->
+            <div id="imgOne-b">
+                <img src="images/7tiers.jpg" alt="Under the Sea theme cake" class="pics">
             </div>
-            <div class="secTwoTxt introTxtStyle">
+            <div id="secTwoTxt" class="introTxtStyle">
                 <h3 class="introTitle">Character theme cakes</h3>
                 <p class="wrapper">Get creative with your cake, make it unique, give a big surprise and you'll leave behind a big impression</p>
             </div>
@@ -94,7 +94,38 @@
                 </div>
             </div>
         </div>
-        <div id="sweetTable" class="">        <!-- Section Three -->
+        <div id="sweetTable" class="display">        <!-- Section Three -->
+            <div class="secThreeImg">
+                <img src="images/Sweet-table.jpg" alt="Royal theme cupcakes" class="pics mobilePicWrap">
+            </div>
+            <div id="secThreeTxt" class="introTxtStyle">
+                <h3 class="introTitle">Need A Sweet Table</h3>
+                <p>Catering is available for all Orange County. Ask about our Sweet Table packages and cake stand rentals</p>
+            </div>
+        </div>      
+    </section>
+
+    <section id="intro">        <!-- This is for mobiel only -->
+        <h2 class="wrapper">WHAT WE OFFER</h2>
+        <div id="lessSugar">     <!-- Section One -->
+            <div class="secOneImg">     
+                <img src="images/mini_cheesecake.jpg" alt="mini cheesecake" class="pics mobilePicWrap">
+            </div>
+            <div class="secOneTxt introTxtStyle">
+                <h3 class="introTitle">Less Sugar, healthy you</h3>
+                <p class="wrapper">Our sweets contain a low amount of sugar and we always provide fresh fruit</p>
+            </div>
+        </div>
+        <div id="themeCakes">        <!-- Section Two -->
+            <div class="secTwoImg">
+                <img src="images/7tiers.jpg" alt="Under the Sea theme cake" class="pics mobilePicWrap">
+            </div>
+            <div class="secTwoTxt introTxtStyle">
+                <h3 class="introTitle">Character theme cakes</h3>
+                <p class="wrapper">Get creative with your cake, make it unique, give a big surprise and you'll leave behind a big impression</p>
+            </div>
+        </div>
+        <div id="sweetTable">        <!-- Section Three -->
             <div class="secThreeImg">
                 <img src="images/Sweet-table.jpg" alt="Royal theme cupcakes" class="pics mobilePicWrap">
             </div>
