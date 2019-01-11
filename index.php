@@ -12,11 +12,13 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:300,600|Playfair+Display:700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/png" href="images/bani_favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/queries.css">
     <link rel="stylesheet" type="text/html" href="gallery.html">
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
 
 </head>
 <body>
@@ -82,21 +84,24 @@
                 <h3 class="introTitle">Character theme cakes</h3>
                 <p class="wrapper">Get creative with your cake, make it unique, give a big surprise and you'll leave behind a big impression</p>
             </div>
-            <div class="secTwoImages">
+            <div id="images-b">
                 <div>
-                    <img src="images/totoro.JPG" alt="Totoro theme wedding cake cake" class="pics">
+                    <a href="images/totoro.JPG" data-lightbox="introduction">
+                    <img src="images/totoro.JPG" alt="Totoro theme wedding cake cake" class="pics"></a>
                 </div>
                 <div>
-                    <img src="images/bouquet.jpg" alt="Bouquet made out of cupcakes" class="pics">
+                    <a href="images/bouquet.jpg" data-lightbox="introduction">
+                    <img src="images/bouquet.jpg" alt="Bouquet made out of cupcakes" class="pics"></a>
                 </div>
                 <div>
-                    <img src="images/mex_cake.jpg" alt="Mexican theme cake" class="pics">
+                    <a href="images/mex_cake.jpg" data-lightbox="introduction">
+                    <img src="images/mex_cake.jpg" alt="Mexican theme cake" class="pics"></a>
                 </div>
             </div>
         </div>
         <div id="sweetTable" class="display">        <!-- Section Three -->
-            <div class="secThreeImg">
-                <img src="images/Sweet-table.jpg" alt="Royal theme cupcakes" class="pics mobilePicWrap">
+            <div id="imgOne-c">
+                <img src="images/Sweet-table.jpg" alt="Royal theme cupcakes" class="pics">
             </div>
             <div id="secThreeTxt" class="introTxtStyle">
                 <h3 class="introTitle">Need A Sweet Table</h3>
@@ -105,7 +110,7 @@
         </div>      
     </section>
 
-    <section id="intro">        <!-- This is for mobiel only -->
+    <section id="intro">        <!-- This is for mobile only -->
         <h2 class="wrapper">WHAT WE OFFER</h2>
         <div id="lessSugar">     <!-- Section One -->
             <div class="secOneImg">     
