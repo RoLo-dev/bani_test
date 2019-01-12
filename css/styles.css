@@ -230,15 +230,23 @@ header {
 }
 #about .aboutTxt {
     color: #814d3b;
-    padding: 10% 2rem 0 2rem;
+    padding: 0 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
 }
 #about .aboutTxt h2 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
     line-height: 1.7;
 }
 
 
 /* Cake & Fillings */
+#cakefill {
+    width: 100%;
+    height: 100vh;
+}
 
 
 /* Contact */
