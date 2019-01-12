@@ -36,13 +36,15 @@ html {
     height: 100vh;
 }
 .introTitle {
-    font-size: 1.25rem;
+    font-size: 1.65rem;
+    margin-bottom: 1rem;
 }
 .introTxtStyle {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-content: center;
     justify-content: center;
+    padding: 0 1rem;
     text-align: center;
 }
 h2 {
@@ -148,19 +150,14 @@ header {
         height: 50%;
     }
     #secOneTxt {
-        top: 25%;
+        top: 30%;
         left: 31%;
         position: absolute;
         width: 38%;
-        height: 50%;
+        height: 40%;
         background-color: #E1C5AC;
         color: #814d3b;
         z-index: 2;
-    }
-    #secOneTxt h3 {
-        font-size: 1.5rem;
-        width: 60%;
-        margin-bottom: 1rem;
     }
 #themeCakes #imgOne-b,
 #themeCakes #images-b {
@@ -174,7 +171,7 @@ header {
     }
     #images-b {
         top: 60%;
-        left: 50%;
+        left: 51%;
         height: 40%;
         width: 50%;
         display: flex;
@@ -184,12 +181,11 @@ header {
     #images-b div {
         height: 45%;
         width: 28%;
+        opacity: 1;
+        transition: 0.9s;
     }
-    #images-b div a {
-        transition: all 0.9s;
-    }
-    #images-b div a:hover {
-        opacity: 0.5;
+    #images-b div:hover {
+        opacity: 0.6;
         transition: all 0.3s ease-in;
     }
     #secTwoTxt {
@@ -205,10 +201,41 @@ header {
 #sweetTable #secThreeTxt {
     position: absolute;
 }
-
+    #imgOne-c {
+        top: 7.5%;
+        left: 15%;
+        width: 70%;
+        height: 85%;
+    }
+    #secThreeTxt {
+        top: 30%;
+        left: 0;
+        height: 40%;
+        width: 35%;
+        background-color: #814d3b;
+        color: #E1C5AC;
+    }
 
 
 /* About */
+#about {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+#about .baniImg,
+#about .aboutTxt {
+    width: 50%;
+    height: 100vh;
+}
+#about .aboutTxt {
+    color: #814d3b;
+    padding: 10% 2rem 0 2rem;
+}
+#about .aboutTxt h2 {
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
 
 
 /* Cake & Fillings */

@@ -69,8 +69,8 @@
                 <img src="images/mini_cheesecake.jpg" alt="mini cheesecake" class="pics">
             </div>
             <div id="secOneTxt" class="introTxtStyle">
-                <h3 class="introTitle">Less Sugar, healthy you</h3>
-                <p class="wrapper">Our sweets contain a low amount of sugar and we always provide fresh fruit</p>
+                <h3 class="introTitle">Less sugar, healthy you</h3>
+                <p>Our sweets contain a low amount of sugar and we always provide fresh fruit</p>
             </div>
             <div id="imgTwo-a">
                 <img src="images/mini_cupcakes.jpg" alt="mini cupcakes" class="pics">
@@ -82,7 +82,7 @@
             </div>
             <div id="secTwoTxt" class="introTxtStyle">
                 <h3 class="introTitle">Character theme cakes</h3>
-                <p class="wrapper">Get creative with your cake, make it unique, give a big surprise and you'll leave behind a big impression</p>
+                <p>Get creative with your cake, make it unique, give a big surprise and you'll leave behind a big impression</p>
             </div>
             <div id="images-b">
                 <div>
@@ -104,7 +104,7 @@
                 <img src="images/Sweet-table.jpg" alt="Royal theme cupcakes" class="pics">
             </div>
             <div id="secThreeTxt" class="introTxtStyle">
-                <h3 class="introTitle">Need A Sweet Table</h3>
+                <h3 class="introTitle">Need a sweet table</h3>
                 <p>Catering is available for all Orange County. Ask about our Sweet Table packages and cake stand rentals</p>
             </div>
         </div>      
