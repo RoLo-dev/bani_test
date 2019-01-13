@@ -63,7 +63,6 @@
     </header>
 
     <section id="introDesktop">     <!-- This is for desktop only -->
-        <h2 class="wrapper">WHAT WE OFFER</h2>
         <div id="lessSugar" class="display">     <!-- Section One -->
             <div id="imgOne-a">     
                 <img src="images/mini_cheesecake.jpg" alt="mini cheesecake" class="pics">
@@ -111,7 +110,6 @@
     </section>
 
     <section id="intro">        <!-- This is for mobile only -->
-        <h2 class="wrapper">WHAT WE OFFER</h2>
         <div id="lessSugar">     <!-- Section One -->
             <div class="secOneImg">     
                 <img src="images/mini_cheesecake.jpg" alt="mini cheesecake" class="pics mobilePicWrap">
@@ -154,7 +152,7 @@
     <section id="flavorFill">     <!-- This is for Desktop -->
         <div class="wrapper boundary">
             <div class="secTitle">
-                <h2>FLAVORS & FILLINGS</h2>
+                <h2>FLAVORS<br />&<br />FILLINGS</h2>
             </div>
             <div class="warning">
                 <p>* Items come with an additional charge</p>

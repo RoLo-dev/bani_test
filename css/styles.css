@@ -48,9 +48,12 @@ html {
     text-align: center;
 }
 h2 {
-    font-size: 2rem;
+    font-size: 2.25rem;
 }
 h3 {
+    font-weight: 600;
+}
+h4 {
     font-weight: 600;
 }
 .boldTxt {
@@ -123,9 +126,6 @@ header {
  #introDesktop {
     color: #814d3b;
     margin-top: 1.5rem;
-}
-#introDesktop h2 {
-    margin-bottom: 1.5rem;
 }
 #introDesktop #lessSugar,
 #introDesktop #themeCakes,
@@ -259,8 +259,8 @@ header {
 }
 #flavorFill .secTitle {
     position: absolute;
-    background-color: #814d3b;
     display: flex;
+    background-color: #814d3b;
     justify-content: center;
     align-items: center;
     width: 30%;
@@ -270,6 +270,7 @@ header {
 }
     .secTitle h2 {
         padding: 0 1rem;
+        text-align: center;
     }
 #flavorFill .warning {
     position: absolute;
@@ -341,16 +342,26 @@ form textarea {
     color: #fff;
     padding-left: 1rem;
     font-size: 0.9rem;
+    transition: all 0.9s;
 }
 form input:focus,
-form textarea:focus {
+form textarea:focus,
+form input:hover,
+form textarea:hover {
     background-color: #814d3b;
+    transition: all 0.3s ease-in;
 }
 form input::placeholder,
 form textarea::placeholder {
     color: #814d3b;
     font-size: 0.8rem;
     letter-spacing: 1px;
+    transition: all 0.9s;
+}
+form input:hover::placeholder,
+form textarea:hover::placeholder {
+    color: #fff;
+    transition: all 0.3s ease-in;
 }
 form textarea {
     height: 10rem;
@@ -367,16 +378,22 @@ form button {
     width: 70%;
     border-radius: 30px;
     margin: 0 auto;
+    transition: all 0.9s;
+}
+form button:hover {
+    background-color: #814d3b;
+    border-radius: 0;
+    letter-spacing: 8px;
+    transition: all 0.3s ease-in;
 }
 .cntctInfo {
+    text-align: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
- .cntctInfo div {
+.cntctInfo .storehrs,
+.cntctInfo .webPhone {
     margin-bottom: 1rem;
-}
-.cntctInfo div:last-child {
-    margin-bottom: 0;
 }
 .cntctInfo li {
     list-style: none;
@@ -398,11 +415,19 @@ form button {
     margin-bottom: 0;
 }
 .socialM .icons li {
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     font-size: 2.5rem;
 }
+.socialM .icons li a {
+    color: #814d3b;
+    transition: all 0.7s;
+}
+.socialM .icons li a:hover {
+    color: #F7ACB8;
+    transition: all 0.3s ease-in;
+}
 .award {
-    width: 60%;
+    display: none;
 }
 
 
@@ -415,7 +440,7 @@ footer {
     padding-top: 1rem;
 }
 .ftLogo {
-    width: 60%;
+    width: 30%;
     margin: 0 auto 1rem auto;
 }
 .ftLinks {
@@ -469,6 +494,7 @@ footer {
     margin-bottom: 1.25rem;
 }
 #socialM h4 {
+    color: #814d3b
     margin-bottom: 0.75rem;
 }
 #socialM .icons li {
