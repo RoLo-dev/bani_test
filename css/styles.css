@@ -16,7 +16,7 @@ bckgrd: #EEDFD1;
 html {
     color: #E1C5AC;
     font-size: 16px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Poppins', sans-serif;
     overflow-y: scroll;
     scroll-behavior: smooth;
     line-height: 1.2;
@@ -48,7 +48,6 @@ html {
     text-align: center;
 }
 h2 {
-    font-family: 'Playfair Display', sans-serif;
     font-size: 2rem;
 }
 h3 {
@@ -110,7 +109,7 @@ header {
 }
 .headTxt h1 {
     font-size: 3rem;
-    font-family: 'Playfair Display', sans-serif;
+    font-weight: 800;
 }
 .headTxt p {
     font-size: 1.25rem;
@@ -243,9 +242,69 @@ header {
 
 
 /* Cake & Fillings */
-#cakefill {
+#cakeFill {
+    display: none;
+}
+#flavorFill {
     width: 100%;
-    height: 100vh;
+    height: auto;
+    background-color: #F7ACB8;
+    color: #fff;
+}
+.boundary {
+    position: relative;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#flavorFill .secTitle {
+    position: absolute;
+    background-color: #814d3b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 30%;
+    right: 35%;
+    top: 35%;
+}
+    .secTitle h2 {
+        padding: 0 1rem;
+    }
+#flavorFill .warning {
+    position: absolute;
+    top: 85%;
+    right: 32.5%;
+    width: 35%;
+    text-align: center;
+    color: #814d3b;
+}
+#listBox,
+#listBox2 {
+    width: 50%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+}
+#listBox {
+    justify-self: flex-start;
+}
+#listBox2 {
+    padding: 1.25rem 0;
+    justify-self: flex-end;
+}
+#flavorFill .listStyles {
+    list-style: none;
+    text-align: center;
+}
+#flavorFill .listStyles li {
+    margin-bottom: 0.35rem;
+}
+#flavorFill .listStyles li:last-child {
+    margin-bottom: 0;
 }
 
 
@@ -253,6 +312,9 @@ header {
 #contact {
     padding: 1.5rem 0;
     color: #814d3b;
+}
+#contact h2 {
+    margin-bottom: 1rem;
 }
 #contact p {
     line-height: 1.7;
@@ -267,7 +329,80 @@ form > * {
 form {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 1.5rem;
+    grid-gap: 1.25rem;
+}
+form input {
+    height: 2.25rem;
+    border-radius: 30px;
+}
+form input,
+form textarea {
+    background-color: #e1c5ac;
+    color: #fff;
+    padding-left: 1rem;
+    font-size: 0.9rem;
+}
+form input:focus,
+form textarea:focus {
+    background-color: #814d3b;
+}
+form input::placeholder,
+form textarea::placeholder {
+    color: #814d3b;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+form textarea {
+    height: 10rem;
+    border-radius: 10px;
+    padding-top: 8px;
+}
+form button {
+    background-color: #F7ACB8;
+    color: #fff;
+    height: 3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    width: 70%;
+    border-radius: 30px;
+    margin: 0 auto;
+}
+.cntctInfo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+ .cntctInfo div {
+    margin-bottom: 1rem;
+}
+.cntctInfo div:last-child {
+    margin-bottom: 0;
+}
+.cntctInfo li {
+    list-style: none;
+    padding-bottom: 0.25rem;
+}
+.webPhone li:first-child {
+    padding-bottom: 0.5rem;
+}
+.cntctInfo li a {
+    text-decoration: none;
+    color: #814d3b;
+}
+.socialM h4 {
+    margin-bottom: 0.75rem;
+}
+.socialM .icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+.socialM .icons li {
+    padding: 0 1rem;
+    font-size: 2.5rem;
+}
+.award {
+    width: 60%;
 }
 
 

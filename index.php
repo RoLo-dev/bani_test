@@ -9,7 +9,7 @@
 
     <title>Bani Bakery | Custom Cakes</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Muli:300,600|Playfair+Display:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,600,800" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/png" href="images/bani_favicon.png">
     <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
@@ -151,11 +151,82 @@
         </div>
     </section>
 
-    <section id="cakeFill">
+    <section id="flavorFill">     <!-- This is for Desktop -->
+        <div class="wrapper boundary">
+            <div class="secTitle">
+                <h2>FLAVORS & FILLINGS</h2>
+            </div>
+            <div class="warning">
+                <p>* Items come with an additional charge</p>
+            </div>
+            <div id="listBox">
+                <div class="flavors listTitle">
+                    <h3>Cake</h3>
+                </div>
+                <div class="listFlv listStyles">
+                    <li>Vanilla</li>
+                    <li>Chocolate</li>
+                    <li>Marble</li>
+                    <li>Strawberry</li>
+                    <li>Lemon</li>
+                    <li>Peanut Butter</li>
+                    <li>Spices</li>
+                    <li>Lemon Blueberry</li>
+                    <li>Almond</li>
+                    <li>Funfetti</li>
+                    <li>Cookies & Cream</li>
+                    <li>Yellow chocolate chips</li>
+                    <li>Hazelnut swirls</li>
+                    <li>Matcha swirls</li>
+                    <li>Blueberry swirls</li>
+                    <li><span class="boldTxt">Red Velvet *</span></li>
+                    <li><span class="boldTxt">Coconut *</span></li>
+                    <li><span class="boldTxt">Banana *</span></li>
+                    <li><span class="boldTxt">Carrot *</span></li>
+                    <li><span class="boldTxt">Pandan *</span></li>
+                    <li><span class="boldTxt">Angel Food *</span></li>
+                    <li><span class="boldTxt">Cherry *</span></li>
+                </div>
+            </div>
+            <div id="listBox2">
+                <div class="fillings listTitle">
+                    <h3>Fillings</h3>
+                </div>
+                <div class="listFill listStyles">
+                    <li>Lemon mousse</li>
+                    <li>Whipped cream</li>
+                    <li>Pineapple cream</li>
+                    <li>Chocolate buttercream</li>
+                    <li>Tiramisu cream</li>
+                    <li>Strawberry mousse</li>
+                    <li>Raspberry mousse</li>
+                    <li>Mango mousse</li>
+                    <li>Bailey's buttercream</li>
+                    <li>Cappucino mousse</li>
+                    <li>Chocolate mousse</li>
+                    <li>Coconut cream</li>
+                    <li>Cookies & Cream</li>
+                    <li>Mocha buttercream</li>
+                    <li>Passion fruit cream</li>
+                    <li>Green tea cream</li>
+                    <li>Peanut butter cream</li>
+                    <li>Hazelnut buttercream</li>
+                    <li>Banana cream</li>
+                    <li><span class="boldTxt">Fresh fruit *</span></li>
+                    <li><span class="boldTxt">Creamcheese *</span></li>
+                    <li><span class="boldTxt">Chocolate ganache *</span></li>
+                    <li><span class="boldTxt">Durian cream *</span></li>
+                    <li><span class="boldTxt">Guava cream *</span></li>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cakeFill">     <!-- This is for mobile -->
         <div class="wrapper">
             <h2>FLAVORS & FILLINGS</h2>
-            <div id="flavors" class="ffStyles">
-                <h3>Cake Flavors</h3>
+            <div id="flavors" class="listTitle">
+                <h3>Cake</h3>
             </div>
             <div id="listFlv" class="listStyles">
                 <li>Vanilla</li>
@@ -182,8 +253,8 @@
                 <li><span class="boldTxt">Cherry *</span></li>
                 <li>* Items come with additional charge *</li>
             </div>
-            <div id="fillings" class="ffStyles">
-                <h3>Cake Fillings</h3>
+            <div id="fillings" class="listTitle">
+                <h3>Fillings</h3>
             </div>
             <div id="listFill" class="listStyles">
                 <li>Lemon mousse</li>
