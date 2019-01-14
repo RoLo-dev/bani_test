@@ -39,9 +39,11 @@
 
     /* Header */
     header {
-        background-size: inherit;
+        background-size: cover;
         background-attachment: scroll;
         background-position: bottom, right;
+        -webkit-background-size: cover;
+        -moz-background-size: cover; 
         height: 65vh;
     }
 
@@ -116,7 +118,7 @@
     #desktop-header {
         display: none;
     }
-    .main-head {
+    header {
         background-attachment: inherit;
         background-position: bottom, right;
     }
@@ -128,7 +130,7 @@
        align-items: center;
     }
     .logo {
-        width: 65%;
+        width: 60%;
     }
     .empty {
         width: auto;

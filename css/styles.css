@@ -84,7 +84,7 @@ header {
     align-items: center;
 }
 .logo {
-    width: 35%;
+    width: 28%;
 }
 .nav ul {
     list-style: none;
@@ -476,6 +476,7 @@ footer {
 
 /*** These are the styles for the Gallery page ***/
 .gallery-head {
+    height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(../images/gallery_banner.jpg);
 }
 .gllryGrid {
