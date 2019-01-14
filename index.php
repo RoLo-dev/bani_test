@@ -223,7 +223,7 @@
     <section id="cakeFill">     <!-- This is for mobile -->
         <div class="wrapper">
             <h2>FLAVORS & FILLINGS</h2>
-            <div id="flavors" class="listTitle">
+            <div id="flavors" class="ffStyles listTitle">
                 <h3>Cake</h3>
             </div>
             <div id="listFlv" class="listStyles">
@@ -251,7 +251,7 @@
                 <li><span class="boldTxt">Cherry *</span></li>
                 <li>* Items come with additional charge *</li>
             </div>
-            <div id="fillings" class="listTitle">
+            <div id="fillings" class="ffStyles listTitle">
                 <h3>Fillings</h3>
             </div>
             <div id="listFill" class="listStyles">

@@ -31,13 +31,17 @@
 
 
 
+
+
 @media only screen and (max-width: 760px) {
     /* Universal Styles */
 
 
     /* Header */
     header {
-        background-attachment: inherit;
+        background-size: inherit;
+        background-attachment: scroll;
+        background-position: bottom, right;
         height: 65vh;
     }
 
@@ -84,6 +88,8 @@
 
 
 
+
+
 @media only screen and (max-width: 640px) {
     /* Universal Styles */
     html {
@@ -104,7 +110,6 @@
     h3 {
         font-size: 1.35rem;
     }
-
 
 
     /* Header */
@@ -182,7 +187,6 @@
     }
 
 
-
     /* Introduction */
     #introDesktop {
         display: none;
@@ -211,22 +215,27 @@
     }
 
 
-
     /* About */
     #about {
+        height: auto;
+        display: block;
         margin-bottom: 1.5rem;
     }
-    .baniImg {
-        height: 52vh;
+    #about .baniImg {
+        height: 55vh;
+        width: 100%;
     }
-    .baniImg img {
+    #about .baniImg img {
         object-position: top;
     }
-    .aboutTxt {
+    #about .aboutTxt h2 {
+        margin-bottom: 1rem;
+    }
+    #about .aboutTxt {
         width: 90%;
+        height: auto;
         margin: 1.5rem auto;
     }
-
 
 
     /* Cake & Fillings */
@@ -234,6 +243,7 @@
         display: none;
     }
     #cakeFill {
+        display: block;
         background-color: #814d3b;
         padding: 1.5rem 0;
     }
@@ -277,10 +287,9 @@
     }
 
 
-
     /* Contact */
     #contact h2 {
-        margin-bottom: 0;
+        margin-bottom: 1rem;
     }
     form {
         grid-gap: 1rem;
