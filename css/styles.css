@@ -69,6 +69,7 @@ h4 {
 header {
     position: relative;
     height: 100vh;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -242,10 +243,10 @@ header {
 
 
 /* Cake & Fillings */
-#cakeFill {
+#lists #cakeFill {
     display: none;
 }
-#flavorFill {
+#lists #flavorFill {
     width: 100%;
     height: auto;
     background-color: #F7ACB8;
@@ -257,7 +258,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-#flavorFill .secTitle {
+#lists #flavorFill .secTitle {
     position: absolute;
     display: flex;
     background-color: #814d3b;
@@ -272,7 +273,7 @@ header {
         padding: 0 1rem;
         text-align: center;
     }
-#flavorFill .warning {
+#lists #flavorFill .warning {
     position: absolute;
     top: 85%;
     right: 32.5%;

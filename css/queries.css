@@ -1,4 +1,4 @@
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1366px) {
     /* Universal Styles */
 
     
@@ -33,18 +33,50 @@
 
 
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 1024px) {
+    /* Universal Styles */
+
+    
+    /* Header */
+
+
+    /* Introduction */
+
+
+    /* About */
+
+
+    /* Cake & Fillings */
+
+
+    /* Contact */
+
+
+    /* Footer */
+
+
+
+
+
+    /*** These are the styles for the Gallery page ***/
+    .imgs {
+        height: 140px;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
     /* Universal Styles */
 
 
     /* Header */
     header {
-        background-size: cover;
-        background-attachment: scroll;
-        background-position: bottom, right;
-        -webkit-background-size: cover;
-        -moz-background-size: cover; 
-        height: 65vh;
+        height: 75vh;
+        background-attachment: inherit;
+        background-position: center;
     }
 
 
@@ -92,7 +124,7 @@
 
 
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 570px) {
     /* Universal Styles */
     html {
         font-size: 14px;
@@ -119,6 +151,7 @@
         display: none;
     }
     header {
+        height: 100vh;
         background-attachment: inherit;
         background-position: bottom, right;
     }
@@ -241,10 +274,10 @@
 
 
     /* Cake & Fillings */
-    #flavorFill {
+    #lists #flavorFill {
         display: none;
     }
-    #cakeFill {
+    #lists #cakeFill {
         display: block;
         background-color: #814d3b;
         padding: 1.5rem 0;
