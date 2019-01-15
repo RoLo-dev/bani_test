@@ -22,7 +22,7 @@ html {
     line-height: 1.2;
 }
 .wrapper {
-    width: 90%;
+    width: 88%;
     margin: 0 auto;
 }
 .pics {
@@ -131,9 +131,7 @@ header {
 #introDesktop #lessSugar,
 #introDesktop #themeCakes,
 #introDesktop #sweetTable {
-    height: 100vh;
-    width: 90%;
-    margin: 0 auto;
+    height: 70vh;
     position: relative;
 }
 #lessSugar #imgOne-a,
@@ -219,14 +217,19 @@ header {
 
 /* About */
 #about {
-    height: 100vh;
+    height: auto;
     width: 100%;
     display: flex;
 }
 #about .baniImg,
 #about .aboutTxt {
     width: 50%;
-    height: 100vh;
+}
+#about .baniImg {
+    height: auto;
+}
+#about .aboutTxt {
+    margin: 1.5rem 0;
 }
 #about .aboutTxt {
     color: #814d3b;
@@ -238,7 +241,9 @@ header {
 }
 #about .aboutTxt h2 {
     margin-bottom: 1.25rem;
-    line-height: 1.7;
+}
+#about .aboutTxt p {
+    line-height: 1.5;
 }
 
 
@@ -319,7 +324,7 @@ header {
     margin-bottom: 1rem;
 }
 #contact p {
-    line-height: 1.7;
+    line-height: 1.5;
     margin-bottom: 2rem;
 }
 .cntctForm {

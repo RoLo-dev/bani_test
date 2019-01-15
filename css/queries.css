@@ -81,22 +81,52 @@
 
 
     /* Introduction */
+    #introDesktop #lessSugar,
+    #introDesktop #themeCakes,
+    #introDesktop #sweetTable {
+        height: 65vh;
+    }
+    #secOneTxt {
+        top: 30%;
+        left: 31%;
+        width: 38%;
+        height: 40%;
+    }
+    #images-b div {
+        height: 45%;
+        width: 28%;
+    }
+    #secTwoTxt {
+        top: 15%;
+        right: 7%;
+        width: 35%;
+        height: 45%;
+    }
+    #secThreeTxt {
+        top: 30%;
+        left: 0;
+        height: 40%;
+        width: 35%;
+    }
 
 
     /* About */
     #about {
-        height: 100vh;
         width: 100%;
-        display: flex;
     }
     #about .baniImg,
     #about .aboutTxt {
         width: 50%;
-        height: 100vh;
     }
 
 
     /* Cake & Fillings */
+    #lists #flavorFill .secTitle {
+    width: 30%;
+    height: 30%;
+    right: 35%;
+    top: 35%;
+}
 
 
     /* Contact */
@@ -124,7 +154,7 @@
 
 
 
-@media only screen and (max-width: 570px) {
+@media only screen and (max-width: 600px) {
     /* Universal Styles */
     html {
         font-size: 14px;

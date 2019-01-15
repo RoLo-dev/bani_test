@@ -63,7 +63,7 @@
     </header>
 
     <section id="introDesktop">     <!-- This is for desktop only -->
-        <div id="lessSugar" class="display">     <!-- Section One -->
+        <div id="lessSugar" class="wrapper">     <!-- Section One -->
             <div id="imgOne-a">     
                 <img src="images/mini_cheesecake.jpg" alt="mini cheesecake" class="pics">
             </div>
@@ -75,7 +75,7 @@
                 <img src="images/mini_cupcakes.jpg" alt="mini cupcakes" class="pics">
             </div>
         </div>
-        <div id="themeCakes" class="display">        <!-- Section Two -->
+        <div id="themeCakes" class="wrapper">        <!-- Section Two -->
             <div id="imgOne-b">
                 <img src="images/7tiers.jpg" alt="Under the Sea theme cake" class="pics">
             </div>
@@ -98,7 +98,7 @@
                 </div>
             </div>
         </div>
-        <div id="sweetTable" class="display">        <!-- Section Three -->
+        <div id="sweetTable" class="wrapper">        <!-- Section Three -->
             <div id="imgOne-c">
                 <img src="images/Sweet-table.jpg" alt="Royal theme cupcakes" class="pics">
             </div>
