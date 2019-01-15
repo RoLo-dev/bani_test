@@ -6,9 +6,18 @@
 
 
     /* Introduction */
+    #introDesktop #lessSugar,
+    #introDesktop #themeCakes,
+    #introDesktop #sweetTable {
+        height: 1000px;
+    }
 
 
     /* About */
+    #about {
+        width: 87%;
+        margin: 0 auto;
+    }
 
 
     /* Cake & Fillings */
@@ -35,6 +44,9 @@
 
 @media only screen and (max-width: 1024px) {
     /* Universal Styles */
+    html {
+        font-size: 16px;
+    }
     .wrapper {
         width: 85%;
     }
@@ -54,9 +66,39 @@
 
 
     /* Introduction */
+    #introDesktop #lessSugar,
+    #introDesktop #themeCakes,
+    #introDesktop #sweetTable {
+        height: 800px;
+    }
+    #secOneTxt {
+        top: 32.5%;
+        left: 35%;
+        width: 30%;
+        height: 35%;
+    }
+    #images-b div {
+        height: 45%;
+        width: 28%;
+    }
+    #secTwoTxt {
+        top: 20%;
+        right: 7%;
+        width: 35%;
+        height: 37%;
+    }
+    #secThreeTxt {
+        top: 32.5%;
+        left: 0;
+        height: 35%;
+        width: 35%;
+    }
 
 
     /* About */
+    #about {
+        width: 100%;
+    }
 
 
     /* Cake & Fillings */
@@ -71,7 +113,6 @@
     /* Contact */
     .cntctForm {
         width: 80%;
-        margin: 0 auto 2rem auto;
     }
 
 
@@ -85,9 +126,7 @@
 
 
     /*** These are the styles for the Gallery page ***/
-    .imgs {
-        height: 140px;
-    }
+   
 }
 
 
@@ -145,13 +184,6 @@
 
 
     /* About */
-    #about {
-        width: 100%;
-    }
-    #about .baniImg,
-    #about .aboutTxt {
-        width: 50%;
-    }
 
 
     /* Cake & Fillings */

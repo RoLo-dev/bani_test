@@ -15,14 +15,14 @@ bckgrd: #EEDFD1;
 }
 html {
     color: #E1C5AC;
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Poppins', sans-serif;
     overflow-y: scroll;
     scroll-behavior: smooth;
     line-height: 1.2;
 }
 .wrapper {
-    width: 88%;
+    width: 87%;
     margin: 0 auto;
 }
 .pics {
@@ -222,7 +222,7 @@ header {
     width: 50%;
 }
 #about .baniImg {
-    height: auto;
+    height: 65vh;
 }
 #about .aboutTxt {
     margin: 1.5rem 0;
@@ -296,8 +296,11 @@ header {
     justify-self: flex-start;
 }
 #listBox2 {
-    padding: 1.25rem 0;
+    padding: 1.75rem 0;
     justify-self: flex-end;
+}
+#flavorFill .listTitle {
+    margin-bottom: 1rem;
 }
 #flavorFill .listStyles {
     list-style: none;
@@ -324,7 +327,8 @@ header {
     margin-bottom: 2rem;
 }
 .cntctForm {
-    margin-bottom: 2rem;
+    width: 65%;
+    margin: 0 auto 2rem auto;
 }
 form > * {
     border: 0;
