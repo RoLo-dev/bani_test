@@ -35,9 +35,22 @@
 
 @media only screen and (max-width: 1024px) {
     /* Universal Styles */
+    .wrapper {
+        width: 85%;
+    }
 
     
     /* Header */
+    header {
+        height: 85vh;
+        background-attachment: inherit;
+        background-position: center;
+    }
+    .headTxt {
+        width: 60%;
+        top: 48%;
+        left: 17%;
+    }
 
 
     /* Introduction */
@@ -47,12 +60,25 @@
 
 
     /* Cake & Fillings */
+    #lists #flavorFill .secTitle {
+        width: 27%;
+        height: 34%;
+        right: 36.5%;
+        top: 33%;
+    }
 
 
     /* Contact */
+    .cntctForm {
+        width: 80%;
+        margin: 0 auto 2rem auto;
+    }
 
 
     /* Footer */
+    .ftLogo {
+        width: 25%;
+    }
 
 
 
@@ -70,6 +96,9 @@
 
 @media only screen and (max-width: 768px) {
     /* Universal Styles */
+    .wrapper {
+        width: 88%;
+    }
 
 
     /* Header */
@@ -77,6 +106,11 @@
         height: 75vh;
         background-attachment: inherit;
         background-position: center;
+    }
+    .headTxt {
+        width: 65%;
+        top: 45%;
+        left: 17%;
     }
 
 
@@ -122,14 +156,17 @@
 
     /* Cake & Fillings */
     #lists #flavorFill .secTitle {
-    width: 30%;
-    height: 30%;
-    right: 35%;
-    top: 35%;
-}
+        width: 30%;
+        height: 30%;
+        right: 35%;
+        top: 35%;
+    }
 
 
     /* Contact */
+    .cntctForm {
+        width: 100%;
+    }
 
 
     /* Footer */
@@ -154,7 +191,7 @@
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
     /* Universal Styles */
     html {
         font-size: 14px;
