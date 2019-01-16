@@ -1,8 +1,16 @@
 @media only screen and (max-width: 1366px) {
     /* Universal Styles */
+    .wrapper {
+        width: 87%;
+    }
 
     
     /* Header */
+    .headTxt {
+        width: 60%;
+        top: 45%;
+        left: 20%;
+    }
 
 
     /* Introduction */
@@ -11,19 +19,49 @@
     #introDesktop #sweetTable {
         height: 1000px;
     }
+    #secOneTxt {
+        top: 35%;
+        left: 37.5%;
+        width: 25%;
+        height: 30%;
+    }
+    #images-b div {
+        height: 45%;
+        width: 28%;
+    }
+    #secTwoTxt {
+        top: 15%;
+        right: 8%;
+        width: 30%;
+        height: 32%;
+    }
+    #secThreeTxt {
+        top: 34%;
+        left: 0;
+        height: 32%;
+        width: 28%;
+    }
 
 
     /* About */
     #about {
         width: 87%;
-        margin: 0 auto;
     }
 
 
     /* Cake & Fillings */
+    #lists #flavorFill .secTitle {
+        width: 22%;
+        height: 40%;
+        right: 39%;
+        top: 30%;
+    }
 
 
     /* Contact */
+    .cntctForm {
+        width: 70%;
+    }
 
 
     /* Footer */
@@ -104,21 +142,21 @@
     /* Cake & Fillings */
     #lists #flavorFill .secTitle {
         width: 27%;
-        height: 34%;
-        right: 36.5%;
-        top: 33%;
+        height: 30%;
+        right: 34%;
+        top: 35%;
     }
 
 
     /* Contact */
     .cntctForm {
-        width: 80%;
+        width: 75%;
     }
 
 
     /* Footer */
     .ftLogo {
-        width: 25%;
+        width: 20%;
     }
 
 

@@ -22,7 +22,7 @@ html {
     line-height: 1.2;
 }
 .wrapper {
-    width: 87%;
+    width: 80%;
     margin: 0 auto;
 }
 .pics {
@@ -81,7 +81,7 @@ header {
     align-items: center;
 }
 .logo {
-    width: 28%;
+    width: 22%;
 }
 .nav ul {
     list-style: none;
@@ -102,10 +102,11 @@ header {
     transition: all 0.3s ease-in;
 }
 .headTxt {
-    width: 60%;
+    text-align: center;
+    width: 50%;
     position: absolute;
     top: 45%;
-    left: 20%;
+    left: 25%;
 }
 .headTxt h1 {
     font-size: 3rem;
@@ -127,7 +128,7 @@ header {
 #introDesktop #lessSugar,
 #introDesktop #themeCakes,
 #introDesktop #sweetTable {
-    height: 70vh;
+    height: 1200px;
     position: relative;
 }
 #lessSugar #imgOne-a,
@@ -144,11 +145,11 @@ header {
         height: 50%;
     }
     #secOneTxt {
-        top: 30%;
-        left: 31%;
+        top: 32.5%;
+        left: 36.5%;
+        width: 27%;
+        height: 35%;
         position: absolute;
-        width: 38%;
-        height: 40%;
         background-color: #E1C5AC;
         color: #814d3b;
         z-index: 2;
@@ -184,9 +185,9 @@ header {
     }
     #secTwoTxt {
         top: 15%;
-        right: 7%;
-        width: 35%;
-        height: 45%;
+        right: 10%;
+        width: 28%;
+        height: 40%;
         position: absolute;
         background-color: #F7ACB8;
         color: #fff;
@@ -202,10 +203,10 @@ header {
         height: 85%;
     }
     #secThreeTxt {
-        top: 30%;
+        top: 32.5%;
         left: 0;
-        height: 40%;
-        width: 35%;
+        height: 35%;
+        width: 25%;
         background-color: #814d3b;
         color: #E1C5AC;
     }
@@ -213,8 +214,9 @@ header {
 
 /* About */
 #about {
+    margin: 0 auto;
     height: auto;
-    width: 100%;
+    width: 80%;
     display: flex;
 }
 #about .baniImg,
@@ -265,10 +267,10 @@ header {
     background-color: #814d3b;
     justify-content: center;
     align-items: center;
-    width: 30%;
-    height: 30%;
-    right: 35%;
-    top: 35%;
+    width: 20%;
+    height: 35%;
+    right: 40%;
+    top: 32.5%;
 }
     .secTitle h2 {
         padding: 0 1rem;
@@ -446,7 +448,7 @@ footer {
     padding-top: 1rem;
 }
 .ftLogo {
-    width: 30%;
+    width: 20%;
     margin: 0 auto 1rem auto;
 }
 .ftLinks {
