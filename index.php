@@ -85,16 +85,16 @@
             </div>
             <div id="images-b">
                 <div>
-                    <a href="images/totoro.JPG" data-lightbox="introduction">
-                    <img src="images/totoro.JPG" alt="Totoro theme wedding cake cake" class="pics"></a>
+                    <a href="images/charac1.jpg" data-lightbox="introduction">
+                    <img src="images/charac1.jpg" alt="custom cake" class="pics"></a>
                 </div>
                 <div>
-                    <a href="images/bouquet.jpg" data-lightbox="introduction">
-                    <img src="images/bouquet.jpg" alt="Bouquet made out of cupcakes" class="pics"></a>
+                    <a href="images/charac2.jpg" data-lightbox="introduction">
+                    <img src="images/charac2.jpg" alt="custom cake" class="pics"></a>
                 </div>
                 <div>
-                    <a href="images/mex_cake.jpg" data-lightbox="introduction">
-                    <img src="images/mex_cake.jpg" alt="Mexican theme cake" class="pics"></a>
+                    <a href="images/charac3.jpg" data-lightbox="introduction">
+                    <img src="images/charac3.jpg" alt="custom cake" class="pics"></a>
                 </div>
             </div>
         </div>
