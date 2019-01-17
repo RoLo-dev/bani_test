@@ -224,7 +224,7 @@ header {
     width: 50%;
 }
 #about .baniImg {
-    height: 65vh;
+    height: auto;
 }
 #about .aboutTxt {
     margin: 1.5rem 0;

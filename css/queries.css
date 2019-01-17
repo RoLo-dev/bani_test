@@ -261,6 +261,25 @@
 
 
 
+@media only screen and (max-width: 736px) {
+    /* Header */
+    header {
+        height: 90vh;
+    }
+
+
+    /* Introduction */
+    #introDesktop #lessSugar,
+    #introDesktop #themeCakes,
+    #introDesktop #sweetTable {
+        height: 600px;
+    }
+}
+
+
+
+
+
 @media only screen and (max-width: 640px) {
     /* Universal Styles */
     html {
