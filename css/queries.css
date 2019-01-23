@@ -178,6 +178,23 @@
     }
 
 
+    /* Holidays or Special events */
+    .specialBox {
+        flex-direction: column;
+    }
+        .specialTxt h3 {
+            font-size: 2rem;
+            padding-bottom: .75rem;
+        }
+        .specialTxt p {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+        .specialImg {
+            width: 75%;
+        }
+
+
     /* Header */
     header {
         height: 75vh;

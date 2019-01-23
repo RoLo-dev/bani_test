@@ -58,6 +58,32 @@ h4 {
 }
 
 
+/* Holidays or Special events */
+#special {
+    background-color: #F7ACB8;
+}
+.specialBox {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .specialTxt {
+        color: #fff;
+    }
+    .specialTxt h3 {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+    .specialTxt p {
+        width: 80%;
+        line-height: 1.5;
+    }
+    .specialImg {
+        width: 80%;
+    }
+
+
 /* Header */
 #mobile-header {
     display: none;
