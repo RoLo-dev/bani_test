@@ -62,6 +62,20 @@
         
     </header>
 
+    <section id="special">
+        <div class="wrapper">
+            <div class="specialBox">
+                <div class="specialTxt">
+                    <h3>Cupcake Roses & Flowers</h3>
+                    <p>Make this an unforgettable Valentine's day by giving cupcake roses or flowers to that special person. Believe us, you'll definitely make a big impression and most importantly, a memorable day. Hurry, place your orders now while supplies last.</p>
+                </div>
+                <div class="specialImg">
+                    <img src="images/val-web.jpg" alt="" class="pics">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="introDesktop">     <!-- This is for desktop only -->
         <div id="lessSugar" class="wrapper">     <!-- Section One -->
             <div id="imgOne-a">     
