@@ -27,7 +27,9 @@ function closeNav() {
     document.getElementById('open').style.display = 'block'
 }
 
-// This is for the Flavor & Filling buttons
+
+
+// This is for the Flavor & Filling buttons on mobile
 let flavorBtn = document.getElementById('flavors');
 let fillingBtn = document.getElementById('fillings');
 
@@ -45,3 +47,27 @@ function toggleFlavor() {
 function toggleFilling() {
     $('#listFill').slideToggle('slow');
 };
+
+
+
+// This code is for smooth scrolling effect
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $(".navLink").on('click', function(event) {
+
+    if (this.hash !== "b") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});

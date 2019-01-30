@@ -30,10 +30,10 @@
             </div>
             <div class="nav">
                 <ul>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="index.php#about">About</a></li>
-                    <li><a href="index.php#lists">Flavors & Fillings</a></li>
-                    <li><a href="index.php#contact">Contact</a></li>
+                    <li><a href="gallery.html" class="navLink">Gallery</a></li>
+                    <li><a href="index.php#about" class="navLink">About</a></li>
+                    <li><a href="index.php#lists" class="navLink">Flavors & Fillings</a></li>
+                    <li><a href="index.php#contact" class="navLink">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -47,10 +47,10 @@
             <div id="mobileNav" class="mobile-nav">
                 <ul>
                     <li><a href="javascript:void(0)" id="close" class="close">&times</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="index.php#about">About</a></li>
-                    <li><a href="index.php#lists">Flavors & Fillings</a></li>
-                    <li><a href="index.php#contact">Contact</a></li>
+                    <li><a href="gallery.html" class="navLink">Gallery</a></li>
+                    <li><a href="index.php#about" class="navLink">About</a></li>
+                    <li><a href="index.php#lists" class="navLink">Flavors & Fillings</a></li>
+                    <li><a href="index.php#contact" class="navLink">Contact</a></li>
                 </ul>
             </div>
         </div>
