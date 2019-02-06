@@ -18,8 +18,8 @@ if (isset($_POST['submit'])) {
             $body = '<h2>Contact Request</h2>
 					<h4>Name</h4><p>'.$name.'</p>
 					<h4>Email</h4><p>'.$email.'</p>
-                    <h4>Email</h4><p>'.$phone.'</p>
-                    <h4>Email</h4><p>'.$date.'</p>
+                    <h4>Phone</h4><p>'.$phone.'</p>
+                    <h4>Date</h4><p>'.$date.'</p>
 					<h4>Message</h4><p>'.$message.'</p>
 				';
 
