@@ -60,6 +60,7 @@ h4 {
 
 /* Holidays or Special events */
 #special {
+    display: none;
     background-color: #F7ACB8;
 }
 .specialBox {
