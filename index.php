@@ -30,7 +30,7 @@
             </div>
             <div class="nav">
                 <ul>
-                    <li><a href="gallery.html" class="navLink">Gallery</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="index.php#about" class="navLink">About</a></li>
                     <li><a href="index.php#lists" class="navLink">Flavors & Fillings</a></li>
                     <li><a href="index.php#contact" class="navLink">Contact</a></li>
@@ -47,7 +47,7 @@
             <div id="mobileNav" class="mobile-nav">
                 <ul>
                     <li><a href="javascript:void(0)" id="close" class="close">&times</a></li>
-                    <li><a href="gallery.html" class="navLink">Gallery</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="index.php#about" class="navLink">About</a></li>
                     <li><a href="index.php#lists" class="navLink">Flavors & Fillings</a></li>
                     <li><a href="index.php#contact" class="navLink">Contact</a></li>
@@ -118,7 +118,7 @@
             </div>
             <div id="secThreeTxt" class="introTxtStyle">
                 <h3 class="introTitle">Need a sweet table</h3>
-                <p>Catering is available for all Orange County. Ask about our Sweet Table packages and cake stand rentals</p>
+                <p>Catering is available for all Orange and Los Angeles County. Ask about our cake stand rentals for your sweet tables.</p>
             </div>
         </div>      
     </section>
@@ -376,9 +376,9 @@
         </div>
         <div class="ftLinks">
             <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="index.php#about">About</a></li>
-            <li><a href="index.php#lists">Flavors & Fillings</a></li>
-            <li><a href="index.php#contact">Contact</a></li>
+            <li><a href="index.php#about" class="navLink">About</a></li>
+            <li><a href="index.php#lists" class="navLink">Flavors & Fillings</a></li>
+            <li><a href="index.php#contact" class="navLink">Contact</a></li>
         </div>
         <div class="copyRight">&copy; Copyright 2019 www.banibakery.com</div>
     </div>
