@@ -147,8 +147,8 @@
                 <img src="images/Sweet-table.jpg" alt="Royal theme cupcakes" class="pics mobilePicWrap">
             </div>
             <div class="secThreeTxt introTxtStyle">
-                <h3 class="introTitle">Need A Sweet Table</h3>
-                <p>Catering is available for all Orange County. Ask about our Sweet Table packages and cake stand rentals</p>
+                <h3 class="introTitle">Need a sweet table</h3>
+                <p>Catering is available for all Orange and Los Angeles County. Ask about our cake stand rentals for your sweet tables.</p>
             </div>
         </div>      
     </section>
