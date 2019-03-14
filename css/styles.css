@@ -237,6 +237,13 @@ header {
         background-color: #814d3b;
         color: #E1C5AC;
     }
+    #secThreeTxt #swtBtn {
+        width: 80%;
+        margin: 1rem auto 0 auto;
+        padding: 0.8rem 2.5rem;
+        border-radius: 25px;
+        font-size: 0.8rem;
+    }
 
 
 /* About */

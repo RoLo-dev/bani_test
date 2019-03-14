@@ -118,7 +118,8 @@
             </div>
             <div id="secThreeTxt" class="introTxtStyle">
                 <h3 class="introTitle">Need a sweet table</h3>
-                <p>Catering is available for all Orange and Los Angeles County. Ask about our cake stand rentals for your sweet tables.</p>
+                <p>Catering is available for all Orange and Los Angeles County. Ask about our cake stand rentals for your sweet tables. Click on the button below to see what we offer.</p>
+                <button id="swtBtn">Sweet items</button>
             </div>
         </div>      
     </section>
