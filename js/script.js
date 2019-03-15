@@ -71,3 +71,10 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+
+
+// This is the code for the modal
+let swtBtn = document.getlElementById('swtBtn');
+let modal = document.getElementById('modal');
+let modalContent = document.getElementById('modal-content');
