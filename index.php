@@ -119,7 +119,48 @@
             <div id="secThreeTxt" class="introTxtStyle">
                 <h3 class="introTitle">Need a sweet table</h3>
                 <p>Catering is available for all Orange and Los Angeles County. Ask about our cake stand rentals for your sweet tables. Click on the button below to see what we offer.</p>
-                <button id="swtBtn">Sweet items</button>
+                <button id="swtBtn">Sweet Items</button>
+            </div>
+        </div>
+        <div id="modal">
+            <div id="modal-content">
+                <span id="closeBtn">&times;</span>
+                <li><h4>Sweet Table Items</h4></li>
+                <li>Mini Cupcakes</li>
+                <li>Cupcakes</li>
+                <li>Cake Pops</li>
+                <li>Oreo Pops</li>
+                <li>Cakeball</li>
+                <li>Lemon Tart</li>
+                <li>Keylime Tart</li>
+                <li>Strawberry Tart</li>
+                <li>Macarons</li>
+                <li>Brownie Bites</li>
+                <li>Rice Krispy Treats</li>
+                <li>Canolli</li>
+                <li>Choux Small</li>
+                <li>Pretzel Sticks</li>
+                <li>Pina Colada Shooters</li>
+                <li>Tiramisu Cups</li>
+                <li>Creme Brulee</li>
+                <li>Mini Fruitarts</li>
+                <li>Cookie Cream Shooters</li>
+                <li>Strawberry Shooters</li>
+                <li>Banana Cream Pie</li>
+                <li>Red Forest Cup</li>
+                <li>Keylime Parfait</li>
+                <li>Tropical Cups</li>
+                <li>Mini Cheesecake</li>
+                <li>Mexican Wedding Cookies</li>
+                <li>Mini Mexican Wedding Cookies</li>
+                <li>Oatmeal Raisin Cookies</li>
+                <li>Peanut Butter Cookies</li>
+                <li>Chocolate Chip Cookies</li>
+                <li>Chocolate Dipped Strawberries</li>
+                <li>Machani Cups</li>
+                <li class="boldTxt">Additional charge of $0.50 each item for bags and bows</li>
+                <li class="boldTxt">Minimum 1 dozen per item</li>
+                <li class="boldTxt">Orders have to be placed 3 days in advance</li>
             </div>
         </div>      
     </section>
