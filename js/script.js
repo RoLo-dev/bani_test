@@ -78,3 +78,27 @@ $(document).ready(function(){
 let swtBtn = document.getlElementById('swtBtn');
 let modal = document.getElementById('modal');
 let modalContent = document.getElementById('modal-content');
+let closeBtn = document.getlElementById('closeBtn');
+
+swtBtn.addEventListener('click', openModal);
+closeBtn.addEventListener('click', closeModal);
+window.addEventListener('click', outsideClick);
+
+function openModal() {
+  modal.style.opacity = '1';
+  modal.style.visibility = 'visible'
+  modalContent.style.top = '0%';
+}
+function closeModal() {
+  modal.style.opacity = '0';
+  modal.style.visibility = 'hidden';
+  modalContent.style.top = '110%';
+}
+function outsideClick(e) {
+  if (e.target == modal) {
+    modal.style.opacity = '0';
+    modal.style.visibility = 'hidden';
+    modalContent.style.top = '110%';
+  }
+}
+
