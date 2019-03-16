@@ -87,18 +87,34 @@ window.addEventListener('click', outsideClick);
 function openModal() {
   modal.style.opacity = '1';
   modal.style.visibility = 'visible'
-  modalContent.style.top = '0%';
+  modalContent.style.top = '0';
 }
 function closeModal() {
   modal.style.opacity = '0';
   modal.style.visibility = 'hidden';
+  modal.style.transition = '0.5s';
   modalContent.style.top = '110%';
 }
 function outsideClick(e) {
   if (e.target == modal) {
     modal.style.opacity = '0';
     modal.style.visibility = 'hidden';
+    modal.style.transition = '0.5s';
     modalContent.style.top = '110%';
   }
 }
 
+// Hidden Sweet table list for mobile
+let swtListBtn = document.getElementById('swtListBtn');
+let hiddenList = document.getElementById('hiddenList');
+let closeList = document.getElementById('closeList');
+
+swtListBtn.addEventListener('click', showList);
+closeList.addEventListener('click', hideList);
+
+function showList() {
+  $('#hiddenList').slideToggle('medium');
+}
+function hideList() {
+  $('#hiddenList').slideToggle('medium');
+}
