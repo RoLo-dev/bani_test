@@ -421,6 +421,31 @@
     .secTwoImg {
         margin-top: 1.25rem;
     }
+    #hiddenList {
+        height: auto;
+        width: 100%;
+    }
+    #hiddenList #listContent {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+    #hiddenList #listContent #closeList {
+        font-size: 2.5rem;
+        color: #F7ACB8;
+        margin-bottom: 0.8rem;
+    }
+    #hiddenList #listContent li {
+        margin-bottom: 0.5rem;
+        list-style: none;
+        display: inline-block;
+        font-size: 1rem;
+    }
 
 
     /* About */
