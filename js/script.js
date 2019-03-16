@@ -113,8 +113,8 @@ swtListBtn.addEventListener('click', showList);
 closeList.addEventListener('click', hideList);
 
 function showList() {
-  $('#hiddenList').slideToggle('medium');
+  $('#hiddenList').slideToggle('slow');
 }
 function hideList() {
-  $('#hiddenList').slideToggle('medium');
+  $('#hiddenList').slideToggle('slow');
 }
