@@ -75,10 +75,10 @@ $(document).ready(function(){
 
 
 // This is the code for the modal
-let swtBtn = document.getlElementById('swtBtn');
+let swtBtn = document.getElementById('swtBtn');
 let modal = document.getElementById('modal');
 let modalContent = document.getElementById('modal-content');
-let closeBtn = document.getlElementById('closeBtn');
+let closeBtn = document.getElementById('closeBtn');
 
 swtBtn.addEventListener('click', openModal);
 closeBtn.addEventListener('click', closeModal);
