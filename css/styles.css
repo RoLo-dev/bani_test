@@ -237,7 +237,8 @@ header {
         background-color: #814d3b;
         color: #E1C5AC;
     }
-    #secThreeTxt #swtBtn {
+    #secThreeTxt #swtBtn,
+    .secThreeTxt .swtBtn {
         width: 80%;
         margin: 1rem auto 0 auto;
         padding: 0.5rem 2.5rem;
@@ -248,7 +249,12 @@ header {
         border: 0;
         transition: all 0.5s;
     }
-    #secThreeTxt #swtBtn:hover {
+    .secThreeTxt .swtBtn {
+        font-size: 1rem;
+        padding: 0.8rem 2.5rem;
+    }
+    #secThreeTxt #swtBtn:hover,
+    .secThreeTxt .swtBtn:hover {
         background-color: #E1C5AC;
         color: #814d3b;
         cursor: pointer;
@@ -264,7 +270,7 @@ header {
         opacity: 0;
         z-index: 5;
         visibility: hidden;
-        transition: visibility 0.5s;
+        transition: all 0.5s;
         overflow: auto;
         background-color: rgba(0, 0, 0, 0.92);
     }
