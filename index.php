@@ -191,11 +191,11 @@
             <div class="secThreeTxt introTxtStyle">
                 <h3 class="introTitle">Need a sweet table</h3>
                 <p>Catering is available for all Orange and Los Angeles County. Ask about our cake stand rentals for your sweet tables. Click on the button below to see what we offer.</p>
-                <button class="swtBtn">Sweet Items</button>
+                <button id="swtListBtn">Sweet Items</button>
             </div>
-            <div id="modal">
-                <div id="modal-content">
-                    <span id="closeBtn">&times;</span>
+            <div id="hiddenList">
+                <div id="listContent">
+                    <span id="closeList">&times;</span>
                     <li><h4>Sweet Table Items</h4></li>
                     <li>Mini Cupcakes</li>
                     <li>Cupcakes</li>
@@ -410,7 +410,7 @@
                 <div class="storehrs">
                     <h4>Store Hours</h4>
                     <li>Monday closed</li>
-                    <li>Tues - Fri: 9am - 6pm</li>
+                    <li>Tues - Fri: 9am - 7pm</li>
                     <li>Sat - Sun: 8am - 3pm</li>
                 </div>
                 <div class="webPhone">
