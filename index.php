@@ -444,7 +444,7 @@
                     </div>
                 </div>
                 <div class="award">
-                    <img src="images/best.png" alt="Award for best business of 2018" class="pics">
+                    <img src="https://threebestrated.com/awards/cakes-santa_ana-2019-clr.svg" alt="Best Cakes in Santa Ana" class="pics">
                 </div>
             </div>
         </div>
