@@ -186,7 +186,7 @@
         </div>
         <div id="sweetTable">        <!-- Section Three -->
             <div class="secThreeImg">
-                <img src="images/Sweet-table.jpg" alt="Royal theme cupcakes" class="pics mobilePicWrap">
+                <img src="images/sweet_table.jpg" alt="Royal theme cupcakes" class="pics mobilePicWrap">
             </div>
             <div class="secThreeTxt introTxtStyle">
                 <h3 class="introTitle">Need a sweet table</h3>
