@@ -6,7 +6,6 @@ lt-gray: #CAC8C7;
 bckgrd: #EEDFD1; 
 */
 
-
 /* Universal Styles */
 * {
     padding: 0;
@@ -56,11 +55,9 @@ h4 {
     font-weight: 600;
     letter-spacing: 0.8px;
 }
-
-
 /* Holidays or Special events */
 #special {
-    display: none;
+    display: block;
     background-color: #F7ACB8;
 }
 .specialBox {
@@ -77,13 +74,8 @@ h4 {
         padding-bottom: 1rem;
     }
     .specialTxt p {
-        width: 80%;
         line-height: 1.5;
     }
-    .specialImg {
-        width: 80%;
-    }
-
 
 /* Header */
 #mobile-header {
@@ -108,7 +100,7 @@ header {
     align-items: center;
 }
 .logo {
-    width: 22%;
+    width: 18%;
 }
 .nav ul {
     list-style: none;
@@ -142,15 +134,13 @@ header {
 .headTxt p {
     font-size: 1.25rem;
 }
-
-
 /* Introduction */
 #intro {    /* This is for mobile */
     display: none;
 }
  #introDesktop {
     color: #814d3b;
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
 }
 #introDesktop #lessSugar,
 #introDesktop #themeCakes,
@@ -158,19 +148,10 @@ header {
     height: 1200px;
     position: relative;
 }
-#lessSugar #imgOne-a,
-#lessSugar #imgTwo-a {
-    position: absolute;
-    width: 50%;
+#lessSugar {
+    display: grid;
+    grid-template: 600px 600px / 1fr 1fr;
 }
-    #imgOne-a {
-        top: 0;
-    }
-    #imgTwo-a {
-        top: 50%;
-        right: 0;
-        height: 50%;
-    }
     #secOneTxt {
         top: 32.5%;
         left: 36.5%;
@@ -309,8 +290,6 @@ header {
         margin-bottom: 1.5rem;
         font-size: 1.75rem;
     }
-
-
 /* About */
 #about {
     margin: 0 auto;
@@ -342,8 +321,6 @@ header {
 #about .aboutTxt p {
     line-height: 1.5;
 }
-
-
 /* Cake & Fillings */
 #lists #cakeFill {
     display: none;
@@ -413,19 +390,19 @@ header {
 #flavorFill .listStyles li:last-child {
     margin-bottom: 0;
 }
-
-
 /* Contact */
 #contact {
     padding: 1.5rem 0;
     color: #814d3b;
 }
 #contact h2 {
-    margin-bottom: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 #contact p {
+    width: 65%;
     line-height: 1.5;
-    margin-bottom: 2rem;
+    margin:0 auto 2rem auto;
 }
 .cntctForm {
     width: 65%;
@@ -536,8 +513,6 @@ form button:hover {
 .award {
     display: none;
 }
-
-
 /* Footer */
 footer {
     background-color: #e1c5ac;
@@ -578,13 +553,10 @@ footer {
 }
 
 
-
-
-
 /*** These are the styles for the Gallery page ***/
 .gallery-head {
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(../images/gallery_banner.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(../images/16.jpg);
 }
 .gllryGrid {
     margin: 2rem auto;

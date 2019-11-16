@@ -3,21 +3,20 @@
     .wrapper {
         width: 87%;
     }
-
-    
     /* Header */
     .headTxt {
         width: 60%;
         top: 45%;
         left: 20%;
     }
-
-
     /* Introduction */
     #introDesktop #lessSugar,
     #introDesktop #themeCakes,
     #introDesktop #sweetTable {
         height: 1000px;
+    }
+    #introDesktop #lessSugar {
+        grid-template: 500px 500px / 1fr 1fr;
     }
     #secOneTxt {
         top: 35%;
@@ -41,14 +40,10 @@
         height: 32%;
         width: 28%;
     }
-
-
     /* About */
     #about {
         width: 87%;
     }
-
-
     /* Cake & Fillings */
     #lists #flavorFill .secTitle {
         width: 22%;
@@ -56,28 +51,19 @@
         right: 39%;
         top: 30%;
     }
-
-
     /* Contact */
+    #contact p {
+        width: 70%;
+    }
     .cntctForm {
         width: 70%;
     }
-
-
-    /* Footer */
-
-
-
-
 
     /*** These are the styles for the Gallery page ***/
     .imgs {
         height: 140px;
     }
 }
-
-
-
 
 
 @media only screen and (max-width: 1024px) {
@@ -88,8 +74,6 @@
     .wrapper {
         width: 85%;
     }
-
-    
     /* Header */
     header {
         height: 85vh;
@@ -101,13 +85,14 @@
         top: 48%;
         left: 17%;
     }
-
-
     /* Introduction */
     #introDesktop #lessSugar,
     #introDesktop #themeCakes,
     #introDesktop #sweetTable {
         height: 800px;
+    }
+    #introDesktop #lessSugar {
+        grid-template: 400px 400px / 1fr 1fr;
     }
     #secOneTxt {
         top: 32.5%;
@@ -131,14 +116,10 @@
         height: 40%;
         width: 35%;
     }
-
-
     /* About */
     #about {
         width: 100%;
     }
-
-
     /* Cake & Fillings */
     #lists #flavorFill .secTitle {
         width: 27%;
@@ -146,29 +127,18 @@
         right: 34%;
         top: 35%;
     }
-
-
     /* Contact */
+    #contact p {
+        width: 75%;
+    }
     .cntctForm {
         width: 75%;
     }
-
-
     /* Footer */
     .ftLogo {
         width: 20%;
     }
-
-
-
-
-
-    /*** These are the styles for the Gallery page ***/
-   
 }
-
-
-
 
 
 @media only screen and (max-width: 768px) {
@@ -176,8 +146,6 @@
     .wrapper {
         width: 88%;
     }
-
-
     /* Holidays or Special events */
     .specialBox {
         flex-direction: column;
@@ -190,11 +158,6 @@
             width: 100%;
             margin-bottom: 2rem;
         }
-        .specialImg {
-            width: 75%;
-        }
-
-
     /* Header */
     header {
         height: 75vh;
@@ -206,13 +169,14 @@
         top: 45%;
         left: 17%;
     }
-
-
     /* Introduction */
     #introDesktop #lessSugar,
     #introDesktop #themeCakes,
     #introDesktop #sweetTable {
         height: 65vh;
+    }
+    #introDesktop #lessSugar {
+        grid-template: 32.5vh 32.5vh / 1fr 1fr;
     }
     #secOneTxt {
         top: 30%;
@@ -236,11 +200,6 @@
         height: 55%;
         width: 35%;
     }
-
-
-    /* About */
-
-
     /* Cake & Fillings */
     #lists #flavorFill .secTitle {
         width: 30%;
@@ -248,22 +207,17 @@
         right: 35%;
         top: 35%;
     }
-
-
     /* Contact */
+    #contact p {
+        width: 100%;
+    }
     .cntctForm {
         width: 100%;
     }
-
-
     /* Footer */
     .ftLogo {
         width: 30%;
     }
-
-
-
-
 
     /*** These are the styles for the Gallery page ***/
     .gllryGrid {
@@ -275,26 +229,22 @@
 }
 
 
-
-
-
 @media only screen and (max-width: 736px) {
     /* Header */
     header {
         height: 90vh;
     }
-
-
     /* Introduction */
     #introDesktop #lessSugar,
     #introDesktop #themeCakes,
     #introDesktop #sweetTable {
         height: 600px;
     }
+    #introDesktop #lessSugar {
+        display: grid;
+        grid-template: 300px 300px / 1fr 1fr;
+    }
 }
-
-
-
 
 
 @media only screen and (max-width: 640px) {
@@ -317,8 +267,6 @@
     h3 {
         font-size: 1.35rem;
     }
-
-
     /* Header */
     #desktop-header {
         display: none;
@@ -393,8 +341,6 @@
     .mobile-HeaderTxt p {
         font-size: 1.35rem;
     }
-
-
     /* Introduction */
     #introDesktop {
         display: none;
@@ -409,6 +355,8 @@
     #intro #sweetTable {
         height: auto;
         width: 100%;
+        display: flex;
+        flex-direction: column;
     }
     .secOneImg {
         height: 38vh;
@@ -456,8 +404,6 @@
     #hiddenList #listContent li h4 {
         font-size: 1.5rem;
     }
-
-
     /* About */
     #about {
         height: auto;
@@ -479,8 +425,6 @@
         height: auto;
         margin: 1.5rem auto;
     }
-
-
     /* Cake & Fillings */
     #lists #flavorFill {
         display: none;
@@ -528,8 +472,6 @@
     #listFlv:active, #listFill:active {
         transition: 0.3s ease-in;
     }
-
-
     /* Contact */
     #contact h2 {
         margin-bottom: 1rem;
@@ -557,7 +499,6 @@
         width: 60%;
     }
 
-
     /* Footer */
     .ftLinks {
         display: flex;
@@ -567,10 +508,6 @@
     .ftLogo {
         width: 45%;
     }
-    
-
-
-
 
     /*** These are the styles for the Gallery page ***/
     .gallery-head {
