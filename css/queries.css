@@ -276,12 +276,12 @@
         background-attachment: inherit;
         background-position: bottom, right;
     }
-   #mobile-header {
-       display: block;
-       padding-top: 2rem;
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
+    #mobile-header {
+        display: block;
+        padding-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     .logo {
         width: 60%;
@@ -369,6 +369,9 @@
     .secTwoImg {
         margin-top: 1.25rem;
     }
+    /* #secThreeTxt #swtListBtn{
+        width: 100%;
+    } */
     #hiddenList {
         height: auto;
         width: 100%;

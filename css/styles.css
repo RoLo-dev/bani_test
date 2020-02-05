@@ -111,12 +111,16 @@ header {
 .nav ul li a {
     text-decoration: none;
     color: #F7ACB8;
-    margin-left: 0.75rem;
+    margin-left: 2rem;
+    border: 2px solid transparent;
+    padding: 3px 13px;
+    border-radius: 5px;
     transition: all 0.9s;
 }
-.nav ul li a:hover {
-    padding: 0 5px;
+.nav ul li a:hover,
+.nav ul li a:focus {
     color: #fff;
+    border-color: #fff;
     background-color: transparent;
     transition: all 0.3s ease-in;
 }
@@ -138,7 +142,7 @@ header {
 #intro {    /* This is for mobile */
     display: none;
 }
- #introDesktop {
+#introDesktop {
     color: #814d3b;
     margin-top: 2.5rem;
 }
@@ -220,19 +224,23 @@ header {
     }
     #secThreeTxt #swtBtn,
     .secThreeTxt #swtListBtn {
-        width: 80%;
         margin: 1rem auto 0 auto;
-        padding: 0.5rem 2.5rem;
-        border-radius: 25px;
-        font-size: 0.8rem;
+        border-radius: 7px;
         background-color: #F7ACB8;
         color: #fff;
+        font-weight: 600;
         border: 0;
         transition: all 0.5s;
     }
-    .secThreeTxt #swtListBtn {
-        font-size: 1rem;
-        padding: 0.8rem 2.5rem;
+    #secThreeTxt #swtBtn{       /* This is for desktop  */
+        width: 80%;
+        padding: 0.5rem 2.5rem;
+        font-size: 0.8rem;
+    }
+    .secThreeTxt #swtListBtn {      /* This is for mobile  */
+        width: 97%;
+        font-size: 1.5rem;
+        padding: 1.15rem 2.5rem;
     }
     #secThreeTxt #swtBtn:hover,
     .secThreeTxt #swtListBtn:hover {
@@ -573,7 +581,7 @@ footer {
         opacity: 0.5;
         transition: 0.3s ease-in;
     }
- #socialM {
+#socialM {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -588,7 +596,7 @@ footer {
     padding: 0 1rem;
     font-size: 3rem;
 }
- #socialM .icons a {
+#socialM .icons a {
     text-decoration: none;
     color: #814d3b;
 }
