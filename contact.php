@@ -29,7 +29,7 @@
             <p>Have any questions? Please feel free to send us any questions or comments. For a quote request or placing an order, please provide detailed information (cake flavor, filling, servings and picture) as well as the date of the event.
             </br>
             </br>
-            All cake and sweet table orders should be placed <span class="boldTxt">8-10 days</span> prior from due date. Pastry and cookie orders should be placed at least <span class="boldTxt">6 days</span> prior from due date. We do require a 50% deposit for any order over $75.</p>
+            All cake and sweet table orders should be placed <span class="boldTxt">8-10 days</span> prior from due date. Pastry and cookie orders should be placed at least <span class="boldTxt">6 days</span> prior from due date. We do require a 50% deposit for any order over $75, if no deposit is made, your order will be put on hold.</p>
 
             <div class="cntctForm">
                 <form action="mail.php" method="POST">
