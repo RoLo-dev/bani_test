@@ -57,28 +57,22 @@ h4 {
 }
 /* Holidays or Special events */
 #special {
-    display: block;
-    background-color: #F7ACB8;
+    /* display: block; */
+    background-color: #814d3b;
 }
-.specialBox {
+.specialTxt {
+    color: #fff;
     padding: 3rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-    .specialTxt {
-        color: #fff;
-    }
-    .specialTxt h3 {
-        font-size: 2rem;
-        margin-bottom: 1.85rem;
-    }
-    .specialTxt .stepsTitle{
-        margin-bottom: 10px;
-    }
-    .specialTxt p {
-        line-height: 1.5;
-    }
+.specialTxt h2 {
+    margin-bottom: 1.25rem;
+}
+.specialTxt .stepsTitle{
+    margin-bottom: 10px;
+}
+.specialTxt p {
+    line-height: 1.35;
+}
 
 /* Header */
 #mobile-header {
@@ -117,7 +111,7 @@ header {
     margin-left: 1.25rem;
     border: 2px solid transparent;
     padding: 3px 13px;
-    border-radius: 5px;
+    border-radius: 7px;
     transition: all 0.9s;
 }
 .nav ul li a:hover,
@@ -223,12 +217,12 @@ header {
         height: 35%;
         width: 25%;
         background-color: #814d3b;
-        color: #E1C5AC;
+        color: #FFF;
     }
     #secThreeTxt #swtBtn,
     .secThreeTxt #swtListBtn {
         margin: 1rem auto 0 auto;
-        border-radius: 7px;
+        border-radius: 30px;
         background-color: #F7ACB8;
         color: #fff;
         font-weight: 600;
@@ -250,7 +244,6 @@ header {
         background-color: #E1C5AC;
         color: #814d3b;
         cursor: pointer;
-        border-radius: 0px;
         transition: all 0.3s ease-in;
     }
     #modal {
@@ -301,37 +294,7 @@ header {
         margin-bottom: 1.5rem;
         font-size: 1.75rem;
     }
-/* About */
-#about {
-    margin: 0 auto;
-    height: auto;
-    width: 80%;
-    display: flex;
-}
-#about .baniImg,
-#about .aboutTxt {
-    width: 50%;
-}
-#about .baniImg {
-    height: auto;
-}
-#about .aboutTxt {
-    margin: 1.5rem 0;
-}
-#about .aboutTxt {
-    color: #814d3b;
-    padding: 0 1.6rem;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-}
-#about .aboutTxt h2 {
-    margin-bottom: 1.25rem;
-}
-#about .aboutTxt p {
-    line-height: 1.5;
-}
+
 /* Cake & Fillings */
 #lists #cakeFill {
     display: none;
@@ -429,7 +392,7 @@ form {
 }
 form input {
     height: 2.25rem;
-    border-radius: 30px;
+    border-radius: 8px;
 }
 form input,
 form textarea {
@@ -466,18 +429,18 @@ form textarea {
 form button {
     background-color: #F7ACB8;
     color: #fff;
-    height: 3rem;
+    height: 2.5rem;
     font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 2px;
-    width: 70%;
+    width: 60%;
     border-radius: 30px;
     margin: 0 auto;
     transition: all 0.9s;
 }
 form button:hover {
+    cursor: pointer;
     background-color: #814d3b;
-    border-radius: 0;
     letter-spacing: 8px;
     transition: all 0.3s ease-in;
 }
@@ -561,6 +524,36 @@ footer {
 .copyRight {
     text-align: center;
     padding-bottom: 0.35rem;
+}
+/* About */
+#about {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#about .baniImg,
+#about .aboutTxt {
+    width: 48%;
+    height: 85vh;
+}
+#about .baniImg {
+    padding: 2rem 0;
+}
+#about .baniImg img{
+    object-position: top;
+}
+#about .aboutTxt {
+    color: #814d3b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+#about .aboutTxt h2 {
+    margin-bottom: 1.25rem;
+}
+#about .aboutTxt p {
+    line-height: 1.5;
 }
 
 
