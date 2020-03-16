@@ -118,3 +118,8 @@ function showList() {
 function hideList() {
   $('#hiddenList').slideToggle('slow');
 }
+
+AOS.init({
+    offset: 300,
+    duration: 850
+});

@@ -15,10 +15,16 @@
     <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/queries.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" type="text/html" href="gallery.html">
-    <link rel="stylesheet" type="text/html" href="contact.php">    
+    <link rel="stylesheet" type="text/html" href="contact.php">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
+    </script>
+
     <script src="js/lightbox-plus-jquery.min.js"></script>
 
 </head>
@@ -27,7 +33,7 @@
 
         <div id="desktop-header" class="wrapper">  <!-- Desktop Nav -->
             <div class="logo">
-                <a href="index.html"><img src="images/bani_logo_hor.svg" alt="bakery logo" class="picss"></a>
+                <a href="index.html"><img src="images/bani_logo_hor.svg" alt="bakery logo" class="pics"></a>
             </div>
             <div class="nav">
                 <ul>
@@ -66,7 +72,7 @@
 
     <section id="introDesktop">     <!-- This is for desktop only -->
         <div class="wrapper">
-            <div id="lessSugar">     <!-- Section One -->
+            <div id="lessSugar" data-aos="fade-up">     <!-- Section One -->
                 <div>     
                     <img src="images/image-one.jpg" alt="mini cupcakes" class="pics">
                 </div>
@@ -81,7 +87,7 @@
                 </div>
             </div>
 
-            <div id="themeCakes">        <!-- Section Two -->
+            <div id="themeCakes" data-aos="fade-up">        <!-- Section Two -->
                 <div id="imgOne-b">
                     <img src="images/18.jpg" alt="Princess theme cake" class="pics">
                 </div>
@@ -105,7 +111,7 @@
                 </div>
             </div>
             
-            <div id="sweetTable">        <!-- Section Three -->
+            <div id="sweetTable" data-aos="fade-up">        <!-- Section Three -->
                 <div id="imgOne-c">
                     <img src="images/16.jpg" alt="Sea theme cake pops" class="pics">
                 </div>
@@ -160,7 +166,7 @@
     </section>
 
     <section id="intro">        <!-- This is for mobile only -->
-        <div id="lessSugar">     <!-- Section One -->
+        <div id="lessSugar" data-aos="fade-up">     <!-- Section One -->
             <div class="secOneImg">     
                 <img src="images/image-one.jpg" alt="Tropical cake" class="pics mobilePicWrap">
             </div>
@@ -169,7 +175,7 @@
                 <p class="wrapper">Our sweets contain a low amount of sugar and we always provide fresh fruit</p>
             </div>
         </div>
-        <div id="themeCakes">        <!-- Section Two -->
+        <div id="themeCakes" data-aos="fade-up">        <!-- Section Two -->
             <div class="secTwoImg">
                 <img src="images/18.jpg" alt="Princess theme cake" class="pics mobilePicWrap">
             </div>
@@ -178,7 +184,7 @@
                 <p class="wrapper">Get creative with your cake, make it unique, give a big surprise and you'll leave behind a big impression</p>
             </div>
         </div>
-        <div id="sweetTable">        <!-- Section Three -->
+        <div id="sweetTable" data-aos="fade-up">        <!-- Section Three -->
             <div class="secThreeImg">
                 <img src="images/sweet_table.jpg" alt="Sea theme cake pops" class="pics mobilePicWrap">
             </div>
@@ -231,7 +237,7 @@
         </div>
     </section>
 
-    <section id="special">  <!-- This is for announcements -->
+    <section id="special" data-aos="fade-up">  <!-- This is for announcements -->
         <div class="wrapper">
             <div class="specialTxt">
                 <h2>HOW IT WORKS</h2>
@@ -252,7 +258,7 @@
 
     <section id="lists">
 
-        <div id="flavorFill">     <!-- This is for Desktop -->
+        <div id="flavorFill" data-aos="fade-up">     <!-- This is for Desktop -->
             <div class="wrapper boundary">
                 <div class="secTitle">
                     <h2>FLAVORS<br />&<br />FILLINGS</h2>
@@ -323,7 +329,7 @@
             </div>
         </div>
 
-        <div id="cakeFill">     <!-- This is for mobile -->
+        <div id="cakeFill" data-aos="fade-up">     <!-- This is for mobile -->
             <div class="wrapper">
                 <h2>FLAVORS & FILLINGS</h2>
                 <div id="flavors" class="ffStyles listTitle">
@@ -389,7 +395,7 @@
 
     </section>
 
-    <section id="about" class="wrapper">
+    <section id="about" class="wrapper" data-aos="fade-up">
         <div class="baniImg">
             <img src="images/bani2.JPG" alt="Bani Dao picture" class="pics">
         </div>
@@ -399,6 +405,7 @@
         </div>
     </section>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 
