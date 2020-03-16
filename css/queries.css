@@ -379,6 +379,10 @@
     form {
         grid-gap: 1rem;
     }
+    #contact p,
+    .cntctForm{
+        width: 100%;
+    }
     .cntctInfo {
         display: flex;
         align-items: center;
