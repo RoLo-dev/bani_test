@@ -64,7 +64,8 @@ h4 {
     color: #fff;
     padding: 3rem 0;
 }
-.specialTxt h2 {
+.specialTxt h3 {
+    font-size: 2rem;
     margin-bottom: 1.25rem;
 }
 .specialTxt .stepsTitle{
@@ -72,6 +73,16 @@ h4 {
 }
 .specialTxt p {
     line-height: 1.35;
+}
+.specialTxt ul{
+    margin-top: 10px;
+}
+.specialTxt ul li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+.specialTxt ul li:last-child{
+    margin-bottom: 0;
 }
 
 /* Header */
@@ -294,6 +305,25 @@ header {
         margin-bottom: 1.5rem;
         font-size: 1.75rem;
     }
+
+/* How It Works */
+#howItWorks {
+    /* display: block; */
+    background-color: #814d3b;
+}
+.steps {
+    color: #fff;
+    padding: 3rem 0;
+}
+.steps h2 {
+    margin-bottom: 1.25rem;
+}
+.steps .stepTitle{
+    margin-bottom: 10px;
+}
+.steps p {
+    line-height: 1.35;
+}
 
 /* Cake & Fillings */
 #lists #cakeFill {
@@ -550,6 +580,7 @@ footer {
     align-content: center;
 }
 #about .aboutTxt h2 {
+    color: #814d3b;
     margin-bottom: 1.25rem;
 }
 #about .aboutTxt p {
