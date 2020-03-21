@@ -120,6 +120,6 @@ function hideList() {
 }
 
 AOS.init({
-    offset: 300,
-    duration: 850
+    offset: 200,
+    duration: 450
 });
