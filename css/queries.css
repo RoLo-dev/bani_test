@@ -345,12 +345,17 @@
         border-radius: 30px;
         text-align: center;
         color: #fff;
+        transform: scale(1);
         transition: 0.5s;
     }
-    .ffStyles:active {
+    .ffStyles:hover,
+    .ffStyles:focus {
         background-color: #e1c5ac;
         color: #814d3b;
         transition: 0.3s;
+    }
+    .ffStyles:active{
+        transform: scale(0.97);
     }
     .listStyles li {
         list-style: none;
