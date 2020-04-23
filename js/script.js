@@ -37,11 +37,6 @@ flavorBtn.addEventListener('click', toggleFlavor);
 fillingBtn.addEventListener('click', toggleFilling);
 
 function toggleFlavor() {
-    // if (flavorList.style.display === 'none') {
-    //     flavorList.style.display = 'block';
-    // } else {
-    //     flavorList.style.display = 'none';
-    // }
     $('#listFlv').slideToggle('slow');
 };
 function toggleFilling() {
@@ -71,8 +66,6 @@ $(document).ready(function(){
     } // End if
   });
 });
-
-
 
 // This is the code for the modal
 let swtBtn = document.getElementById('swtBtn');
