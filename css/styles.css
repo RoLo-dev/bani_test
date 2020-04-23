@@ -24,6 +24,10 @@ html {
     width: 90%;
     margin: 0 auto;
 }
+.smaller-wrapper{
+    width: 70%;
+    margin: 0 auto;
+}
 .pics {
     display: block;
     width: 100%;
@@ -153,11 +157,10 @@ header {
 #introDesktop {
     color: #814d3b;
     margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
 }
-#lessSugar,
-#themeCakes,
-#sweetTable{
-    height: 1200px;
+.introSections-styles{
+    height: 100vh;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -166,23 +169,26 @@ header {
         width: 50%;
     }
     .lessSugar-leftCol img,
-    .lessSugar-righttCol img,
+    .lessSugar-rightCol img,
     .sweet-leftCol img,
     .sweet-rightCol img{
         height: 50%;
     }
-    .lessSugar-righttCol,
-    .sweet-lefttCol{
+    .lessSugar-rightCol,
+    .sweet-leftCol{
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
     }
-    .secOneTxt {
+    .secOneTxt,
+    .secThreeTxt{
         top: 32.5%;
         left: 37.5%;
         width: 25%;
         height: 35%;
         position: absolute;
+    }
+    .secOneTxt{
         background-color: #E1C5AC;
         color: #814d3b;
     }
@@ -194,8 +200,8 @@ header {
         align-items: center;
         padding-left: 1rem;
     }
-        .secTwoTxt {
-        width: 50%;
+        .secTwoTxt{
+        width: 60%;
         height: 35%;
         background-color: #F7ACB8;
         color: #fff;
@@ -217,22 +223,11 @@ header {
         transition: all 0.3s ease-in;
     }
 
-    .sweet-leftCol img{
-        top: 7.5%;
-        left: 15%;
-        width: 70%;
-        height: 85%;
-    }
-    #secThreeTxt {
-        position: absolute;
-        top: 32.5%;
-        left: 0;
-        height: 35%;
-        width: 25%;
+    .secThreeTxt {
         background-color: #814d3b;
         color: #FFF;
     }
-    #secThreeTxt #swtBtn,
+    .secThreeTxt #swtBtn,
     .secThreeTxt #swtListBtn {
         margin: 1rem auto 0 auto;
         border-radius: 30px;
@@ -242,10 +237,19 @@ header {
         border: 0;
         transition: all 0.5s;
     }
-    #secThreeTxt #swtBtn{       /* This is for desktop  */
+    .secThreeTxt #swtBtn{       /* This is for desktop  */
         width: 80%;
         padding: 0.5rem 2.5rem;
         font-size: 0.8rem;
+    }
+    .secThreeTxt #swtBtn:hover{
+        cursor: pointer;
+        color: #814d3b;
+        background-color: #E1C5AC;
+        transition: all 0.2s ease-in;
+    }
+    .secThreeTxt #swtBtn:active{
+        transform: scale(0.95);
     }
     .secThreeTxt #swtListBtn {      /* This is for mobile  */
         width: 100%;
@@ -328,7 +332,9 @@ header {
 }
 
 /* Cake & Fillings */
-#lists #cakeFill {
+#lists #cakeFill,
+#flavors,
+#fillings{
     display: none;
 }
 #lists #flavorFill {
@@ -337,13 +343,30 @@ header {
     background-color: #F7ACB8;
     color: #fff;
 }
-.boundary {
+.list-container {
     position: relative;
     height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0;
 }
-#lists #flavorFill .secTitle {
+.list{
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.list .listTitle{
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+.list ul li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+#flavorFill .secTitle {
     position: absolute;
     display: flex;
     background-color: #814d3b;
@@ -365,36 +388,6 @@ header {
     width: 35%;
     text-align: center;
     color: #814d3b;
-}
-#listBox,
-#listBox2 {
-    width: 50%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    align-content: center;
-    justify-items: center;
-    justify-content: center;
-}
-#listBox {
-    justify-self: flex-start;
-}
-#listBox2 {
-    padding: 1.75rem 0;
-    justify-self: flex-end;
-}
-#flavorFill .listTitle {
-    margin-bottom: 1rem;
-}
-#flavorFill .listStyles {
-    list-style: none;
-    text-align: center;
-}
-#flavorFill .listStyles li {
-    margin-bottom: 0.35rem;
-}
-#flavorFill .listStyles li:last-child {
-    margin-bottom: 0;
 }
 /* Contact */
 #contact {
@@ -516,57 +509,56 @@ form button:hover {
     color: #F7ACB8;
     transition: all 0.3s ease-in;
 }
-.award {
+.award{
     display: none;
 }
 /* Footer */
-footer {
+footer{
     background-color: #e1c5ac;
     color: #814d3b;
 }
-.ftContent {
+.ftContent{
     padding-top: 1rem;
 }
-.ftLogo {
+.ftLogo{
     width: 20%;
     margin: 0 auto 1rem auto;
 }
-.ftLinks {
+.ftLinks{
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
 }
-.ftLinks li {
+.ftLinks li{
     list-style: none;
     padding-bottom: 0.75rem;
 }
-.ftLinks li:last-child {
+.ftLinks li:last-child{
     padding-bottom: 0;
 }
-.ftLinks li a {
+.ftLinks li a{
     text-decoration: none;
     color: #814d3b;
     font-weight: 600;
     transition: all 0.9s;
 }
-.ftLinks li a:hover {
+.ftLinks li a:hover{
     color: #fff;
     transition: 0.3s ease-in;
 }
-.copyRight {
+.copyRight{
     text-align: center;
     padding-bottom: 0.35rem;
 }
 /* About */
 #about {
-    height: auto;
+    height: 85vh;
     display: flex;
     justify-content: space-between;
 }
 #about .baniImg,
-#about .aboutTxt {
+#about .aboutTxt{
     width: 48%;
-    height: 85vh;
 }
 #about .baniImg {
     padding: 2rem 0;
@@ -574,49 +566,49 @@ footer {
 #about .baniImg img{
     object-position: top;
 }
-#about .aboutTxt {
+#about .aboutTxt{
     color: #814d3b;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
 }
-#about .aboutTxt h2 {
+#about .aboutTxt h2{
     color: #814d3b;
     margin-bottom: 1.25rem;
 }
-#about .aboutTxt p {
+#about .aboutTxt p{
     line-height: 1.5;
 }
 
 
 /*** These are the styles for the Gallery page ***/
-.gallery-head {
+.gallery-head{
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(../images/16.jpg);
 }
-.gllryGrid {
+.gllryGrid{
     margin: 2rem auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 0.5rem;
 }
-    .imgs {
+    .imgs{
         height: 200px;
         opacity: 1;
         transition: all 0.8s;
     }
-    .imgs:hover {
+    .imgs:hover{
         opacity: 0.5;
         transition: 0.3s ease-in;
     }
-#socialM {
+#socialM{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 1.25rem;
 }
-#socialM h4 {
+#socialM h4{
     color: #814d3b;
     margin-bottom: 0.75rem;
 }

@@ -71,7 +71,7 @@
     </header>
 
     <section id="special">  <!-- This is for announcements -->
-        <div class="wrapper specialTxt">
+        <div class="smaller-wrapper specialTxt">
             <h3>TEMPORARY STORE HOURS</h3>
             <p>We hope that everyone is doing well during this time. Due to unfortunate measures we will be having temporary store hours until further notice. Please feel free to reach us by email or by phone for any inquiries. Remember to practice social distancing, stay safe and healthy everyone.</p>
             <ul>
@@ -85,11 +85,11 @@
 
     <section id="introDesktop">     <!-- This is for desktop only -->
         <div class="wrapper">
-            <div id="lessSugar" data-aos="fade-down">  <!-- Section One -->
+            <div id="lessSugar" class="introSections-styles" data-aos="fade-down">  <!-- Section One -->
                 <div class="lessSugar-leftCol col">
                     <img src="images/image-one.jpg" alt="mini cupcakes" class="pics">
                 </div>
-                <div class="lessSugar-righttCol col">
+                <div class="lessSugar-rightCol col">
                     <img src="images/image-two.jpg" alt="macarons" class="pics">
                 </div>
                 <div class="secOneTxt introTxtStyle">
@@ -98,7 +98,7 @@
                 </div>
             </div>
 
-            <div id="themeCakes" data-aos="fade-down">  <!-- Section Two -->
+            <div id="themeCakes" class="introSections-styles"  data-aos="fade-down">  <!-- Section Two -->
                 <div class="theme-leftCol col">
                     <img src="images/18.jpg" alt="Princess theme cake" class="pics">
                 </div>
@@ -126,14 +126,14 @@
                 </div>
             </div>
 
-            <div id="sweetTable" data-aos="fade-down">  <!-- Section Three -->
+            <div id="sweetTable" class="introSections-styles" data-aos="fade-down">  <!-- Section Three -->
                 <div class="sweet-leftCol col">
-                    <img src="" alt="" class="pics">
+                    <img src="images/sweet_table02.jpg" alt="" class="pics">
                 </div>
                 <div class="sweet-rightCol col">
                     <img src="images/16.jpg" alt="Sea theme cake pops" class="pics">
                 </div>
-                <div id="secThreeTxt" class="introTxtStyle">
+                <div class="secThreeTxt introTxtStyle">
                     <h3 class="introTitle">Need a sweet table</h3>
                     <p>Catering is available for all Orange and Los Angeles County. Ask about our cake stand rentals for your sweet tables. Click on the button below to see what we offer.</p>
                     <button id="swtBtn">Sweet Items</button>
@@ -256,7 +256,7 @@
     </section>
 
     <section id="howItWorks">
-        <div class="wrapper steps" data-aos="fade-down">
+        <div class="smaller-wrapper steps" data-aos="fade-down">
             <h2>HOW IT WORKS</h2>
             <p class="boldTxt stepTitle">Placing your Order</p>
             <p>We ask our customers to please place their orders ahead of time, we try our best to fulfill as many orders as possible each week. Orders must be placed at least <span class="boldTxt">8-10 days in advance</span>. We also ask to have pictures ready of the cake design they're interested in for reference as well as the amount of servings to determine the size of the cake</p>
@@ -275,18 +275,23 @@
     <section id="lists">
 
         <div id="flavorFill" >     <!-- This is for Desktop -->
-            <div class="wrapper boundary" data-aos="fade-down">
+            <div class="wrapper list-container" data-aos="fade-down">
                 <div class="secTitle">
                     <h2>FLAVORS<br />&<br />FILLINGS</h2>
                 </div>
+
                 <div class="warning">
                     <p>* Items come with an additional charge</p>
                 </div>
-                <div id="listBox">
-                    <div class="flavors listTitle">
+
+                <div id="listBox" class="list">
+                    <div id="flavors" class="listTitle-mobile">
                         <h3>Cake</h3>
                     </div>
-                    <div class="listFlv listStyles">
+                    <ul>
+                        <li>
+                            <h3 class="listTitle">Cake</h3>
+                        </li>
                         <li>Vanilla</li>
                         <li>Chocolate</li>
                         <li>Marble</li>
@@ -309,13 +314,16 @@
                         <li><span class="boldTxt">Pandan *</span></li>
                         <li><span class="boldTxt">Angel Food *</span></li>
                         <li><span class="boldTxt">Cherry *</span></li>
-                    </div>
+                    </ul>
                 </div>
-                <div id="listBox2">
-                    <div class="fillings listTitle">
+                <div id="listBox2" class="list">
+                    <div id="fillings" class="listTitle">
                         <h3>Fillings</h3>
                     </div>
-                    <div class="listFill listStyles">
+                    <ul>
+                        <li>
+                            <h3 class="listTitle">Fillings</h3>
+                        </li>
                         <li>Lemon mousse</li>
                         <li>Whipped cream</li>
                         <li>Pineapple cream</li>
@@ -340,8 +348,9 @@
                         <li><span class="boldTxt">Chocolate ganache *</span></li>
                         <li><span class="boldTxt">Durian cream *</span></li>
                         <li><span class="boldTxt">Guava cream *</span></li>
-                    </div>
+                    </ul>
                 </div>
+
             </div>
         </div>
 
