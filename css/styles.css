@@ -21,7 +21,7 @@ html {
     line-height: 1.2;
 }
 .wrapper {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 .pics {
@@ -174,43 +174,41 @@ header {
         color: #814d3b;
         z-index: 2;
     }
-#themeCakes #imgOne-b,
-#themeCakes #images-b {
-    position: absolute;
+#themeCakes{
+    display: flex;
+    justify-content: space-between;
 }
-    #imgOne-b {
-        left: 0;
-        top: 0;
+    .col{
         width: 50%;
-        height: 100%;
     }
-    #images-b {
-        top: 60%;
-        left: 51%;
-        height: 40%;
-        width: 50%;
+    .theme-rightCol{
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
+        padding-left: 1rem;
     }
-    #images-b div {
-        height: 45%;
-        width: 28%;
+        .secTwoTxt {
+        width: 50%;
+        height: 35%;
+        background-color: #F7ACB8;
+        color: #fff;
+        margin-bottom: 3rem;
+    }
+    .three-images {
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .three-images div {
+        height: 60%;
+        width: 30%;
         opacity: 1;
         transition: 0.9s;
     }
-    #images-b div:hover {
+    .three-images div:hover {
         opacity: 0.6;
         transition: all 0.3s ease-in;
-    }
-    #secTwoTxt {
-        top: 15%;
-        right: 10%;
-        width: 28%;
-        height: 40%;
-        position: absolute;
-        background-color: #F7ACB8;
-        color: #fff;
     }
 #sweetTable #imgOne-c,
 #sweetTable #secThreeTxt {
