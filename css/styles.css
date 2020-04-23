@@ -154,33 +154,39 @@ header {
     color: #814d3b;
     margin-top: 2.5rem;
 }
-#introDesktop #lessSugar,
-#introDesktop #themeCakes,
-#introDesktop #sweetTable {
+#lessSugar,
+#themeCakes,
+#sweetTable{
     height: 1200px;
     position: relative;
-}
-#lessSugar {
-    display: grid;
-    grid-template: 600px 600px / 1fr 1fr;
-}
-    #secOneTxt {
-        top: 32.5%;
-        left: 36.5%;
-        width: 27%;
-        height: 35%;
-        position: absolute;
-        background-color: #E1C5AC;
-        color: #814d3b;
-        z-index: 2;
-    }
-#themeCakes{
     display: flex;
     justify-content: space-between;
 }
     .col{
         width: 50%;
     }
+    .lessSugar-leftCol img,
+    .lessSugar-righttCol img,
+    .sweet-leftCol img,
+    .sweet-rightCol img{
+        height: 50%;
+    }
+    .lessSugar-righttCol,
+    .sweet-lefttCol{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .secOneTxt {
+        top: 32.5%;
+        left: 37.5%;
+        width: 25%;
+        height: 35%;
+        position: absolute;
+        background-color: #E1C5AC;
+        color: #814d3b;
+    }
+
     .theme-rightCol{
         display: flex;
         flex-direction: column;
@@ -210,17 +216,15 @@ header {
         opacity: 0.6;
         transition: all 0.3s ease-in;
     }
-#sweetTable #imgOne-c,
-#sweetTable #secThreeTxt {
-    position: absolute;
-}
-    #imgOne-c {
+
+    .sweet-leftCol img{
         top: 7.5%;
         left: 15%;
         width: 70%;
         height: 85%;
     }
     #secThreeTxt {
+        position: absolute;
         top: 32.5%;
         left: 0;
         height: 35%;
