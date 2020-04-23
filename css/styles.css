@@ -246,9 +246,9 @@ header {
         font-size: 0.8rem;
     }
     .secThreeTxt #swtListBtn {      /* This is for mobile  */
-        width: 97%;
+        width: 100%;
         font-size: 1.5rem;
-        padding: 1.15rem 2.5rem;
+        padding: 1rem 0;
     }
     #secThreeTxt #swtBtn:hover,
     .secThreeTxt #swtListBtn:hover {

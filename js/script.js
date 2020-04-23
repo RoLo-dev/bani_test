@@ -27,8 +27,6 @@ function closeNav() {
     document.getElementById('open').style.display = 'block'
 }
 
-
-
 // This is for the Flavor & Filling buttons on mobile
 let flavorBtn = document.getElementById('flavors');
 let fillingBtn = document.getElementById('fillings');
@@ -42,8 +40,6 @@ function toggleFlavor() {
 function toggleFilling() {
     $('#listFill').slideToggle('slow');
 };
-
-
 
 // This code is for smooth scrolling effect
 $(document).ready(function(){
