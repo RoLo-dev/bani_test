@@ -200,7 +200,6 @@ header{
         background-color: #E1C5AC;
         color: #814d3b;
     }
-
     .theme-rightCol{
         display: flex;
         flex-direction: column;
@@ -321,7 +320,6 @@ header{
 
 /* How It Works */
 #howItWorks {
-    /* display: block; */
     background-color: #814d3b;
 }
 .steps {
@@ -362,7 +360,6 @@ header{
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 .list .listTitle{
