@@ -133,28 +133,30 @@ header{
     background-color: transparent;
     transition: all 0.3s ease-in;
 }
+/* Banner */
 .banner{
     height: 100vh;
     width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(../images/hero_img3.jpeg);
 }
-.headTxt {
-    text-align: center;
-    width: 50%;
-    position: absolute;
-    top: 45%;
-    left: 25%;
+.bannerTxt{
+    margin-left: 5%;
 }
-.headTxt h1 {
-    font-size: 3rem;
+.bannerTxt h1{
+    font-size: 4.25rem;
     font-weight: 800;
+    text-transform: uppercase;
 }
-.headTxt p {
+.bannerTxt p{
     font-size: 1.25rem;
+    width: 48%;
 }
 /* Introduction */
 #intro {    /* This is for mobile */
@@ -174,10 +176,10 @@ header{
     .col{
         width: 50%;
     }
-    .lessSugar-leftCol img,
-    .lessSugar-rightCol img,
-    .sweet-leftCol img,
-    .sweet-rightCol img{
+    #portrait-img{
+        object-position: left;
+    }
+    .imgHeight-50{
         height: 50%;
     }
     .lessSugar-rightCol,
@@ -233,7 +235,7 @@ header{
         background-color: #814d3b;
         color: #FFF;
     }
-    .secThreeTxt #swtBtn,
+    .swtBtn,
     .secThreeTxt #swtListBtn {
         margin: 1rem auto 0 auto;
         border-radius: 30px;
@@ -243,18 +245,18 @@ header{
         border: 0;
         transition: all 0.5s;
     }
-    .secThreeTxt #swtBtn{       /* This is for desktop  */
+    .swtBtn{       /* This is for desktop  */
         width: 80%;
         padding: 0.5rem 2.5rem;
         font-size: 0.8rem;
     }
-    .secThreeTxt #swtBtn:hover{
+    .swtBtn:hover{
         cursor: pointer;
         color: #814d3b;
         background-color: #E1C5AC;
         transition: all 0.2s ease-in;
     }
-    .secThreeTxt #swtBtn:active{
+    .swtBtn:active{
         transform: scale(0.95);
     }
     .secThreeTxt #swtListBtn {      /* This is for mobile  */
@@ -262,7 +264,6 @@ header{
         font-size: 1.5rem;
         padding: 1rem 0;
     }
-    #secThreeTxt #swtBtn:hover,
     .secThreeTxt #swtListBtn:hover {
         background-color: #E1C5AC;
         color: #814d3b;

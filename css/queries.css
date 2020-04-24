@@ -116,7 +116,7 @@
 @media only screen and (max-width: 850px){
     /* Header */
     .main-head .logo{
-        width: 28%;
+        width: 30%;
     }
     .main-head .nav{
         display: none;
@@ -163,8 +163,32 @@
     .animate::after{
     transform: rotate(90deg) translate(-9px);
     }
-
+    /* Banner */
+    .bannerTxt h1{
+        font-size: 3rem;
+    }
+    .bannerTxt p{
+        width: 65%;
+    }
     /* Introduction */
+    .secOneTxt,
+    .secThreeTxt,
+    .three-images{
+        display: none;
+    }
+    .text-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+    }
+    .secTwoTxt{
+        background: none;
+        color: #814d3b;
+        height: 100%;
+        width: 100%;
+    }
     .introSections-styles{
         height: 60vh;
     }

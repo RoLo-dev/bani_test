@@ -61,7 +61,7 @@ $(document).ready(function(){
 });
 
 // This is the code for the modal
-let swtBtn = document.getElementById('swtBtn');
+let swtBtn = document.querySelector('.swtBtn');
 let modal = document.getElementById('modal');
 let modalContent = document.getElementById('modal-content');
 let closeBtn = document.getElementById('closeBtn');
