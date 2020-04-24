@@ -90,26 +90,22 @@ h4 {
 }
 
 /* Header */
-#mobile-header {
+#mobile-openBtn {
     display: none;
 }
-header {
-    position: relative;
-    height: 100vh;
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+    z-index: 5;
+    height: 3rem;
 }
-.main-head {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(../images/hero_img3.jpeg);
-}
-#desktop-header {
-    padding-top: 2rem;
+.main-head{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 0;
 }
 .logo {
     width: 18%;
@@ -135,6 +131,15 @@ header {
     border-color: #fff;
     background-color: transparent;
     transition: all 0.3s ease-in;
+}
+.banner{
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(../images/hero_img3.jpeg);
 }
 .headTxt {
     text-align: center;
