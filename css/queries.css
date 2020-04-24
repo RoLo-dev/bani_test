@@ -212,7 +212,7 @@
 }
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 690px) {
     /* Universal Styles */
     html{
         font-size: 14px;
@@ -348,11 +348,22 @@
     .secTwoTxt{
         margin-bottom: 0;
     }
+    .sweet-rightCol{
+        display: none;
+    }
     .sweet-leftCol{
         width: 100%;
     }
-    .sweet-rightCol{
-        display: none;
+    .sweet-leftCol .text-content{
+        height: 30%;
+    }
+    .sweet-leftCol .text-content .swtBtn{
+        padding: 0.75rem 0;
+        width: 70%;
+        font-size: 1rem;
+    }
+    .sweet-leftCol img{
+        height: 70%;
     }
 
     /* #hiddenList {
