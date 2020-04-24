@@ -1,11 +1,8 @@
 // This is for the mobile nav
 let mobileOnly = window.matchMedia('(maxwidth: 640px)');
-let open = document.getElementById('open');
-let close = document.getElementById('close');
+
 
 mobileOnly.addListener(screenSize);
-open.addEventListener('click', openNav);
-close.addEventListener('click', closeNav);
 
 function screenSize() {
     if (mobileOnly.matches) {
