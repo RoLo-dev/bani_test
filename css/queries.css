@@ -222,94 +222,7 @@
     }
     h3{
         font-size: 1.35rem;
-    } 
-    /*
-    .mobilePicWrap {
-        width: 90%;
-        margin: 0 auto;
     }
-    h2 {
-        color: #fff;
-        font-size: 2rem;
-        margin-bottom: 1.25rem;
-    }
-    h3 {
-        font-size: 1.35rem;
-    } */
-    /* Header */
-    /* #desktop-header {
-        display: none;
-    }
-    header {
-        height: 100vh;
-        background-attachment: inherit;
-        background-position: bottom, right;
-    }
-    #mobile-header {
-        display: block;
-        padding-top: 2rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .logo {
-        width: 35%;
-    }
-    .empty {
-        width: auto;
-    }
-    .open {
-        color: #F7ACB8;
-        display: block;
-        cursor: pointer;
-        text-align: center;
-        font-size: 2.25rem;
-    }
-    #mobileNav {
-        width: 0;
-        z-index: 5;
-        height: 100vh;
-        display: block;
-        top: 0;
-        right: 0;
-        position: fixed;
-        transition: 0.5s;
-        overflow-x: hidden;
-        background-color: rgba(66, 42, 23, 0.9);
-    }
-    .mobile-nav ul {
-        height: 100%;
-        list-style: none;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-    }
-    .mobile-nav ul li {
-        padding-bottom: 1.5rem;
-        font-weight: 600;
-        font-size: 1.5rem;
-    }
-    .mobile-nav ul li:first-child {
-        font-size: 3.75rem;
-    }
-    .mobile-nav ul li a {
-        text-decoration: none;
-        color: #F7ACB8;
-    }
-    .mobile-HeaderTxt {
-        width: 85%;
-        top: 35%;
-        left: 7.5%;
-        text-align: center;
-    }
-    .mobile-HeaderTxt h1 {
-        font-size: 2.75rem;
-    }
-    .mobile-HeaderTxt p {
-        font-size: 1.35rem;
-    } */
     /* Introduction */
     .introPic-gone{
         display: none;
@@ -366,41 +279,11 @@
         height: 70%;
     }
 
-    /* #hiddenList {
-        height: auto;
-        width: 100%;
-        display: none;
-        transition: all 0.5s;
+    .text-content .swtBtn{
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
     }
-    #hiddenList #listContent {
-        width: 95%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: 0 auto;
-        padding: 0 2rem;
-    }
-    #hiddenList #listContent #closeList {
-        font-size: 3rem;
-        color: #F7ACB8;
-        margin-bottom: 0.8rem;
-    }
-    #hiddenList #listContent #closeList:hover {
-        color: #e1c5ac;
-        cursor: pointer;
-        transition: all 0.3s;
-    }
-    #hiddenList #listContent li {
-        margin-bottom: 0.5rem;
-        list-style: none;
-        display: inline-block;
-        font-size: 1rem;
-    }
-    #hiddenList #listContent li h4 {
-        font-size: 1.5rem;
-    } */
     /* About */
     #about {
         flex-direction: column;

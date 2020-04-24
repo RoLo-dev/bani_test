@@ -27,25 +27,10 @@ mobileOnly.addListener(screenSize);
 
 function screenSize() {
     if (mobileOnly.matches) {
+        changeSwtBtnFunction();
         toggleFlavor();
         toggleFilling();
-    } else {
-        open.style.display = 'none';
     }
-};
-
-// This is for the Flavor & Filling buttons on mobile
-let flavorBtn = document.getElementById('flavors');
-let fillingBtn = document.getElementById('fillings');
-
-flavorBtn.addEventListener('click', toggleFlavor);
-fillingBtn.addEventListener('click', toggleFilling);
-
-function toggleFlavor() {
-    $('#listFlv').slideToggle('slow');
-};
-function toggleFilling() {
-    $('#listFill').slideToggle('slow');
 };
 
 // This is the code for the modal
@@ -71,6 +56,27 @@ function outsideClick(e) {
     modal.style.visibility = 'hidden';
   }
 }
+// This is for the sweet table list after 690px
+function changeSwtBtnFunction(){
+  swtBtn.setAttribute('onclick', 'displaySweetList()')
+}
+function displaySweetList(){
+  console.log('working');
+}
+
+// This is for the Flavor & Filling buttons on mobile
+let flavorBtn = document.getElementById('flavors');
+let fillingBtn = document.getElementById('fillings');
+
+flavorBtn.addEventListener('click', toggleFlavor);
+fillingBtn.addEventListener('click', toggleFilling);
+
+function toggleFlavor() {
+    $('#listFlv').slideToggle('slow');
+};
+function toggleFilling() {
+    $('#listFill').slideToggle('slow');
+};
 
 // Hidden Sweet table list for mobile
 let swtListBtn = document.getElementById('swtListBtn');
