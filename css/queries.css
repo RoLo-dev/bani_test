@@ -211,6 +211,25 @@
     }
 }
 
+@media only screen and (max-width: 780px){
+    /* About */
+    #about{
+        height: auto;
+        flex-direction: column;
+        justify-content: start;
+        margin-bottom: 2rem;
+    }
+    #about .baniImg,
+    #about .aboutTxt{
+        width: 100%;
+    }
+    #about .baniImg{
+        margin: 0 auto;
+        height: 60vh;
+        width: 65%;
+    }
+}
+
 
 @media only screen and (max-width: 690px) {
     /* Universal Styles */
@@ -278,11 +297,22 @@
     .sweet-leftCol img{
         height: 70%;
     }
-
     .text-content .swtBtn{
         font-size: 1.1rem;
         text-transform: uppercase;
         letter-spacing: 1px;
+    }
+    #modal{
+        visibility: hidden;
+        opacity: 0;
+        height: 43vh;
+        top: 30%;
+        position: absolute;
+    }
+    #modal.show{
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.3s ease-in;
     }
     /* About */
     #about {

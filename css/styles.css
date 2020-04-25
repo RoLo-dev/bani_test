@@ -317,7 +317,6 @@ header{
         margin-bottom: 1.5rem;
         font-size: 1.75rem;
     }
-
 /* How It Works */
 #howItWorks {
     background-color: #814d3b;
@@ -335,7 +334,6 @@ header{
 .steps p {
     line-height: 1.35;
 }
-
 /* Cake & Fillings */
 #lists #cakeFill,
 #flavors,
@@ -392,6 +390,36 @@ header{
     width: 35%;
     text-align: center;
     color: #814d3b;
+}
+/* About */
+#about {
+    height: 85vh;
+    display: flex;
+    justify-content: space-between;
+}
+#about .baniImg,
+#about .aboutTxt{
+    width: 48%;
+}
+#about .baniImg {
+    padding: 2rem 0;
+}
+#about .baniImg img{
+    object-position: top;
+}
+#about .aboutTxt{
+    color: #814d3b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+#about .aboutTxt h2{
+    color: #814d3b;
+    margin-bottom: 1.25rem;
+}
+#about .aboutTxt p{
+    line-height: 1.5;
 }
 /* Contact */
 #contact {
@@ -554,37 +582,6 @@ footer{
     text-align: center;
     padding-bottom: 0.35rem;
 }
-/* About */
-#about {
-    height: 85vh;
-    display: flex;
-    justify-content: space-between;
-}
-#about .baniImg,
-#about .aboutTxt{
-    width: 48%;
-}
-#about .baniImg {
-    padding: 2rem 0;
-}
-#about .baniImg img{
-    object-position: top;
-}
-#about .aboutTxt{
-    color: #814d3b;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
-#about .aboutTxt h2{
-    color: #814d3b;
-    margin-bottom: 1.25rem;
-}
-#about .aboutTxt p{
-    line-height: 1.5;
-}
-
 
 /*** These are the styles for the Gallery page ***/
 .gallery-head{

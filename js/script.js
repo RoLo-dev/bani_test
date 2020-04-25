@@ -27,7 +27,7 @@ mobileOnly.addListener(screenSize);
 
 function screenSize() {
     if (mobileOnly.matches) {
-        changeSwtBtnFunction();
+        swtBtnMobile.addEventListener('click', displaySweetList);
         toggleFlavor();
         toggleFilling();
     }
@@ -44,7 +44,7 @@ window.addEventListener('click', outsideClick);
 
 function openModal() {
   modal.style.opacity = '1';
-  modal.style.visibility = 'visible'
+  modal.style.visibility = 'visible';
 }
 function closeModal() {
   modal.style.opacity = '0';
@@ -57,11 +57,13 @@ function outsideClick(e) {
   }
 }
 // This is for the sweet table list after 690px
-function changeSwtBtnFunction(){
-  swtBtn.setAttribute('onclick', 'displaySweetList()')
-}
+const swtBtnMobile = document.getElementById('swtBtn-mobile');
+
+swtBtnMobile.addEventListener('click', displaySweetList);
+
 function displaySweetList(){
   console.log('working');
+  modal.classList.toggle('show');
 }
 
 // This is for the Flavor & Filling buttons on mobile
