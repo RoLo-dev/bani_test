@@ -1,26 +1,40 @@
 // This code is for smooth scrolling effect
 $(document).ready(function(){
-  // Add smooth scrolling to all links
-  $(".navLink").on('click', function(event) {
-
-    if (this.hash !== "b") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 200, function(){
-
-        window.location.hash = hash;
-      });
-    } // End if
-  });
+    // Add smooth scrolling to all links
+    $(".navLink").on('click', function(event) {
+        if (this.hash !== "b") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+            // Store hash
+            var hash = this.hash;
+            $('html, body').animate(
+                {scrollTop: $(hash).offset().top},
+                200, 
+                function(){window.location.hash = hash;}
+            );
+        } // End if
+    });
 });
 
-// This is for the mobile nav
+// This is the code for the modal
+let swtBtn = document.querySelector('.swtBtn');
+let modal = document.getElementById('modal');
+let modalContent = document.getElementById('modal-content');
+
+window.addEventListener('click', outsideClick);
+
+function openModal() {
+    modal.style.opacity = '1';
+    modal.style.visibility = 'visible';
+}
+function outsideClick(e) {
+    if (e.target == modal) {
+        modal.style.opacity = '0';
+        modal.style.visibility = 'hidden';
+    }
+}
+
+// This is for the mobile
 let mobileOnly = window.matchMedia('(max-width: 690px)');
 
 mobileOnly.addListener(screenSize);
@@ -33,37 +47,13 @@ function screenSize() {
     }
 };
 
-// This is the code for the modal
-let swtBtn = document.querySelector('.swtBtn');
-let modal = document.getElementById('modal');
-let modalContent = document.getElementById('modal-content');
-// let closeBtn = document.getElementById('closeBtn');
-
-// closeBtn.addEventListener('click', closeModal);
-window.addEventListener('click', outsideClick);
-
-function openModal() {
-  modal.style.opacity = '1';
-  modal.style.visibility = 'visible';
-}
-// function closeModal() {
-//   modal.style.opacity = '0';
-//   modal.style.visibility = 'hidden';
-// }
-function outsideClick(e) {
-  if (e.target == modal) {
-    modal.style.opacity = '0';
-    modal.style.visibility = 'hidden';
-  }
-}
 // This is for the sweet table list after 690px
 const swtBtnMobile = document.getElementById('swtBtn-mobile');
 
 swtBtnMobile.addEventListener('click', displaySweetList);
 
 function displaySweetList(){
-  console.log('working');
-  modal.classList.toggle('show');
+    modal.classList.toggle('show');
 }
 
 // This is for the Flavor & Filling buttons on mobile

@@ -243,7 +243,11 @@
         font-size: 1.35rem;
     }
     /* Introduction */
-    .introPic-gone{
+    .introSections-styles{
+        height: auto;
+    }
+    .introPic-gone,
+    .sweet-rightCol{
         display: none;
     }
     #lessSugar{
@@ -252,17 +256,21 @@
     .intrTxtStyle{
         padding: 0;
     }
-    .lessSugar-leftCol{
-        height: 80%;
-        width: 100%;
-    }
-    .lessSugar-rightCol{
-        height: 20%;
+    .lessSugar-leftCol,
+    .lessSugar-rightCol,
+    .sweet-leftCol{
         width: 100%;
     }
     .imgHeight-50,
+    .theme-leftCol img{
+        height: 50vh;
+    }
+    .lessSugar-rightCol{
+        justify-content: flex-start;
+    }
     .text-content{
-        height: 100%;
+        height: auto;
+        padding: 1.5rem 0;
     }
     .theme-leftCol{
         width: 100%;
@@ -280,24 +288,9 @@
     .secTwoTxt{
         margin-bottom: 0;
     }
-    .sweet-rightCol{
-        display: none;
-    }
-    .sweet-leftCol{
-        width: 100%;
-    }
-    .sweet-leftCol .text-content{
-        height: 30%;
-    }
     .sweet-leftCol .text-content .swtBtn{
         padding: 0.75rem 0;
         width: 70%;
-        font-size: 1rem;
-    }
-    .sweet-leftCol img{
-        height: 70%;
-    }
-    .text-content .swtBtn{
         font-size: 1.1rem;
         text-transform: uppercase;
         letter-spacing: 1px;
@@ -305,14 +298,14 @@
     #modal{
         visibility: hidden;
         opacity: 0;
-        height: 43vh;
-        top: 30%;
+        height: 51vh;
+        top: 28%;
         position: absolute;
     }
     #modal.show{
         visibility: visible;
         opacity: 1;
-        transition: all 0.3s ease-in;
+        /* transition: all 0.3s ease-in; */
     }
     /* About */
     #about {
