@@ -290,22 +290,16 @@ header{
         width: 55%;
         padding: 2rem 0;
         margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         text-align: center;
         transition: all 0.3s;
     }
     #modal #modal-content ul li {
         margin-bottom: 12px;
-        list-style: none;
         color: #fff;
-        display: inline-block;
         font-size: 1.2rem;
     }
     #modal #modal-content li h3 {
         margin-bottom: 1rem;
-        /* font-size: 1.75rem; */
     }
 /* How It Works */
 #howItWorks {

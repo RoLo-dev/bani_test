@@ -242,6 +242,10 @@
     h3{
         font-size: 1.35rem;
     }
+    /* Banner */
+    .banner{
+        height: 65vh;
+    }
     /* Introduction */
     .introSections-styles{
         height: auto;
@@ -289,8 +293,8 @@
         margin-bottom: 0;
     }
     .sweet-leftCol .text-content .swtBtn{
-        padding: 0.75rem 0;
-        width: 70%;
+        padding: 0.5rem 0;
+        width: 100%;
         font-size: 1.1rem;
         text-transform: uppercase;
         letter-spacing: 1px;
@@ -299,13 +303,15 @@
         visibility: hidden;
         opacity: 0;
         height: 51vh;
-        top: 28%;
+        top: 35%;
         position: absolute;
+    }
+    #modal #modal-content{
+        width: 70%;
     }
     #modal.show{
         visibility: visible;
         opacity: 1;
-        /* transition: all 0.3s ease-in; */
     }
     /* About */
     #about {
