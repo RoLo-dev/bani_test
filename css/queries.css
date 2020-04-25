@@ -295,9 +295,9 @@
     .sweet-leftCol .text-content .swtBtn{
         padding: 0.5rem 0;
         width: 100%;
-        font-size: 1.1rem;
+        font-size: 1rem;
         text-transform: uppercase;
-        letter-spacing: 1px;
+        letter-spacing: 0.5px;
     }
     #modal{
         visibility: hidden;
