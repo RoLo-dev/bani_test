@@ -55,6 +55,9 @@ h3 {
 h4 {
     font-weight: 600;
 }
+ul li{
+    list-style: none;
+}
 .boldTxt {
     font-weight: 600;
     letter-spacing: 0.8px;
@@ -82,7 +85,6 @@ h4 {
     margin-top: 10px;
 }
 .specialTxt ul li{
-    list-style: none;
     margin-bottom: 5px;
 }
 .specialTxt ul li:last-child{
@@ -279,7 +281,7 @@ header{
         z-index: 5;
         visibility: hidden;
         transition: all 0.5s;
-        overflow: auto;
+        overflow-y: scroll;
         background-color: rgba(0, 0, 0, 0.92);
     }
     #modal #modal-content {
@@ -291,8 +293,7 @@ header{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-content: center;
-        align-items: center;
+        text-align: center;
         transition: all 0.3s;
     }
     #modal #modal-content #closeBtn {
@@ -365,7 +366,6 @@ header{
     text-transform: uppercase;
 }
 .list ul li{
-    list-style: none;
     margin-bottom: 5px;
 }
 #flavorFill .secTitle {

@@ -37,19 +37,19 @@ function screenSize() {
 let swtBtn = document.querySelector('.swtBtn');
 let modal = document.getElementById('modal');
 let modalContent = document.getElementById('modal-content');
-let closeBtn = document.getElementById('closeBtn');
+// let closeBtn = document.getElementById('closeBtn');
 
-closeBtn.addEventListener('click', closeModal);
+// closeBtn.addEventListener('click', closeModal);
 window.addEventListener('click', outsideClick);
 
 function openModal() {
   modal.style.opacity = '1';
   modal.style.visibility = 'visible';
 }
-function closeModal() {
-  modal.style.opacity = '0';
-  modal.style.visibility = 'hidden';
-}
+// function closeModal() {
+//   modal.style.opacity = '0';
+//   modal.style.visibility = 'hidden';
+// }
 function outsideClick(e) {
   if (e.target == modal) {
     modal.style.opacity = '0';
@@ -79,21 +79,6 @@ function toggleFlavor() {
 function toggleFilling() {
     $('#listFill').slideToggle('slow');
 };
-
-// Hidden Sweet table list for mobile
-let swtListBtn = document.getElementById('swtListBtn');
-let hiddenList = document.getElementById('hiddenList');
-let closeList = document.getElementById('closeList');
-
-swtListBtn.addEventListener('click', showList);
-closeList.addEventListener('click', hideList);
-
-function showList() {
-  $('#hiddenList').slideToggle('slow');
-}
-function hideList() {
-  $('#hiddenList').slideToggle('slow');
-}
 
 AOS.init({
     offset: 250,
