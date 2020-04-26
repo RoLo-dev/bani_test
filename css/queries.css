@@ -21,7 +21,7 @@
         width: 87%;
     }
     /* Cake & Fillings */
-    #flavorFill .secTitle{
+    .list-container .secTitle{
         width: 30%;
         left: 35%;
     }
@@ -90,7 +90,7 @@
         height: 65vh;
     }
     /* Cake & Fillings */
-    #lists #flavorFill .secTitle {
+    .list-container .secTitle {
         width: 27%;
         height: 30%;
         right: 34%;
@@ -297,7 +297,7 @@
         margin-bottom: 0;
     }
     .sweet-leftCol .text-content .swtBtn{
-        padding: 0.5rem 0;
+        padding: 0.75rem 0;
         width: 100%;
         font-size: 1rem;
         text-transform: uppercase;
@@ -342,56 +342,32 @@
         height: auto;
     }
     /* Cake & Fillings */
-    /* #lists #flavorFill {
-        display: none;
-    }
-    #lists #cakeFill {
+    #flavors-title,
+    #fillings-title,
+    #flavorFill-mobile{
         display: block;
-        background-color: #814d3b;
-        padding: 1.5rem 0;
     }
-    #flavors,
-    #fillings {
-        margin-bottom: 1.1rem;
-        cursor: pointer;
-    }
-    .ffStyles {
-        background-color: #F7ACB8;
-        padding: 1em 0;
-        border-radius: 30px;
-        text-align: center;
-        color: #fff;
-        transform: scale(1);
-        transition: 0.5s;
-    }
-    .ffStyles:hover,
-    .ffStyles:focus {
-        background-color: #e1c5ac;
-        color: #814d3b;
-        transition: 0.3s;
-    }
-    .ffStyles:active{
-        transform: scale(0.97);
-    }
-    .listStyles li {
-        list-style: none;
-        text-align: center;
-        margin-bottom: 0.5rem;
-        font-size: 1.1rem;
-    }
-    .listStyles li:last-child {
-        margin-bottom: 0;
-        margin-top: 1.25rem;
-    }
-    #listFlv {
-        margin-bottom: 1rem;
-    }
-    #listFlv, #listFill {
+    #flavorFill-desktop{
         display: none;
     }
-    #listFlv:active, #listFill:active {
-        transition: 0.3s ease-in;
-    } */
+    .list-container{
+        flex-direction: column;
+    }
+    .list-container .secTitle{
+        position: static;
+        width: 100%;
+        height: auto;
+        background-color: none;
+    }
+    #listBox2{
+        align-items: flex-start;
+    }
+    .list-container .warning{
+        height: 50px;
+        bottom: 0;
+        left: 12%;
+    }
+
     /* Contact */
     #contact h2 {
         color: #814d3b;
@@ -423,7 +399,6 @@
         display: block;
         width: 60%;
     }
-
     /* Footer */
     .ftLinks {
         display: flex;

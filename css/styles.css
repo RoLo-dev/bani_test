@@ -319,12 +319,12 @@ header{
     line-height: 1.35;
 }
 /* Cake & Fillings */
-#lists #cakeFill,
-#flavors,
-#fillings{
+#flavor-title,
+#filling-title,
+#flavorFill-mobile{
     display: none;
 }
-#lists #flavorFill {
+#flavorFill {
     width: 100%;
     height: auto;
     background-color: #F7ACB8;
@@ -332,12 +332,12 @@ header{
 }
 .list-container {
     position: relative;
-    height: auto;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     padding: 3rem 0;
 }
-.list{
+.list-container .list{
     width: 40%;
     height: auto;
     display: flex;
@@ -351,7 +351,7 @@ header{
 .list ul li{
     margin-bottom: 5px;
 }
-#flavorFill .secTitle {
+.list-container .secTitle {
     position: absolute;
     display: flex;
     background-color: #814d3b;
@@ -366,7 +366,7 @@ header{
         padding: 0 1rem;
         text-align: center;
     }
-#lists #flavorFill .warning {
+.list-container .warning {
     position: absolute;
     top: 85%;
     right: 32.5%;

@@ -57,12 +57,6 @@ function displaySweetList(){
 }
 
 // This is for the Flavor & Filling buttons on mobile
-let flavorBtn = document.getElementById('flavors');
-let fillingBtn = document.getElementById('fillings');
-
-flavorBtn.addEventListener('click', toggleFlavor);
-fillingBtn.addEventListener('click', toggleFilling);
-
 function toggleFlavor() {
     $('#listFlv').slideToggle('slow');
 };
