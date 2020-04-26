@@ -255,7 +255,7 @@
     }
     #about .baniImg{
         margin: 0 auto;
-        height: 60vh;
+        height: 370px;
         width: 65%;
     }
 }
@@ -282,7 +282,7 @@
     /* Banner */
     .banner,
     .gallery-banner{
-        height: 65vh;
+        height: 450px;
     }
     /* Introduction */
     .introSections-styles{
@@ -306,10 +306,10 @@
         width: 100%;
     }
     .imgHeight-50{
-        height: 45vh;
+        height: 325px;
     }
     .theme-leftCol img{
-        height: 50vh;
+        height: 350px;
     }
     .lessSugar-rightCol{
         justify-content: flex-start;
@@ -340,7 +340,7 @@
     #modal{
         visibility: hidden;
         opacity: 0;
-        height: 53vh;
+        height: 370px;
         top: 42%;
         box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.65);
         transform: translate(350px);
@@ -421,7 +421,7 @@
         margin-top: 1.5rem;
     }
     #about .baniImg {
-        height: 55vh;
+        height: 325px;
         width: 100%;
         margin-bottom: 1rem;
         padding: 0;
@@ -489,9 +489,5 @@
 @media only screen and (max-width: 580px){
     .logo {
         width: 43%;
-    }
-
-    #about .baniImg{
-        height: 45vh;
     }
 }
