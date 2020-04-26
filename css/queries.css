@@ -265,7 +265,9 @@
     .sweet-leftCol{
         width: 100%;
     }
-    .imgHeight-50,
+    .imgHeight-50{
+        height: 45vh;
+    }
     .theme-leftCol img{
         height: 50vh;
     }
@@ -302,16 +304,23 @@
     #modal{
         visibility: hidden;
         opacity: 0;
-        height: 51vh;
-        top: 35%;
+        height: 50vh;
+        top: 38%;
+        background-color: rgba(255, 255, 255, 0.9);
+        transform: translate(350px);
         position: absolute;
     }
     #modal #modal-content{
         width: 70%;
     }
+    #modal #modal-content ul li{
+        color: #814d3b;
+    }
     #modal.show{
         visibility: visible;
         opacity: 1;
+        transform: translate(0);
+        /* background-color: rgba(129, 77, 59, 0.9); */
     }
     /* About */
     #about {
