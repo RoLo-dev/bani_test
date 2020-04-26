@@ -39,24 +39,29 @@ function outsideClick(e) {
         modal.style.visibility = 'hidden';
     }
 }
-// This is for the mobile
+// This is for mobile
 let mobileOnly = window.matchMedia('(max-width: 690px)');
+const swtBtnMobile = document.getElementById('swtBtn-mobile');
+const openNavBtn = document.getElementById('mobile-openBtn');
+const mobileNav = document.getElementById('mobile-nav');
+const openIcon = document.querySelector('.openIcon');
 
 mobileOnly.addListener(screenSize);
+swtBtnMobile.addEventListener('click', displaySweetList);
+openNavBtn.addEventListener('click', openNavMenu);
 
 function screenSize() {
     if (mobileOnly.matches) {
         swtBtnMobile.addEventListener('click', displaySweetList);
     }
 };
-// This is for the sweet table list after 690px
-const swtBtnMobile = document.getElementById('swtBtn-mobile');
-
-swtBtnMobile.addEventListener('click', displaySweetList);
-
+function openNavMenu(){
+  openIcon.classList.toggle('animate');
+  mobileNav.classList.toggle('show-nav')
+}
 function displaySweetList(){
     modal.classList.toggle('show');
-}
+};
 
 AOS.init({
     offset: 250,

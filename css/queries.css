@@ -166,6 +166,35 @@
     .animate::after{
     transform: rotate(90deg) translate(-9px);
     }
+    #mobile-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 170px;
+        transform: translate(170px);
+        height: 300px;
+        background-color: #814d3b;
+        border-bottom-left-radius: 10px;
+        transition: all 0.4s ease-out;
+    }
+    #mobile-nav.show-nav{
+        transform: translate(0);
+        transition: transform 0.1s ease-in;
+    }
+    #mobile-nav ul li{
+        margin-bottom: 10px;
+    }
+    #mobile-nav ul li a{
+        color: #FFF;
+        font-size: 1rem;
+        text-decoration: none;
+    }
+    #mobile-nav ul li:last-child{
+        margin-bottom: 0;
+    }
     /* Banner */
     .bannerTxt h1{
         font-size: 3rem;
@@ -246,6 +275,9 @@
     .main-head .logo{
         width: 45%;
     }
+    #mobile-nav{
+        height: 200px;
+    }
     /* Banner */
     .banner{
         height: 65vh;
@@ -308,7 +340,6 @@
         opacity: 0;
         height: 53vh;
         top: 42%;
-        /* background-color: rgba(255, 255, 255, 1); */
         box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.65);
         transform: translate(350px);
         position: absolute;
@@ -320,26 +351,6 @@
         visibility: visible;
         opacity: 1;
         transform: translate(0);
-        /* background-color: rgba(129, 77, 59, 0.9); */
-    }
-    /* About */
-    #about {
-        flex-direction: column;
-        margin-bottom: 1.5rem;
-        margin-top: 1.5rem;
-    }
-    #about .baniImg {
-        height: 75vh;
-        width: 100%;
-        margin-bottom: 1rem;
-        padding: 0;
-    }
-    #about .aboutTxt h2 {
-        margin-bottom: 1rem;
-    }
-    #about .aboutTxt {
-        width: 100%;
-        height: auto;
     }
     /* How it works */
     .steps{
@@ -401,7 +412,25 @@
         position: static;
         width: 100%;
     }
-
+    /* About */
+    #about {
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    #about .baniImg {
+        height: 55vh;
+        width: 100%;
+        margin-bottom: 1rem;
+        padding: 0;
+    }
+    #about .aboutTxt h2 {
+        margin-bottom: 1rem;
+    }
+    #about .aboutTxt {
+        width: 100%;
+        height: auto;
+    }
     /* Contact */
     #contact h2 {
         color: #814d3b;
@@ -460,11 +489,11 @@
 }
 
 @media only screen and (max-width: 680px){
-    .logo {
+    /* .logo {
         width: 40%;
     }
 
     #about .baniImg{
         height: 68vh;
-    }
+    } */
 }
