@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Bani Bakery specializes in Custom cakes, Wedding cakes and delicious pastries using fine ingredients and everything made fresh and with love by order. Never compromising quality over quantity. Located in Santa Ana California and cater all of Orange County and Los Angeles County.">
-    <meta name="keywords" content="cakes,custom,wedding cakes,desserts,pastries,Orange County,OC,bakery,french,macarons,pastel,pan dulce,wedding,cookies,fresh,love,delivery, smash cake,asian,high end,Santa ana,California,Orange,Southern California,local bakery">
+    <meta name="keywords" content="cakes, custom, wedding cakes, desserts, pastries, Orange County, OC,bakery, french, macarons, pastel, pan dulce, wedding,cookies,fresh,love, delivery, smash cake,asian, high end, Santa ana, California, Orange, Southern California, local bakery">
 
     <title>Bani Bakery | Custom Cakes</title>
 
@@ -71,10 +71,10 @@
                         <li>
                             <a href="https://www.facebook.com/banibakery/" target="_blank"><i class="fab fa-facebook-square"></i></a>
                         </li>
-                        <li>                           
+                        <li>
                             <a href="https://www.instagram.com/banihouseofcakes/" target="_blank"><i class="fab fa-instagram"></i></a>
                         </li>
-                        <li>                           
+                        <li>
                             <a href="https://www.yelp.com/biz/bani-bakery-santa-ana" target="_blank"><i class="fab fa-yelp"></i></a>
                         </li>
                     </div>
@@ -86,7 +86,6 @@
         </div>
     </section>
 
-    
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 
@@ -97,6 +96,7 @@
         </div>
         <div class="ftLinks">
             <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="index.html#flavorFill" class="navLink">Flavors & Fillings</a></li>
             <li><a href="index.html#about" class="navLink">About</a></li>
             <li><a href="index.html#lists" class="navLink">Flavors & Fillings</a></li>
             <li><a href="contact.php" class="navLink">Contact</a></li>
