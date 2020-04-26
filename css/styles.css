@@ -282,7 +282,7 @@ header{
         visibility: hidden;
         transition: all 0.5s;
         overflow-y: scroll;
-        background-color: #814d3b;
+        background-color: #FFF;
     }
     #modal #modal-content {
         top: 110%;
@@ -295,7 +295,7 @@ header{
     }
     #modal #modal-content ul li {
         margin-bottom: 12px;
-        color: #fff;
+        color: #814d3b;
         font-size: 1.2rem;
     }
     #modal #modal-content li h3 {

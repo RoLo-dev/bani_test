@@ -45,9 +45,6 @@
     html {
         font-size: 16px;
     }
-    .wrapper {
-        width: 85%;
-    }
     /* Header */
     .banner{
         height: 85vh;
@@ -114,6 +111,9 @@
 
 
 @media only screen and (max-width: 850px){
+    .smaller-wrapper{
+        width: 90%;
+    }
     h2{
         font-size: 2rem;
     }
@@ -143,7 +143,7 @@
     .openIcon::after{
     width: 1.75rem;
     height: 3px;
-    background: #fff;
+    background: #F7ACBB;
     border-radius: 30px;
 
     transition: transform 350ms ease-in-out, opacity 200ms linear;
@@ -242,6 +242,10 @@
     h3{
         font-size: 1.35rem;
     }
+    /* Header */
+    .main-head .logo{
+        width: 45%;
+    }
     /* Banner */
     .banner{
         height: 65vh;
@@ -257,11 +261,13 @@
     #lessSugar{
         flex-direction: column;
     }
-    .intrTxtStyle{
+    .introTxtStyle{
         padding: 0;
     }
     .lessSugar-leftCol,
     .lessSugar-rightCol,
+    .theme-leftCol,
+    .theme-rightCol,
     .sweet-leftCol{
         width: 100%;
     }
@@ -278,18 +284,14 @@
         height: auto;
         padding: 1.5rem 0;
     }
-    .theme-leftCol{
-        width: 100%;
+    #themeCakes{
+        height: auto;
+        flex-direction: column;
     }
     .theme-rightCol{
-        z-index: 2;
-        position: absolute;
-        top: 30%;
-        right: 0;
-        background:rgba(255, 255, 255, 0.7);
-        height: 40%;
-        border-top-left-radius: 150px;
-        border-bottom-left-radius: 150px;
+        padding-top: 1rem;
+        padding-left: 0;
+        width: 100%;
     }
     .secTwoTxt{
         margin-bottom: 0;
@@ -306,15 +308,13 @@
         opacity: 0;
         height: 50vh;
         top: 38%;
-        background-color: rgba(255, 255, 255, 0.9);
+        /* background-color: rgba(255, 255, 255, 1); */
+        box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.65);
         transform: translate(350px);
         position: absolute;
     }
     #modal #modal-content{
         width: 70%;
-    }
-    #modal #modal-content ul li{
-        color: #814d3b;
     }
     #modal.show{
         visibility: visible;
