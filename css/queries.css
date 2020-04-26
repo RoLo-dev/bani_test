@@ -306,8 +306,8 @@
     #modal{
         visibility: hidden;
         opacity: 0;
-        height: 50vh;
-        top: 38%;
+        height: 53vh;
+        top: 42%;
         /* background-color: rgba(255, 255, 255, 1); */
         box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.65);
         transform: translate(350px);
@@ -341,31 +341,65 @@
         width: 100%;
         height: auto;
     }
+    /* How it works */
+    .steps{
+        padding: 2rem 0;
+    }
     /* Cake & Fillings */
-    #flavors-title,
-    #fillings-title,
+    .listTitle-btn,
     #flavorFill-mobile{
         display: block;
     }
-    #flavorFill-desktop{
+    #flavorFill-desktop,
+    .listTitle{
         display: none;
     }
     .list-container{
+        padding: 2rem 0;
         flex-direction: column;
     }
-    .list-container .secTitle{
-        position: static;
-        width: 100%;
-        height: auto;
-        background-color: none;
+    .list-container #flavorFill-mobile{
+        margin-bottom: 2rem;
     }
     #listBox2{
         align-items: flex-start;
     }
+    .listTitle-btn{
+        background-color: #814d3b;
+        width: 100%;
+        padding: 0.75rem 0;
+        border-radius: 30px;
+        margin-bottom: 1rem;
+        transition: all 0.5s ease-out;
+    }
+    .listTitle-btn:hover{
+        cursor: pointer;
+        background-color: #e1c5ac;
+        color: #814d3b;
+        transition: all 0.3s ease-in;
+    }
+    .listTitle-btn:active{
+        transform: scale(0.95);
+    }
+    .list-container .list{
+        width: 100%;
+        text-align: center;
+    }
+    .list-container .list ul{
+        display: none;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .list-container .list ul li{
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+    }
+    .list-container .list ul li:last-child{
+        margin-bottom: 0;
+    }
     .list-container .warning{
-        height: 50px;
-        bottom: 0;
-        left: 12%;
+        position: static;
+        width: 100%;
     }
 
     /* Contact */

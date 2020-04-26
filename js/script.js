@@ -14,8 +14,14 @@ $(document).ready(function(){
             );
         } // End if
     });
+    // This is for the Flavor & Filling buttons on mobile
+    $('#flavor-title').on('click', function(){
+        $('#flavor-list').slideToggle('slow');
+    });
+    $('#filling-title').on('click', function(){
+        $('#filling-list').slideToggle('slow');
+    });
 });
-
 // This is the code for the modal
 let swtBtn = document.querySelector('.swtBtn');
 let modal = document.getElementById('modal');
@@ -33,7 +39,6 @@ function outsideClick(e) {
         modal.style.visibility = 'hidden';
     }
 }
-
 // This is for the mobile
 let mobileOnly = window.matchMedia('(max-width: 690px)');
 
@@ -42,11 +47,8 @@ mobileOnly.addListener(screenSize);
 function screenSize() {
     if (mobileOnly.matches) {
         swtBtnMobile.addEventListener('click', displaySweetList);
-        toggleFlavor();
-        toggleFilling();
     }
 };
-
 // This is for the sweet table list after 690px
 const swtBtnMobile = document.getElementById('swtBtn-mobile');
 
@@ -55,14 +57,6 @@ swtBtnMobile.addEventListener('click', displaySweetList);
 function displaySweetList(){
     modal.classList.toggle('show');
 }
-
-// This is for the Flavor & Filling buttons on mobile
-function toggleFlavor() {
-    $('#listFlv').slideToggle('slow');
-};
-function toggleFilling() {
-    $('#listFill').slideToggle('slow');
-};
 
 AOS.init({
     offset: 250,

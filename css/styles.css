@@ -64,12 +64,11 @@ ul li{
 }
 /* Holidays or Special events */
 #special {
-    /* display: block; */
     background-color: #814d3b;
 }
 .specialTxt {
     color: #fff;
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 .specialTxt h3 {
     font-size: 2rem;
@@ -319,8 +318,7 @@ header{
     line-height: 1.35;
 }
 /* Cake & Fillings */
-#flavor-title,
-#filling-title,
+.listTitle-btn,
 #flavorFill-mobile{
     display: none;
 }
