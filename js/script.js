@@ -10,11 +10,12 @@ $('#filling-title').on('click', function(){
     $('#filling-list').slideToggle('slow');
 });
 // This is the code for the modal
-let swtBtn = document.querySelector('.swtBtn');
+let swtBtnDesktop = document.getElementById('swtBtn-desktop');
 let modal = document.getElementById('modal');
 let modalContent = document.getElementById('modal-content');
 
 window.addEventListener('click', outsideClick);
+swtBtnDesktop.addEventListener('click', openModal);
 
 function openModal() {
     modal.style.opacity = '1';
