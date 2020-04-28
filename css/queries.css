@@ -185,7 +185,7 @@
         transition: transform 0.2s ease-in;
     }
     #mobile-nav ul{
-        padding: 85px 0 0 2rem;
+        padding: 85px 0 0 1rem;
     }
     #mobile-nav ul li{
         margin-bottom: 10px;

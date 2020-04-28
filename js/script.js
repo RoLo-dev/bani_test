@@ -46,8 +46,8 @@ if (mobileOnly.matches) {
     swtBtnMobile.addEventListener('click', displaySweetList);
 }
 function openNavMenu(){
-  openIcon.classList.toggle('animate');
-  mobileNav.classList.toggle('show-nav')
+    openIcon.classList.toggle('animate');
+    mobileNav.classList.toggle('show-nav');
 }
 function displaySweetList(){
     modal.classList.toggle('show');
