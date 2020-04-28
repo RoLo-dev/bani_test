@@ -376,12 +376,12 @@
         background-color: #e1c5ac;
         color: #814d3b;
     }
-    .listTitle-btn:hover{
+    /* .listTitle-btn:hover{
         cursor: pointer;
         background-color: #e1c5ac;
         color: #814d3b;
         transition: all 0.3s ease-in;
-    }
+    } */
     .listTitle-btn:active{
         transform: scale(0.95);
     }
