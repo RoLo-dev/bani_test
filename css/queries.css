@@ -341,7 +341,7 @@
         text-transform: uppercase;
         letter-spacing: 0.5px;
     }
-    #modal{
+    /* #modal{
         visibility: hidden;
         opacity: 0;
         height: 380px;
@@ -358,7 +358,7 @@
         visibility: visible;
         opacity: 1;
         transform: translate(0);
-    }
+    } */
     /* How it works */
     .steps{
         padding: 2rem 0;

@@ -266,12 +266,13 @@ header{
         visibility: hidden;
         transition: all 0.5s;
         overflow-y: scroll;
-        background-color: rgb(225,197,172);
+        background-color: rgba(225,197,172,0.95);
     }
     #modal #modal-content {
         top: 110%;
         left: 0;
-        width: 55%;
+        width: 45%;
+        /* background: #fff; */
         padding: 2rem 0;
         margin: 0 auto;
         text-align: center;

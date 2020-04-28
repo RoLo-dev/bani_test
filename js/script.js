@@ -15,7 +15,7 @@ const swtBtnDesktop = document.getElementById('swtBtn-desktop');
 const modal = document.getElementById('modal');
 const modalContent = document.getElementById('modal-content');
 
-// window.addEventListener('click', outsideClick);
+window.addEventListener('click', outsideClick);
 swtBtnDesktop.addEventListener('click', openModal);
 
 // if(desktopOnly.matches){
@@ -34,13 +34,13 @@ function outsideClick(e) {
 }
 // This is for mobile
 const mobileOnly = window.matchMedia('(max-width: 900px)');
-// const swtBtnMobile = document.getElementById('swtBtn-mobile');
+const swtBtnMobile = document.getElementById('swtBtn-mobile');
 const openNavBtn = document.getElementById('mobile-openBtn');
 const mobileNav = document.getElementById('mobile-nav');
 const openIcon = document.querySelector('.openIcon');
 
 // mobileOnly.addListener(screenSize);
-// swtBtnMobile.addEventListener('click', displaySweetList);
+swtBtnMobile.addEventListener('click', openModal);
 openNavBtn.addEventListener('click', openNavMenu);
 
 // if (mobileOnly.matches) {
