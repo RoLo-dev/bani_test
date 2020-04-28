@@ -34,15 +34,15 @@ const openNavBtn = document.getElementById('mobile-openBtn');
 const mobileNav = document.getElementById('mobile-nav');
 const openIcon = document.querySelector('.openIcon');
 
-mobileOnly.addListener(screenSize);
-// swtBtnMobile.addEventListener('click', displaySweetList);
+// mobileOnly.addListener(screenSize);
+swtBtnMobile.addEventListener('click', displaySweetList);
 openNavBtn.addEventListener('click', openNavMenu);
 
-function screenSize() {
-    if (mobileOnly.matches) {
-        swtBtnMobile.addEventListener('click', displaySweetList);
-    }
-};
+// function screenSize() {
+//     if (mobileOnly.matches) {
+//         swtBtnMobile.addEventListener('click', displaySweetList);
+//     }
+// };
 function openNavMenu(){
   openIcon.classList.toggle('animate');
   mobileNav.classList.toggle('show-nav')
