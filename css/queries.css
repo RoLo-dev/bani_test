@@ -372,6 +372,10 @@
         margin-bottom: 1rem;
         transition: all 0.5s ease-out;
     }
+    .listTitle-btn.active{
+        background-color: #e1c5ac;
+        color: #814d3b;
+    }
     .listTitle-btn:hover{
         cursor: pointer;
         background-color: #e1c5ac;
@@ -380,8 +384,6 @@
     }
     .listTitle-btn:active{
         transform: scale(0.95);
-        background-color: #e1c5ac;
-        color: #814d3b;
     }
     .list-container .list{
         width: 100%;

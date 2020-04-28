@@ -4,9 +4,11 @@ const scroll = new SmoothScroll('.navLink', {
 })
 // This is for the Flavor & Filling buttons on mobile
 $('#flavor-title').on('click', function(){
+    $(this).toggleClass('active');
     $('#flavor-list').slideToggle('slow');
 });
 $('#filling-title').on('click', function(){
+    $(this).toggleClass('active');
     $('#filling-list').slideToggle('slow');
 });
 // This is the code for the modal
@@ -33,6 +35,7 @@ const swtBtnMobile = document.getElementById('swtBtn-mobile');
 const openNavBtn = document.getElementById('mobile-openBtn');
 const mobileNav = document.getElementById('mobile-nav');
 const openIcon = document.querySelector('.openIcon');
+const listTitle = document.querySelectorAll('.listTitle-btn');
 
 // mobileOnly.addListener(screenSize);
 swtBtnMobile.addEventListener('click', openModal);
@@ -42,9 +45,6 @@ function openNavMenu(){
     openIcon.classList.toggle('animate');
     mobileNav.classList.toggle('show-nav');
 }
-function displaySweetList(){
-    modal.classList.toggle('show');
-};
 
 AOS.init({
     offset: 150,
