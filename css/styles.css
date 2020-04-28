@@ -13,9 +13,9 @@ bckgrd: #EEDFD1;
     box-sizing: border-box;
 }
 html {
-    color: #E1C5AC;
     font-size: 18px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
     overflow-y: scroll;
     scroll-behavior: smooth;
     line-height: 1.2;
@@ -59,8 +59,8 @@ ul li{
     list-style: none;
 }
 .boldTxt {
-    font-weight: 600;
-    letter-spacing: 0.8px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
 }
 /* Holidays or Special events */
 #special {
@@ -149,11 +149,13 @@ header{
 }
 .bannerTxt{
     margin-left: 5%;
+    color: #FFF;
 }
 .bannerTxt h1{
-    font-size: 4.25rem;
-    font-weight: 800;
-    text-transform: uppercase;
+    font-size: 5rem;
+    line-height: 1;
+    width: 62%;
+    font-family: 'DM Serif Text', serif;
 }
 .bannerTxt p{
     font-size: 1.25rem;
