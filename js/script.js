@@ -1,26 +1,13 @@
 // This code is for smooth scrolling effect
-$(document).ready(function(){
-    // Add smooth scrolling to all links
-    $(".navLink").on('click', function(event) {
-        if (this.hash !== "b") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
-            // Store hash
-            var hash = this.hash;
-            $('html, body').animate(
-                {scrollTop: $(hash).offset().top},
-                200, 
-                function(){window.location.hash = hash;}
-            );
-        } // End if
-    });
-    // This is for the Flavor & Filling buttons on mobile
-    $('#flavor-title').on('click', function(){
-        $('#flavor-list').slideToggle('slow');
-    });
-    $('#filling-title').on('click', function(){
-        $('#filling-list').slideToggle('slow');
-    });
+const scroll = new SmoothScroll('.navLink', {
+    speed: 300
+})
+// This is for the Flavor & Filling buttons on mobile
+$('#flavor-title').on('click', function(){
+    $('#flavor-list').slideToggle('slow');
+});
+$('#filling-title').on('click', function(){
+    $('#filling-list').slideToggle('slow');
 });
 // This is the code for the modal
 let swtBtn = document.querySelector('.swtBtn');
