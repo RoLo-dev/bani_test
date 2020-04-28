@@ -52,7 +52,7 @@
                 <div class="webPhone">
                     <li>
                         <i class="fas fa-globe-americas"></i>
-                        <a href="mailto:banibake@banibakery.com"> banibake@banibakery.com</a>
+                        <a href="mailto:banibakery@gmail.com"> banibakery@gmail.com.com</a>
                     </li>
                     <li>
                         <i class="fas fa-phone-square"></i>

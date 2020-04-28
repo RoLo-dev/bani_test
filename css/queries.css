@@ -100,7 +100,7 @@
     }
     /* Footer */
     .ftLogo {
-        width: 20%;
+        width: 25%;
     }
 }
 
@@ -360,6 +360,7 @@
     }
     .list-container #flavorFill-mobile{
         margin-bottom: 2rem;
+        color: #814d3b;
     }
     #listBox2{
         align-items: flex-start;
@@ -373,15 +374,15 @@
         transition: all 0.5s ease-out;
     }
     .listTitle-btn.active{
-        background-color: #e1c5ac;
-        color: #814d3b;
+        background-color: #F7ACBB;
+        color: #FFF;
     }
-    /* .listTitle-btn:hover{
+    .listTitle-btn:hover{
         cursor: pointer;
-        background-color: #e1c5ac;
-        color: #814d3b;
+        background-color: #F7ACBB;
+        color: #FFF;
         transition: all 0.3s ease-in;
-    } */
+    }
     .listTitle-btn:active{
         transform: scale(0.95);
     }
@@ -412,7 +413,7 @@
         margin-top: 1.5rem;
     }
     #about .baniImg {
-        height: 325px;
+        height: 400px;
         width: 100%;
         margin-bottom: 1rem;
         padding: 0;
@@ -456,13 +457,21 @@
         width: 60%;
     }
     /* Footer */
-    .ftLinks {
+    footer{
+        text-align: center;
+    }
+    footer .ftLogo{
+        width: 40%;
+        margin: 0 auto 1rem auto;
+    }
+    .ftContent {
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: center;
     }
-    .ftLogo {
-        width: 45%;
+    .business-contact{
+        margin-bottom: 1rem;
     }
 
     /*** These are the styles for the Gallery page ***/
@@ -480,5 +489,8 @@
 @media only screen and (max-width: 580px){
     .logo {
         width: 43%;
+    }
+    footer .ftLogo{
+        width: 48%;
     }
 }

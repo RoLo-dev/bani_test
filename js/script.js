@@ -48,5 +48,5 @@ function openNavMenu(){
 
 AOS.init({
     offset: 150,
-    duration: 550
+    duration: 650
 });

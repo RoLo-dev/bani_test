@@ -311,7 +311,8 @@ header{
 #flavorFill {
     width: 100%;
     height: auto;
-    background-color: #F7ACB8;
+    /* background-color: #F7ACB8; */
+    background-color: #E1C5AC;
     color: #fff;
 }
 .list-container {
@@ -334,6 +335,7 @@ header{
 }
 .list ul li{
     margin-bottom: 5px;
+    color: #814d3b;
 }
 .list-container .secTitle {
     position: absolute;
@@ -515,41 +517,59 @@ form button:hover {
 }
 /* Footer */
 footer{
-    background-color: #e1c5ac;
-    color: #814d3b;
+    background-color: #814d3b;
+    height: auto;
 }
 .ftContent{
-    padding-top: 1rem;
-}
-.ftLogo{
-    width: 20%;
-    margin: 0 auto 1rem auto;
-}
-.ftLinks{
     display: flex;
     justify-content: space-between;
+    padding: 2.5rem 0 2rem 0;
+}
+.ftLogo{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+    .copyRight{
+        color: #FFF;
+        text-align: center;
+        margin-top: 1rem;
+    }
+.business-info{
+    color: #FFF;
+}
+.business-info .storehrs{
     margin-bottom: 1rem;
 }
-.ftLinks li{
-    list-style: none;
-    padding-bottom: 0.75rem;
+.business-info h4{
+    margin-bottom: 12px;
 }
-.ftLinks li:last-child{
-    padding-bottom: 0;
+.business-info ul li{
+    margin-bottom: 7px;
 }
-.ftLinks li a{
+.business-info ul li a{
+    color: #FFF;
     text-decoration: none;
-    color: #814d3b;
-    font-weight: 600;
+}
+.ftLinks{
+    display: block;
+}
+.ftLinks ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.business-info ul li:last-child,
+.ftLinks ul li:last-child{
+    margin-bottom: 0;
+}
+.ftLinks ul li a{
+    text-decoration: none;
+    color: #FFF;
     transition: all 0.9s;
 }
-.ftLinks li a:hover{
-    color: #fff;
+.ftLinks ul li a:hover{
+    color: #F7ACB8;
     transition: 0.3s ease-in;
-}
-.copyRight{
-    text-align: center;
-    padding-bottom: 0.35rem;
 }
 
 /*** These are the styles for the Gallery page ***/
