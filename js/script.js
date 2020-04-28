@@ -34,8 +34,12 @@ const openNavBtn = document.getElementById('mobile-openBtn');
 const mobileNav = document.getElementById('mobile-nav');
 const openIcon = document.querySelector('.openIcon');
 
-// mobileOnly.addListener(screenSize);
-swtBtnMobile.addEventListener('click', displaySweetList);
+mobileOnly.addListener(function(){
+   if (mobileOnly.matches) {
+        swtBtnMobile.addEventListener('click', displaySweetList);
+    }
+});
+// swtBtnMobile.addEventListener('click', displaySweetList);
 openNavBtn.addEventListener('click', openNavMenu);
 
 // function screenSize() {
@@ -43,6 +47,9 @@ openNavBtn.addEventListener('click', openNavMenu);
 //         swtBtnMobile.addEventListener('click', displaySweetList);
 //     }
 // };
+// if (mobileOnly.matches) {
+//       swtBtnMobile.addEventListener('click', displaySweetList);
+//   }
 function openNavMenu(){
   openIcon.classList.toggle('animate');
   mobileNav.classList.toggle('show-nav')
@@ -52,6 +59,6 @@ function displaySweetList(){
 };
 
 AOS.init({
-    offset: 250,
-    duration: 650
+    offset: 150,
+    duration: 350
 });
