@@ -162,22 +162,30 @@
     transform: rotate(90deg) translate(-9px);
     }
     #mobile-nav{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: block;
         position: absolute;
         top: 0;
         right: 0;
         width: 170px;
-        transform: translate(170px);
+        transform: translateY(-300px);
         height: 300px;
-        background-color: #814d3b;
+        background: linear-gradient(
+            rgba(129,77,59,0),
+            rgba(129,77,59,0.5),
+            rgb(129,77,59),
+            rgb(129,77,59),
+            rgb(129,77,59),
+            rgb(129,77,59));
+        /* background: #814d3b; */
         border-bottom-left-radius: 10px;
         transition: all 0.4s ease-out;
     }
     #mobile-nav.show-nav{
-        transform: translate(0);
-        transition: transform 0.1s ease-in;
+        transform: translateY(0);
+        transition: transform 0.2s ease-in;
+    }
+    #mobile-nav ul{
+        padding: 85px 0 0 2rem;
     }
     #mobile-nav ul li{
         margin-bottom: 10px;
@@ -193,9 +201,6 @@
     /* Banner */
     .bannerTxt h1{
         font-size: 3rem;
-    }
-    .bannerTxt p{
-        width: 65%;
     }
     /* Introduction */
     .secOneTxt,
@@ -278,6 +283,10 @@
     .gallery-banner{
         height: 450px;
     }
+    .bannerTxt{
+        padding-top: 2.5rem;
+        width: 70%;
+    }
     /* Introduction */
     .introSections-styles{
         height: auto;
@@ -334,9 +343,9 @@
     #modal{
         visibility: hidden;
         opacity: 0;
-        height: 370px;
+        height: 380px;
         top: 42%;
-        box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.65);
+        box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
         transform: translate(350px);
         position: absolute;
     }

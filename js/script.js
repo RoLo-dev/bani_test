@@ -55,5 +55,5 @@ function displaySweetList(){
 
 AOS.init({
     offset: 150,
-    duration: 450
+    duration: 550
 });
