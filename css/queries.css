@@ -52,10 +52,8 @@
         background-attachment: inherit;
         background-position: center;
     }
-    .headTxt {
-        width: 60%;
-        top: 48%;
-        left: 17%;
+    .bannerTxt{
+        width: 65%;
     }
     .nav ul li a{
         margin-left: 0.15rem;
@@ -65,26 +63,22 @@
     .introSections-styles{
         height: 85vh;
     }
-    .secOneTxt{
-        height: 28%;
-        top: 36%;
-        width: 35%;
-        left: 32.5%;
-    }
     #themeCakes{
         height: 70vh;
     }
     .secTwoTxt{
-        width: 68%;
+        width: 85%;
+        height: 45%;
     }
     .three-images div{
         height: 85%;
     }
+    .secOneTxt,
     .secThreeTxt{
-        height: 35%;
-        top: 32.5%;
-        width: 40%;
-        left: 30%;
+        height: 42%;
+        top: 29%;
+        width: 37%;
+        left: 31.5%;
     }
     /* About */
     #about{
