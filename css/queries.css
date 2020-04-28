@@ -48,7 +48,7 @@
     /* Header */
     .banner,
     .gallery-banner{
-        height: 85vh;
+        height: 780px;
         background-attachment: inherit;
         background-position: center;
     }
@@ -61,10 +61,10 @@
     }
     /* Introduction */
     .introSections-styles{
-        height: 85vh;
+        height: 780px;
     }
     #themeCakes{
-        height: 70vh;
+        height: 700px;
     }
     .secTwoTxt{
         width: 85%;
@@ -249,7 +249,7 @@
     }
     #about .baniImg{
         margin: 0 auto;
-        height: 370px;
+        height: 485px;
         width: 65%;
     }
 }
@@ -348,6 +348,7 @@
         top: 42%;
         box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
         transform: translate(350px);
+        border-radius: 20px;
         position: absolute;
     }
     #modal #modal-content{

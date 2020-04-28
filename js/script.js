@@ -15,11 +15,12 @@ const swtBtnDesktop = document.getElementById('swtBtn-desktop');
 const modal = document.getElementById('modal');
 const modalContent = document.getElementById('modal-content');
 
-window.addEventListener('click', outsideClick);
+// window.addEventListener('click', outsideClick);
+swtBtnDesktop.addEventListener('click', openModal);
 
-if(desktopOnly.matches){
-    swtBtnDesktop.addEventListener('click', openModal);
-}
+// if(desktopOnly.matches){
+//     swtBtnDesktop.addEventListener('click', openModal);
+// }
 
 function openModal() {
     modal.style.opacity = '1';
@@ -32,8 +33,8 @@ function outsideClick(e) {
     }
 }
 // This is for mobile
-const mobileOnly = window.matchMedia('(max-width: 690px)');
-const swtBtnMobile = document.getElementById('swtBtn-mobile');
+const mobileOnly = window.matchMedia('(max-width: 900px)');
+// const swtBtnMobile = document.getElementById('swtBtn-mobile');
 const openNavBtn = document.getElementById('mobile-openBtn');
 const mobileNav = document.getElementById('mobile-nav');
 const openIcon = document.querySelector('.openIcon');
@@ -42,9 +43,10 @@ const openIcon = document.querySelector('.openIcon');
 // swtBtnMobile.addEventListener('click', displaySweetList);
 openNavBtn.addEventListener('click', openNavMenu);
 
-if (mobileOnly.matches) {
-    swtBtnMobile.addEventListener('click', displaySweetList);
-}
+// if (mobileOnly.matches) {
+//     console.log('hello');
+//     swtBtnMobile.addEventListener('click', displaySweetList);
+// }
 function openNavMenu(){
     openIcon.classList.toggle('animate');
     mobileNav.classList.toggle('show-nav');
