@@ -10,17 +10,12 @@ $('#filling-title').on('click', function(){
     $('#filling-list').slideToggle('slow');
 });
 // This is the code for the modal
-const desktopOnly = window.matchMedia('(min-width: 691px)');
 const swtBtnDesktop = document.getElementById('swtBtn-desktop');
 const modal = document.getElementById('modal');
 const modalContent = document.getElementById('modal-content');
 
 window.addEventListener('click', outsideClick);
 swtBtnDesktop.addEventListener('click', openModal);
-
-// if(desktopOnly.matches){
-//     swtBtnDesktop.addEventListener('click', openModal);
-// }
 
 function openModal() {
     modal.style.opacity = '1';
@@ -43,10 +38,6 @@ const openIcon = document.querySelector('.openIcon');
 swtBtnMobile.addEventListener('click', openModal);
 openNavBtn.addEventListener('click', openNavMenu);
 
-// if (mobileOnly.matches) {
-//     console.log('hello');
-//     swtBtnMobile.addEventListener('click', displaySweetList);
-// }
 function openNavMenu(){
     openIcon.classList.toggle('animate');
     mobileNav.classList.toggle('show-nav');

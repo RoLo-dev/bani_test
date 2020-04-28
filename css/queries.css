@@ -341,24 +341,6 @@
         text-transform: uppercase;
         letter-spacing: 0.5px;
     }
-    /* #modal{
-        visibility: hidden;
-        opacity: 0;
-        height: 380px;
-        top: 42%;
-        box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
-        transform: translate(350px);
-        border-radius: 20px;
-        position: absolute;
-    }
-    #modal #modal-content{
-        width: 70%;
-    }
-    #modal.show{
-        visibility: visible;
-        opacity: 1;
-        transform: translate(0);
-    } */
     /* How it works */
     .steps{
         padding: 2rem 0;
@@ -398,6 +380,8 @@
     }
     .listTitle-btn:active{
         transform: scale(0.95);
+        background-color: #e1c5ac;
+        color: #814d3b;
     }
     .list-container .list{
         width: 100%;
