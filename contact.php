@@ -9,7 +9,7 @@
 
     <title>Bani Bakery | Custom Cakes</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,600,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text|Muli:300,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/png" href="images/bani_favicon.png">
     <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/html" href="index.html">
     <link rel="stylesheet" type="text/html" href="gallery.html">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
     <script src="js/lightbox-plus-jquery.min.js"></script>
 
 </head>
@@ -33,11 +33,11 @@
 
             <div class="cntctForm">
                 <form action="mail.php" method="POST">
-                    <input type="text" name="name" placeholder="Name">
-                    <input type="text" name="email" placeholder="Email">
-                    <input type="text" name="phone" placeholder="Phone">
-                    <input type="text" name="date" placeholder="Due Date">
-                    <textarea name="message" placeholder="Message"></textarea>
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="text" name="email" placeholder="Email" required>
+                    <input type="text" name="phone" placeholder="Phone" required>
+                    <input type="text" name="date" placeholder="Due Date" required>
+                    <textarea name="message" placeholder="Message" required></textarea>
                     <button type="submit" name="submit">SEND</button>
                 </form>
             </div>
@@ -52,7 +52,7 @@
                 <div class="webPhone">
                     <li>
                         <i class="fas fa-globe-americas"></i>
-                        <a href="mailto:banibakery@gmail.com"> banibakery@gmail.com.com</a>
+                        <a href="mailto:banibakery@gmail.com"> banibakery@gmail.com</a>
                     </li>
                     <li>
                         <i class="fas fa-phone-square"></i>
