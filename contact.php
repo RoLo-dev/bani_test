@@ -46,48 +46,6 @@
                     <button type="submit" name="submit">SEND</button>
                 </form>
             </div>
-
-            <div class="cntctInfo">
-                <div class="storehrs">
-                    <h4>Store Hours</h4>
-                    <li>Monday closed</li>
-                    <li>Tues - Fri: 9am - 7pm</li>
-                    <li>Sat - Sun: 8am - 3pm</li>
-                </div>
-                <div class="webPhone">
-                    <li>
-                        <i class="fas fa-globe-americas"></i>
-                        <a href="mailto:banibakery@gmail.com"> banibakery@gmail.com</a>
-                    </li>
-                    <li>
-                        <i class="fas fa-phone-square"></i>
-                        <a href="tel:6572316211"> (657) 231 - 6211</a>
-                    </li>
-                </div>
-                <div class="address">
-                    <li>
-                        <i class="fas fa-map-marked-alt"></i>
-                        <a href="https://www.google.com/maps/place/3710+Westminster+Ave,+Santa+Ana,+CA+92703/@33.7592065,-117.9220215,17z/data=!3m1!4b1!4m5!3m4!1s0x80dcd80b68a29147:0x8f38e2865ae5971b!8m2!3d33.7592021!4d-117.9198328" target="_blank">3710 Westminster Ave. Ste. E,</br>Santa Ana, Ca, 92703</a>
-                    </li>
-                </div>
-                <div class="socialM">
-                    <h4>Follow us on Social Media</h4>
-                    <div class="icons">
-                        <li>
-                            <a href="https://www.facebook.com/banibakery/" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/banihouseofcakes/" target="_blank"><i class="fab fa-instagram"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.yelp.com/biz/bani-bakery-santa-ana" target="_blank"><i class="fab fa-yelp"></i></a>
-                        </li>
-                    </div>
-                </div>
-                <!-- <div class="award">
-                    <img src="https://threebestrated.com/awards/cakes-santa_ana-2019-clr.svg" alt="Best Cakes in Santa Ana" class="pics">
-                </div> -->
-            </div>
         </div>
     </section>
 
@@ -123,7 +81,7 @@
             </div>
             <div class="award">
                 <div>
-                    <img src="images/" class="pics" alt="">
+                    <img src="images/best.png" class="pics" alt="Award for best business of 2018">
                 </div>
                 <div class="background-white">
                     <img src="https://threebestrated.com/awards/cakes-santa_ana-2019-clr.svg" alt="Best Cakes in Santa Ana" class="pics">
@@ -151,7 +109,7 @@
                         </li>
                         <li>
                             <i class="fas fa-map-marked-alt"></i>
-                            <a href="https://www.google.com/maps/place/3710+Westminster+Ave,+Santa+Ana,+CA+92703/@33.7592065,-117.9220215,17z/data=!3m1!4b1!4m5!3m4!1s0x80dcd80b68a29147:0x8f38e2865ae5971b!8m2!3d33.7592021!4d-117.9198328" target="_blank">3710 Westminster Ave. Ste. E,</br>Santa Ana, Ca, 92703</a>
+                            <a href="https://www.google.com/maps/place/3710+Westminster+Ave,+Santa+Ana,+CA+92703/@33.7592065,-117.9220215,17z/data=!3m1!4b1!4m5!3m4!1s0x80dcd80b68a29147:0x8f38e2865ae5971b!8m2!3d33.7592021!4d-117.9198328" target="_blank">3710 Westminster Ave. Ste. E, Santa Ana, Ca, 92703</a>
                         </li>
                     </ul>
                 </div>

@@ -32,6 +32,10 @@
     .cntctForm {
         width: 70%;
     }
+    /* Footer */
+    .award{
+        width: 12%;
+    }
 
     /*** These are the styles for the Gallery page ***/
     .imgs {
@@ -100,7 +104,16 @@
     }
     /* Footer */
     .ftLogo {
-        width: 25%;
+        width: 20%;
+    }
+    .award{
+        width: 15%;
+    }
+    .award .background-white{
+        padding: 9px;
+    }
+    .business-info{
+        width: 22%;
     }
 }
 
@@ -233,6 +246,25 @@
     #about{
         height: 58vh;
     }
+    /* Footer */
+    .ftContent{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+    .ftContent .ftLogo{
+        width: 50%;
+    }
+    .ftContent .ftLinks{
+        width: 40%;
+        margin-bottom: 1.5rem;
+    }
+    .ftContent .award{
+        width: 45%;
+    }
+    .ftContent .business-info{
+        width: 50%;
+    }
 }
 
 @media only screen and (max-width: 780px){
@@ -251,6 +283,13 @@
         margin: 0 auto;
         height: 485px;
         width: 65%;
+    }
+    /* Footer */
+    .ftLogo{
+        width: 20%;
+    }
+    .award .background-white{
+        padding: 7px;
     }
 }
 
@@ -436,25 +475,6 @@
     #contact p,
     .cntctForm{
         width: 100%;
-    }
-    .cntctInfo {
-        display: flex;
-        align-items: center;
-        text-align: center;
-        flex-direction: column;
-    }
-    .cntctInfo div {
-        margin-bottom: 1rem;
-    }
-    .cntctInfo div:last-child {
-        margin-bottom: 0;
-    }
-    .socialM .icons li {
-        padding: 0 1rem;
-    }
-    .award {
-        display: block;
-        width: 60%;
     }
     /* Footer */
     footer{

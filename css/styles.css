@@ -473,46 +473,6 @@ form button:hover {
     background-color: #814d3b;
     transition: all 0.3s ease-in;
 }
-.cntctInfo {
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-.cntctInfo .storehrs,
-.cntctInfo .webPhone {
-    margin-bottom: 1rem;
-}
-.cntctInfo li {
-    list-style: none;
-    padding-bottom: 0.25rem;
-}
-.webPhone li:first-child {
-    padding-bottom: 0.5rem;
-}
-.cntctInfo li a {
-    text-decoration: none;
-    color: #814d3b;
-}
-.socialM h4 {
-    margin-bottom: 0.75rem;
-}
-.socialM .icons {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 0;
-}
-.socialM .icons li {
-    padding: 0 1.5rem;
-    font-size: 2.5rem;
-}
-.socialM .icons li a {
-    color: #814d3b;
-    transition: all 0.7s;
-}
-.socialM .icons li a:hover {
-    color: #F7ACB8;
-    transition: all 0.3s ease-in;
-}
 /* Footer */
 footer{
     background-color: #814d3b;
@@ -535,6 +495,7 @@ footer{
     }
 .business-info{
     color: #FFF;
+    width: 15%;
 }
 .business-info .storehrs{
     margin-bottom: 1rem;
@@ -550,10 +511,13 @@ footer{
     text-decoration: none;
 }
 .award{
-    width: 15%;
+    width: 11%;
 }
 .award .background-white{
     background-color: #FFF;
+    border-radius: 130px;
+    padding: 15px;
+    margin-top: 10px;
 }
 .ftLinks h4{
     color: #FFF;
