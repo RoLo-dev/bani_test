@@ -243,13 +243,13 @@ header{
         display: flex;
         justify-content: space-between;
     }
-    .three-images div{
-        height: 60%;
+    .three-images .cake-samples{
+        overflow: hidden;
         width: 30%;
         opacity: 1;
-        transition: 0.9s;
+        transition: 0.5s;
     }
-    .three-images div:hover{
+    .three-images .cake-samples:hover{
         opacity: 0.6;
         transition: all 0.3s ease-in;
     }
