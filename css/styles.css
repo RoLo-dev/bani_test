@@ -411,17 +411,18 @@ header{
     margin: 0 auto 2rem auto;
 }
 form {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1.25rem;
+    display: flex;
+    flex-direction: column;
 }
 form input {
     height: 2.25rem;
     padding: 0 7px;
+    margin-bottom: 1rem;
 }
 form textarea {
     height: 10rem;
     padding: 10px 7px;
+    margin-bottom: 1.75rem;
 }
 form input,
 form textarea {
@@ -430,32 +431,28 @@ form textarea {
     color: #814d3b;
     font-size: 0.9rem;
     border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Muli', serif;
+    font-weight: 300;
     transition: all 0.9s;
 }
 form input:focus,
 form textarea:focus{
     background-color: transparent;
 }
-form input:active,
-form textarea:active{
-    background-color: transparent;
-}
 form input:hover,
 form textarea:hover {
-    background-color: #814d3b;
+    border-color: #E1C5AC;
     transition: all 0.3s ease-in;
 }
 form input::placeholder,
 form textarea::placeholder {
     color: #814d3b;
-    font-size: 0.8rem;
+    font-weight: 400;
+    font-size: 0.9rem;
+    opacity: 0.75;
     letter-spacing: 1px;
     transition: all 0.9s;
-}
-form input:hover::placeholder,
-form textarea:hover::placeholder {
-    color: #fff;
-    transition: all 0.3s ease-in;
 }
 form button {
     background-color: #F7ACB8;

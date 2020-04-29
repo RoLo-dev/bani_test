@@ -33,10 +33,15 @@
 
             <div class="cntctForm">
                 <form action="mail.php" method="POST">
-                    <input type="text" name="name" placeholder="Name" required>
-                    <input type="text" name="email" placeholder="Email" required>
-                    <input type="text" name="phone" placeholder="Phone" required>
-                    <input type="text" name="date" placeholder="Due Date" required>
+                    <label>Full name:</label>
+                    <input type="text" name="name" placeholder="John Doe" required>
+                    <label>Email:</label>
+                    <input type="email" name="email" placeholder="example@example.com" required>
+                    <label>Phone:</label>
+                    <input type="tel" name="phone" placeholder="321-098-765" required>
+                    <label>Due date:</label>
+                    <input type="date" name="date" placeholder="mm/dd/yyyy" required>
+                    <label>Message:</label>
                     <textarea name="message" placeholder="Message" required></textarea>
                     <button type="submit" name="submit">SEND</button>
                 </form>
