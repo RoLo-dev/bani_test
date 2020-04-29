@@ -1,7 +1,7 @@
 // This code is for smooth scrolling effect
-const scroll = new SmoothScroll('.navLink','.banner-btn', {
+const scroll = new SmoothScroll('.navLink, .banner-btn', {
     speed: 300
-})
+});
 // This is for the Flavor & Filling buttons on mobile
 $('#flavor-title').on('click', function(){
     $(this).toggleClass('active');
