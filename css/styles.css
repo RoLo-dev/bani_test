@@ -102,13 +102,16 @@ header{
     left: 0;
     width: 100%;
     z-index: 5;
-    height: 3rem;
+    padding: 1rem 0;
+}
+#contact-page,
+#contact-header{
+    background-color: #814d3b;
 }
 .main-head{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
 }
 .logo {
     width: 18%;
@@ -394,7 +397,7 @@ header{
 }
 /* Contact */
 #contact {
-    padding: 1.5rem 0;
+    padding: 7.5rem 0 1.5rem 0;
     color: #814d3b;
 }
 #contact h2 {
@@ -472,6 +475,13 @@ form button:hover {
     cursor: pointer;
     background-color: #814d3b;
     transition: all 0.3s ease-in;
+}
+#contact .map{
+    width: 65%;
+    margin: 0 auto;
+}
+#contact .map iframe{
+    width: 100%;
 }
 /* Footer */
 footer{

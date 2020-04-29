@@ -23,6 +23,36 @@
 
 </head>
 <body>
+    <header id="contact-page">
+        <div id="contact-header" class="main-head wrapper">
+            <div class="logo">
+                <a href="index.html"><img src="images/bani_logo_hor.svg" alt="bakery logo" class="pics"></a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="index.html#sweetTable" class="navLink">Sweet Table</a></li>
+                    <li><a href="index.html#flavorFill" class="navLink">Flavors & Fillings</a></li>
+                    <li><a href="index.html#about" class="navLink">About</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                </ul>
+            </div>
+            <div id="mobile-openBtn">
+                <span class="openIcon"></span>
+            </div>
+        </div>
+    </header>
+
+    <div id="mobile-nav">
+        <ul>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="index.html#sweetTable" class="navLink">Sweet Table</a></li>
+            <li><a href="index.html#flavorFill" class="navLink">Flavors & Fillings</a></li>
+            <li><a href="index.html#about" class="navLink">About</a></li>
+            <li><a href="contact.php">Contact</a></li>
+        </ul>
+    </div>
+
     <section id="contact">
         <div class="wrapper">
             <h2>CONTACT</h2>
@@ -30,7 +60,6 @@
             </br>
             </br>
             All cake and sweet table orders should be placed <span class="boldTxt">8-10 days</span> prior from due date. Pastry and cookie orders should be placed at least <span class="boldTxt">6 days</span> prior from due date. We do require a 50% deposit for any order over $75, if no deposit is made, your order will be put on hold.</p>
-
             <div class="cntctForm">
                 <form action="mail.php" method="POST">
                     <label>Full name:</label>
@@ -45,6 +74,9 @@
                     <textarea name="message" placeholder="Your inquiry" required></textarea>
                     <button type="submit" name="submit">SEND</button>
                 </form>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.0578767952493!2d-117.92201634876362!3d33.75917024046908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcd80b68bcd7c1%3A0x595e516c978318ea!2sBani%20Bakery!5e0!3m2!1sen!2sus!4v1588195290219!5m2!1sen!2sus" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </div>
     </section>

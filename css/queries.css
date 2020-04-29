@@ -26,10 +26,9 @@
         left: 35%;
     }
     /* Contact */
-    #contact p {
-        width: 70%;
-    }
-    .cntctForm {
+    #contact p,
+    .cntctForm,
+    #contact .map{
         width: 70%;
     }
     /* Footer */
@@ -96,11 +95,10 @@
         top: 35%;
     }
     /* Contact */
-    #contact p {
-        width: 75%;
-    }
-    .cntctForm {
-        width: 75%;
+    #contact p,
+    .cntctForm,
+    #contact .map{
+        width: 80%;
     }
     /* Footer */
     .ftLogo {
@@ -465,12 +463,16 @@
         height: auto;
     }
     /* Contact */
+    #contact{
+        padding-top: 9.25rem;
+    }
     #contact h2 {
         color: #814d3b;
         margin-bottom: 1rem;
     }
     #contact p,
-    .cntctForm{
+    .cntctForm,
+    #contact .map{
         width: 100%;
     }
     form label{
