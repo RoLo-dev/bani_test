@@ -149,6 +149,22 @@
         </div>
     </footer>
 
-    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        // This code is for smooth scrolling effect
+        const scroll = new SmoothScroll('.navLink', {
+            speed: 300
+        })
+        const mobileNav = document.getElementById('mobile-nav');
+        const openIcon = document.querySelector('.openIcon');
+        const openNavBtn = document.getElementById('mobile-openBtn');
+
+        openNavBtn.addEventListener('click', openNavMenu);
+
+        function openNavMenu(){
+            openIcon.classList.toggle('animate');
+            mobileNav.classList.toggle('show-nav');
+        }
+    </script>
 </body>
 </html>
