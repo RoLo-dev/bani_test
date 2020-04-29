@@ -84,9 +84,9 @@
                         </li>
                     </div>
                 </div>
-                <div class="award">
+                <!-- <div class="award">
                     <img src="https://threebestrated.com/awards/cakes-santa_ana-2019-clr.svg" alt="Best Cakes in Santa Ana" class="pics">
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -96,6 +96,33 @@
             <div class="ftLogo">
                 <a href="index.html"><img src="images/bani_logo_17.png" alt="Bani bakery logo" class="pics"></a>
                 <div class="copyRight">&copy; Copyright 2020 banibakery.com</div>
+            </div>
+            <div class="ftLinks">
+                <h4>Bani Bakery</h4>
+                <ul>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="index.html#sweetTable" class="navLink">Sweet Table</a></li>
+                    <li><a href="index.html#flavorFill" class="navLink">Flavors & Fillings</a></li>
+                    <li><a href="index.html#about" class="navLink">About</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <h4 class="social">Social</h4>
+                <ul class="socialList">
+                    <li>
+                        <a href="https://www.facebook.com/banibakery/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/banihouseofcakes/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.yelp.com/biz/bani-bakery-santa-ana" target="_blank"><i class="fab fa-yelp"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="award">
+                <img src="https://threebestrated.com/awards/cakes-santa_ana-2019-clr.svg" alt="Best Cakes in Santa Ana" class="pics">
             </div>
             <div class="business-info">
                 <div class="storehrs">
@@ -123,15 +150,6 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div class="ftLinks">
-                <ul>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="index.html#sweetTable" class="navLink">Sweet Table</a></li>
-                    <li><a href="index.html#flavorFill" class="navLink">Flavors & Fillings</a></li>
-                    <li><a href="index.html#about" class="navLink">About</a></li>
-                    <li><a href="contact.php">Contact</a></li>
-                </ul>
             </div>
         </div>
     </footer>
