@@ -469,29 +469,42 @@
         color: #814d3b;
         margin-bottom: 1rem;
     }
-    form {
-        grid-gap: 1rem;
-    }
     #contact p,
     .cntctForm{
         width: 100%;
+    }
+    form label{
+        margin-bottom: 5px;
+        font-size: 1.1rem;
     }
     /* Footer */
     footer{
         text-align: center;
     }
-    footer .ftLogo{
+    .ftContent .ftLogo{
         width: 40%;
         margin: 0 auto 1rem auto;
     }
-    .ftContent {
+    .ftLinks .socialList li{
+        font-size: 2.25rem;
+        margin: 0 10px;
+    }
+    .ftContent .award{
+        width: 33%;
+    }
+    .ftContent .award .background-white{
+        padding: 12px;
+    }
+    .ftContent{
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
-    .business-contact{
-        margin-bottom: 1rem;
+    .ftContent .business-info{
+        width: 40%;
+        margin-top: 1rem;
     }
 
     /*** These are the styles for the Gallery page ***/
@@ -510,7 +523,10 @@
     .logo {
         width: 43%;
     }
-    footer .ftLogo{
+    .ftContent .ftLogo{
         width: 48%;
+    }
+    .ftContent .award{
+        width: 40%;
     }
 }

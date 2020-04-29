@@ -42,7 +42,7 @@
                     <label>Due date:</label>
                     <input type="date" name="date" placeholder="mm/dd/yyyy" required>
                     <label>Message:</label>
-                    <textarea name="message" placeholder="Message" required></textarea>
+                    <textarea name="message" placeholder="Your inquiry" required></textarea>
                     <button type="submit" name="submit">SEND</button>
                 </form>
             </div>
