@@ -549,6 +549,12 @@ footer{
     color: #FFF;
     text-decoration: none;
 }
+.award{
+    width: 15%;
+}
+.award .background-white{
+    background-color: #FFF;
+}
 .ftLinks h4{
     color: #FFF;
     margin-bottom: 12px;

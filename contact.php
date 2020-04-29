@@ -122,7 +122,12 @@
                 </ul>
             </div>
             <div class="award">
-                <img src="https://threebestrated.com/awards/cakes-santa_ana-2019-clr.svg" alt="Best Cakes in Santa Ana" class="pics">
+                <div>
+                    <img src="images/" class="pics" alt="">
+                </div>
+                <div class="background-white">
+                    <img src="https://threebestrated.com/awards/cakes-santa_ana-2019-clr.svg" alt="Best Cakes in Santa Ana" class="pics">
+                </div>
             </div>
             <div class="business-info">
                 <div class="storehrs">
