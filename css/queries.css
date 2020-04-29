@@ -5,6 +5,10 @@
         top: 45%;
         left: 20%;
     }
+    /* Banner */
+    .banner-btn{
+        width: 35%;
+    }
     /* Introduction */
     .secOneTxt,
     .secThreeTxt{
@@ -208,6 +212,10 @@
     .bannerTxt h1{
         font-size: 3rem;
     }
+    .banner-btn{
+        padding: 10px 0;
+        width: 45%;
+    }
     /* Introduction */
     .secOneTxt,
     .secThreeTxt,
@@ -319,11 +327,15 @@
     /* Banner */
     .banner,
     .gallery-banner{
-        height: 450px;
+        height: 555px;
     }
     .bannerTxt{
         padding-top: 2.5rem;
         width: 70%;
+    }
+    .banner-btn{
+        width: 65%;
+        padding: 7px;
     }
     /* Introduction */
     .introSections-styles{
@@ -464,7 +476,7 @@
     }
     /* Contact */
     #contact{
-        padding-top: 9.25rem;
+        padding-top: 8rem;
     }
     #contact h2 {
         color: #814d3b;
@@ -475,38 +487,40 @@
     #contact .map{
         width: 100%;
     }
+    #contact .map iframe{
+        height: 430px;
+    }
     form label{
         margin-bottom: 5px;
         font-size: 1.1rem;
     }
     /* Footer */
     footer{
-        text-align: center;
-    }
-    .ftContent .ftLogo{
-        width: 40%;
-        margin: 0 auto 1rem auto;
-    }
-    .ftLinks .socialList li{
-        font-size: 2.25rem;
-        margin: 0 10px;
-    }
-    .ftContent .award{
-        width: 33%;
-    }
-    .ftContent .award .background-white{
-        padding: 12px;
+        text-align: left;
     }
     .ftContent{
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     }
+    .ftContent .ftLogo{
+        width: 55%;
+        margin: 0 auto 1rem auto;
+    }
+    .ftContent .ftLinks,
     .ftContent .business-info{
-        width: 40%;
-        margin-top: 1rem;
+        width: 100%;
+    }
+    .ftContent .ftLinks{
+        margin-bottom: 1rem;
+    }
+    .ftLinks .socialList li{
+        font-size: 2rem;
+        margin:0 1.5rem 0 0;
+    }
+    .ftContent .award{
+        display: none;
     }
 
     /*** These are the styles for the Gallery page ***/
@@ -526,9 +540,6 @@
         width: 43%;
     }
     .ftContent .ftLogo{
-        width: 48%;
-    }
-    .ftContent .award{
-        width: 40%;
+        /* width: 48%; */
     }
 }

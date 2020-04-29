@@ -164,6 +164,27 @@ header{
 .bannerTxt p{
     font-size: 1.25rem;
 }
+.banner-btn{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.1rem;
+    background-color: #F7ACB8;
+    border-radius: 30px;
+    margin-top: 1rem;
+    width: 25%;
+    padding: 13px 0;
+    transition: all 0.5s ease-in;
+}
+.banner-btn:hover{
+    background-color: #814d3b;
+    transition: background-color 0.2s ease-in;
+}
+.banner-btn:active{
+    transform: scale(0.95);
+}
 /* Introduction */
 #intro{
     color: #814d3b;
@@ -288,7 +309,7 @@ header{
     #modal #modal-content li h3 {
         margin-bottom: 1rem;
     }
-/* How It Works */
+/* Getting Started*/
 #howItWorks {
     background-color: #814d3b;
 }
