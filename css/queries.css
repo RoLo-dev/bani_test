@@ -29,12 +29,6 @@
         width: 30%;
         left: 35%;
     }
-    /* Contact */
-    #contact p,
-    .cntctForm,
-    #contact .map{
-        width: 70%;
-    }
     /* Footer */
     .award{
         width: 12%;
@@ -94,12 +88,6 @@
         height: 30%;
         right: 34%;
         top: 35%;
-    }
-    /* Contact */
-    #contact p,
-    .cntctForm,
-    #contact .map{
-        width: 80%;
     }
     /* Footer */
     .ftLogo {
@@ -478,11 +466,6 @@
     #contact h2 {
         color: #814d3b;
         margin-bottom: 1rem;
-    }
-    #contact p,
-    .cntctForm,
-    #contact .map{
-        width: 100%;
     }
     #contact .map iframe{
         height: 430px;

@@ -1,3 +1,55 @@
+<?php
+    if($_SERVER["REQUEST_METHOD"] == "POST") {
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $phone = $_POST['phone'];
+        $date = $_POST['date'];
+        $message = $_POST['message'];
+        $msg = '';
+        $msgClass = '';
+        $nameErr = $emailErr = $phoneErr = $dateErr = $messageErr = "";
+        if(empty($name) && empty($email) && empty($phone) && empty($date) && empty($message)){
+            // Failed
+            $msg = "Please fill in all fields";
+            $msgClass = "emailFailed";
+            $nameErr = "Name is required";
+            $emailErr = "Email is required";
+            $phoneErr = "Phone number is required";
+            $dateErr = "Date is required";
+            $messageErr = "Message is required";
+        } else{
+            if(filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
+                $msg = "Invalid email format";
+                $msgClass = "emailFailed";
+            } else {
+                $email_to = "banibakery@gmail.com";
+                $email_subject = 'Contact form submission from '.$name;
+                $body =
+                    '<h2>Contact Request</h2>
+                    <h4>Name</h4><p>'.$name.'</p>
+                    <h4>Email</h4><p>'.$email.'</p>
+                    <h4>Phone</h4><p>'.$phone.'</p>
+                    <h4>Date</h4><p>'.$date.'</p>
+                    <h4>Message</h4><p>'.$message.'</p>';
+                // Email Headers
+                $headers = "MIME-Version: 1.0" ."\r\n";
+                $headers .="Content-Type:text/html;charset=UTF-8" . "\r\n";
+                // Additional Headers
+                $headers .= "From: " .$name. "<".$email.">". "\r\n";
+                if(mail($email_to, $email_subject, $body, $headers)){
+                    // Email Sent
+                    $msg = "Thank you, we will get back to you soon";
+                    $msgClass = "emailSuccess";
+                } else {
+                    // Failed
+                    $msg = "I'm sorry, something went wrong. Please try again";
+                    $msgClass = "emailFailed";
+                }
+            }
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,27 +106,52 @@
     </div>
 
     <section id="contact">
-        <div class="wrapper">
+        <div class="smaller-wrapper">
             <h2>CONTACT</h2>
             <p>Have any questions? Please feel free to send us any questions or comments. For a quote request or placing an order, please provide detailed information (cake flavor, filling, servings and picture) as well as the date of the event.
             </br>
             </br>
             All cake and sweet table orders should be placed <span class="boldTxt">8-10 days</span> prior from due date. Pastry and cookie orders should be placed at least <span class="boldTxt">6 days</span> prior from due date. We do require a 50% deposit for any order over $75, if no deposit is made, your order will be put on hold.</p>
+
             <div class="cntctForm">
-                <form action="mail.php" method="POST">
-                    <label>Full name:</label>
-                    <input type="text" name="name" placeholder="John Doe" required>
-                    <label>Email:</label>
-                    <input type="email" name="email" placeholder="example@example.com" required>
-                    <label>Phone:</label>
-                    <input type="tel" name="phone" placeholder="321-098-765" required>
-                    <label>Due date:</label>
-                    <input type="date" name="date" placeholder="mm/dd/yyyy" required>
-                    <label>Message:</label>
-                    <textarea name="message" placeholder="Your inquiry" required></textarea>
+                <?php if($msg != ''): ?>
+                    <div class="alert-container alert <?php echo $msgClass; ?>"><?php echo $msg; ?></div>
+                <?php endif; ?>
+
+                <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+                    <label>
+                        Full name:
+                        <span class="error"> * <?php echo $nameErr;?></span>
+                    </label>
+                    <input type="text" name="name" value="<?php echo isset($_POST['name']) ? $name : ''; ?>"" placeholder="John Doe">
+
+                    <label>
+                        Email:
+                        <span class="error"> * <?php echo $emailErr;?></span>
+                    </label>
+                    <input type="email" name="email" value="<?php echo isset($_POST['email']) ? $email : ''; ?>" placeholder="example@example.com">
+
+                    <label>
+                        Phone:
+                        <span class="error"> * <?php echo $phoneErr;?></span>
+                    </label>
+                    <input type="tel" name="phone" value="<?php echo isset($_POST['phone']) ? $phone : ''; ?>" placeholder="321-098-765">
+
+                    <label>
+                        Due date:
+                        <span class="error"> * <?php echo $dateErr;?></span>
+                    </label>
+                    <input type="date" name="date" value="<?php echo isset($_POST['date']) ? $date : ''; ?>" placeholder="mm/dd/yyyy">
+
+                    <label>
+                        Message:
+                        <span class="error"> * <?php echo $messageErr;?></span>
+                    </label>
+                    <textarea name="message" value="<?php echo isset($_POST['message']) ? $message : ''; ?>" placeholder="Your inquiry"></textarea>
                     <button type="submit" name="submit">SEND</button>
                 </form>
             </div>
+
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.0578767952493!2d-117.92201634876362!3d33.75917024046908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcd80b68bcd7c1%3A0x595e516c978318ea!2sBani%20Bakery!5e0!3m2!1sen!2sus!4v1588195290219!5m2!1sen!2sus" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
