@@ -33,25 +33,25 @@
                     // echo '<a href="http://banibakery.com">Return home</a>';
                     // header("Location: http://banibakery.com/contact.php");
                     // exit();
-                    $msg = "Thank you, we will get back to you soon";
-                    $msgClass = "emailSuccess";
+                    echo $msg = "Thank you, we will get back to you soon";
+                    echo $msgClass = "emailSuccess";
                 } else {
                     // Failed
-                    $msg = "Sorry, something went wrong. Please try again";
-                    $msgClass = "emailFailed";
+                    echo $msg = "Sorry, something went wrong. Please try again";
+                    echo $msgClass = "emailFailed";
                 }
             }
         } else {
             // Failed
             // echo 'Please fill in all fields.<br /><br />';
             // echo 'Click on the BACK button to resolve.';
-            $msg = "Please fill in all fields";
-            $msgClass = "emailFailed";
-            $nameErr = "Name is required";
-            $emailErr = "Email is required";
-            $phoneErr = "Phone number is required";
-            $dateErr = "Date is required";
-            $messageErr = "Message is required";
+            echo $msg = "Please fill in all fields";
+            echo $msgClass = "emailFailed";
+            echo $nameErr = "Name is required";
+            echo $emailErr = "Email is required";
+            echo $phoneErr = "Phone number is required";
+            echo $dateErr = "Date is required";
+            echo $messageErr = "Message is required";
         }
     }
 // < ?p h p echo $_SERVER["PHP_SELF"]; ? >
