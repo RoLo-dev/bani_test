@@ -1,53 +1,54 @@
 <?php
-    if($_SERVER["REQUEST_METHOD"] == "POST") {
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $phone = $_POST['phone'];
-        $date = $_POST['date'];
-        $message = $_POST['message'];
-        $msg = '';
-        $msgClass = '';
-        $nameErr = $emailErr = $phoneErr = $dateErr = $messageErr = "";
-        if(empty($name) && empty($email) && empty($phone) && empty($date) && empty($message)){
-            // Failed
-            $msg = "Please fill in all fields";
-            $msgClass = "emailFailed";
-            $nameErr = "Name is required";
-            $emailErr = "Email is required";
-            $phoneErr = "Phone number is required";
-            $dateErr = "Date is required";
-            $messageErr = "Message is required";
-        } else{
-            if(filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
-                $msg = "Invalid email format";
-                $msgClass = "emailFailed";
-            } else {
-                $email_to = "banibakery@gmail.com";
-                $email_subject = 'Contact form submission from '.$name;
-                $body =
-                    '<h2>Contact Request</h2>
-                    <h4>Name</h4><p>'.$name.'</p>
-                    <h4>Email</h4><p>'.$email.'</p>
-                    <h4>Phone</h4><p>'.$phone.'</p>
-                    <h4>Date</h4><p>'.$date.'</p>
-                    <h4>Message</h4><p>'.$message.'</p>';
-                // Email Headers
-                $headers = "MIME-Version: 1.0" ."\r\n";
-                $headers .="Content-Type:text/html;charset=UTF-8" . "\r\n";
-                // Additional Headers
-                $headers .= "From: " .$name. "<".$email.">". "\r\n";
-                if(mail($email_to, $email_subject, $body, $headers)){
-                    // Email Sent
-                    $msg = "Thank you, we will get back to you soon";
-                    $msgClass = "emailSuccess";
-                } else {
-                    // Failed
-                    $msg = "I'm sorry, something went wrong. Please try again";
-                    $msgClass = "emailFailed";
-                }
-            }
-        }
-    }
+    // if(isset($_POST['submit'])) {
+    //     $name = htmlspecialchars($_POST['name']);
+    //     $email = htmlspecialchars($_POST['email']);
+    //     $phone = htmlspecialchars($_POST['phone']);
+    //     $date = htmlspecialchars($_POST['date']);
+    //     $message = htmlspecialchars($_POST['message']);
+    //     $msg = "";
+    //     $msgClass = "";
+    //     $nameErr = $emailErr = $phoneErr = $dateErr = $messageErr = "";
+    //     if(empty($name) && empty($email) && empty($phone) && empty($date) && empty($message)){
+    //         // Failed
+    //         $msg = "Please fill in all fields";
+    //         $msgClass = "emailFailed";
+    //         $nameErr = "Name is required";
+    //         $emailErr = "Email is required";
+    //         $phoneErr = "Phone number is required";
+    //         $dateErr = "Date is required";
+    //         $messageErr = "Message is required";
+    //     } else{
+    //         if(filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
+    //             $msg = "Invalid email format";
+    //             $msgClass = "emailFailed";
+    //         } else {
+    //             $email_to = "banibakery@gmail.com";
+    //             $email_subject = 'Contact form submission from '.$name;
+    //             $body =
+    //                 '<h2>Contact Request</h2>
+    //                 <h4>Name</h4><p>'.$name.'</p>
+    //                 <h4>Email</h4><p>'.$email.'</p>
+    //                 <h4>Phone</h4><p>'.$phone.'</p>
+    //                 <h4>Date</h4><p>'.$date.'</p>
+    //                 <h4>Message</h4><p>'.$message.'</p>';
+    //             // Email Headers
+    //             $headers = "MIME-Version: 1.0" ."\r\n";
+    //             $headers .="Content-Type:text/html;charset=UTF-8" . "\r\n";
+    //             // Additional Headers
+    //             $headers .= "From: " .$name. "<".$email.">". "\r\n";
+    //             if(mail($email_to, $email_subject, $body, $headers)){
+    //                 // Email Sent
+    //                 $msg = "Thank you, we will get back to you soon";
+    //                 $msgClass = "emailSuccess";
+    //             } else {
+    //                 // Failed
+    //                 $msg = "I'm sorry, something went wrong. Please try again";
+    //                 $msgClass = "emailFailed";
+    //             }
+    //         }
+    //     }
+    // }
+    include 'test.php';
 ?>
 
 <!DOCTYPE html>
@@ -114,11 +115,8 @@
             All cake and sweet table orders should be placed <span class="boldTxt">8-10 days</span> prior from due date. Pastry and cookie orders should be placed at least <span class="boldTxt">6 days</span> prior from due date. We do require a 50% deposit for any order over $75, if no deposit is made, your order will be put on hold.</p>
 
             <div class="cntctForm">
-                <?php if($msg != ''): ?>
+                <form method="post" action="test.php">
                     <div class="alert-container alert <?php echo $msgClass; ?>"><?php echo $msg; ?></div>
-                <?php endif; ?>
-
-                <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                     <label>
                         Full name:
                         <span class="error"> * <?php echo $nameErr;?></span>
