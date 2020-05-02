@@ -1,49 +1,3 @@
-<?php
-    // if(isset($_POST['submit'])) {
-    //     $name = htmlspecialchars($_POST['name']);
-    //     $email = htmlspecialchars($_POST['email']);
-    //     $phone = htmlspecialchars($_POST['phone']);
-    //     $date = htmlspecialchars($_POST['date']);
-    //     $message = htmlspecialchars($_POST['message']);
-    //     $msg = "";
-    //     $msgClass = "";
-    //     $nameErr = $emailErr = $phoneErr = $dateErr = $messageErr = "";
-    //     if(empty($name) && empty($email) && empty($phone) && empty($date) && empty($message)){
-    //         // Failed
-    //         $msg = "Please fill in all fields";
-    //         $msgClass = "emailFailed";
-    //         $nameErr = "Name is required";
-    //         $emailErr = "Email is required";
-    //         $phoneErr = "Phone number is required";
-    //         $dateErr = "Date is required";
-    //         $messageErr = "Message is required";
-    //     } else{
-    //         if(filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
-    //             $msg = "Invalid email format";
-    //             $msgClass = "emailFailed";
-    //         } else {
-    //             $to = "banibakery@gmail.com";
-    //             $subject = 'Contact form submission from '.$name;
-    //             $body =
-    //                 '<h2>Contact Request</h2>
-    //                 <h4>Name</h4><p>'.$name.'</p>
-    //                 <h4>Email</h4><p>'.$email.'</p>
-    //                 <h4>Phone</h4><p>'.$phone.'</p>
-    //                 <h4>Date</h4><p>'.$date.'</p>
-    //                 <h4>Message</h4><p>'.$message.'</p>';
-    //             // Email Headers
-    //             $headers = "MIME-Version: 1.0" ."\r\n";
-    //             $headers .="Content-Type:text/html;charset=UTF-8" . "\r\n";
-    //             // Additional Headers
-    //             $headers .= "From: " .$name. "<".$email.">". "\r\n";
-    //             mail('banibakery@gmail.com', $subject, $body, $headers);
-    //             $msg = "Thank you, we will get back to you soon";
-    //             $msgClass = "emailSuccess";
-    //         }
-    //     }
-    // }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -108,37 +62,36 @@
             All cake and sweet table orders should be placed <span class="boldTxt">8-10 days</span> prior from due date. Pastry and cookie orders should be placed at least <span class="boldTxt">6 days</span> prior from due date. We do require a 50% deposit for any order over $75, if no deposit is made, your order will be put on hold.</p>
 
             <div class="cntctForm">
-                <form method="post" action="test.php">
-                    <div class="alert-container alert <?php echo $msgClass; ?>"><?php echo $msg; ?></div>
+                <form method="post" action="test.php" name="contactForm" onsubmit="return validateForm()">
                     <label>
                         Full name:
-                        <span class="error"> * <?php echo $nameErr;?></span>
+                        <span id="name" class="error"> * Please enter your full name</span>
                     </label>
                     <input type="text" name="name" value="<?php echo isset($_POST['name']) ? $name : ''; ?>"" placeholder="John Doe">
 
                     <label>
                         Email:
-                        <span class="error"> * <?php echo $emailErr;?></span>
+                        <span id="email" class="error"> * Please provide your email</span>
                     </label>
-                    <input type="email" name="email" value="<?php echo isset($_POST['email']) ? $email : ''; ?>" placeholder="example@example.com">
+                    <input type="email" name="email" value="<?php echo isset($_POST['email']) ? $email : ''; ?>" placeholder="john_doe@example.com">
 
                     <label>
                         Phone:
-                        <span class="error"> * <?php echo $phoneErr;?></span>
+                        <span id="phone" class="error"> * Please enter your phone number</span>
                     </label>
-                    <input type="tel" name="phone" value="<?php echo isset($_POST['phone']) ? $phone : ''; ?>" placeholder="321-098-765">
+                    <input type="tel" name="phone" value="<?php echo isset($_POST['phone']) ? $phone : ''; ?>" placeholder="321-098-7654">
 
                     <label>
                         Due date:
-                        <span class="error"> * <?php echo $dateErr;?></span>
+                        <span id="date" class="error"> * Please provide a date</span>
                     </label>
                     <input type="date" name="date" value="<?php echo isset($_POST['date']) ? $date : ''; ?>" placeholder="mm/dd/yyyy">
 
                     <label>
                         Message:
-                        <span class="error"> * <?php echo $messageErr;?></span>
+                        <span id="message" class="error"> * Please provide details of your inquiry</span>
                     </label>
-                    <textarea name="message" value="<?php echo isset($_POST['message']) ? $message : ''; ?>" placeholder="Your inquiry"></textarea>
+                    <textarea name="message" value="<?php echo isset($_POST['message']) ? $message : ''; ?>" placeholder="Your message"></textarea>
                     <button type="submit" name="submit">SEND</button>
                 </form>
             </div>
@@ -218,21 +171,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
-    <script>
-        // This code is for smooth scrolling effect
-        const scroll = new SmoothScroll('.navLink', {
-            speed: 300
-        })
-        const mobileNav = document.getElementById('mobile-nav');
-        const openIcon = document.querySelector('.openIcon');
-        const openNavBtn = document.getElementById('mobile-openBtn');
-
-        openNavBtn.addEventListener('click', openNavMenu);
-
-        function openNavMenu(){
-            openIcon.classList.toggle('animate');
-            mobileNav.classList.toggle('show-nav');
-        }
-    </script>
+    <script src="js/scriptContact.js"></script>
 </body>
 </html>

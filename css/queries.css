@@ -29,6 +29,10 @@
         width: 30%;
         left: 35%;
     }
+    /* Contact */
+    #contact{
+        padding-top: 9rem;
+    }
     /* Footer */
     .award{
         width: 12%;
@@ -88,6 +92,10 @@
         height: 30%;
         right: 34%;
         top: 35%;
+    }
+    /* Contact */
+    .backBtn{
+        width: 20%;
     }
     /* Footer */
     .ftLogo {
@@ -460,8 +468,14 @@
         height: auto;
     }
     /* Contact */
+    .backBtn{
+        width: 35%;
+    }
+    .other-errors{
+        height: 300px;
+    }
     #contact{
-        padding-top: 8rem;
+        padding-top: 9.5rem;
     }
     #contact h2 {
         color: #814d3b;
@@ -521,5 +535,9 @@
     }
     .ftContent .ftLogo{
         /* width: 48%; */
+    }
+    /* Contact */
+    #contact{
+        padding-top: 8.5rem;
     }
 }
