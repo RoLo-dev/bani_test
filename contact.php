@@ -62,36 +62,37 @@
             All cake and sweet table orders should be placed <span class="boldTxt">8-10 days</span> prior from due date. Pastry and cookie orders should be placed at least <span class="boldTxt">6 days</span> prior from due date. We do require a 50% deposit for any order over $75, if no deposit is made, your order will be put on hold.</p>
 
             <div class="cntctForm">
-                <form method="post" action="test.php" name="contactForm" onsubmit="return validateForm()">
+                <form method="post" id="messageForm" action="test.php" name="contactForm">
+                <!-- <form method="post" action="test.php" name="contactForm" onsubmit="return validateForm()"> -->
                     <label>
                         Full name:
                         <span id="name" class="error"> * Please enter your full name</span>
                     </label>
-                    <input type="text" name="name" value="<?php echo isset($_POST['name']) ? $name : ''; ?>"" placeholder="John Doe">
+                    <input type="text" name="name" value="<?php echo isset($_POST['name']) ? $name : ''; ?>">
 
                     <label>
                         Email:
                         <span id="email" class="error"> * Please provide your email</span>
                     </label>
-                    <input type="email" name="email" value="<?php echo isset($_POST['email']) ? $email : ''; ?>" placeholder="john_doe@example.com">
+                    <input type="email" name="email" value="<?php echo isset($_POST['email']) ? $email : ''; ?>">
 
                     <label>
                         Phone:
                         <span id="phone" class="error"> * Please enter your phone number</span>
                     </label>
-                    <input type="tel" name="phone" value="<?php echo isset($_POST['phone']) ? $phone : ''; ?>" placeholder="321-098-7654">
+                    <input type="tel" name="phone" value="<?php echo isset($_POST['phone']) ? $phone : ''; ?>">
 
                     <label>
                         Due date:
                         <span id="date" class="error"> * Please provide a date</span>
                     </label>
-                    <input type="date" name="date" value="<?php echo isset($_POST['date']) ? $date : ''; ?>" placeholder="mm/dd/yyyy">
+                    <input type="date" name="date" value="<?php echo isset($_POST['date']) ? $date : ''; ?>">
 
                     <label>
                         Message:
                         <span id="message" class="error"> * Please provide details of your inquiry</span>
                     </label>
-                    <textarea name="message" value="<?php echo isset($_POST['message']) ? $message : ''; ?>" placeholder="Your message"></textarea>
+                    <textarea name="message" value="<?php echo isset($_POST['message']) ? $message : ''; ?>"></textarea>
                     <button type="submit" name="submit">SEND</button>
                 </form>
             </div>

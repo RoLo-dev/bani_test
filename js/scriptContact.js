@@ -13,12 +13,17 @@ function openNavMenu(){
     mobileNav.classList.toggle('show-nav');
 }
 
-function validateForm(){
-    let name = document.forms['contactForm']['name'].value;
-    let email = document.forms['contactForm']['email'].value;
-    let phone = document.forms['contactForm']['phone'].value;
-    let date = document.forms['contactForm']['date'].value;
-    let message = document.forms['contactForm']['message'].value;
+const form = document.getElementById('messageForm');
+let name = document.forms['contactForm']['name'].value;
+let email = document.forms['contactForm']['email'].value;
+let phone = document.forms['contactForm']['phone'].value;
+let date = document.forms['contactForm']['date'].value;
+let message = document.forms['contactForm']['message'].value;
+
+form.addEventListener('submit', validateForm)
+
+function validateForm(e){
+    e.preventDefault();
 
     if(name === ''){
         document.getElementById('name').style.visibility = 'visible';
@@ -35,4 +40,5 @@ function validateForm(){
     if(message === ''){
         document.getElementById('message').style.visibility = 'visible';
     }
+    if(!name === '' && !email === "" && !phone === "")
 }
