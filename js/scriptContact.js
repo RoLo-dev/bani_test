@@ -23,59 +23,56 @@ let message = document.forms['contactForm']['message'].value;
 // form.addEventListener('click', validateForm)
 
 function validateForm(){
-    if(name === ''){
-        document.getElementById('name').style.visibility = 'visible';
-    } else{
-        document.getElementById('name').style.visibility = 'hidden';
-    }
-    if(email === ''){
-        document.getElementById('email').style.visibility = 'visible';
-    } else{
-        document.getElementById('email').style.visibility = 'hidden';
-    }
-    if(phone === ''){
-        document.getElementById('phone').style.visibility = 'visible';
-    } else{
-        document.getElementById('phone').style.visibility = 'hidden';
-    }
-    if(date === ''){
-        document.getElementById('date').style.visibility = 'visible';
-    } else{
-        document.getElementById('date').style.visibility = 'hidden';
-    }
-    if(message === ''){
-        document.getElementById('message').style.visibility = 'visible';
-    } else{
-        document.getElementById('message').style.visibility = 'hidden';
-    }
-    // event.preventDefault();
-    console.log('here');
-    // form.onsubmit();
-    // if(!name === '' && !email === "" && !phone === "" && !date === "" && !message === ""){
-    //     console.log('Hello');
-    //     form.onsubmit();
-    // }
+    nameInput();
+    emailInput();
+    phoneInput();
+    dateInput();
+    messageInput();
+    event.preventDefault();
 }
 
-
-
-// function validateForm(e){
-//     e.preventDefault();
-
-//     if(name === ''){
-//         document.getElementById('name').style.visibility = 'visible';
-//     }
-//     if(email === ''){
-//         document.getElementById('email').style.visibility = 'visible';
-//     }
-//     if(phone === ''){
-//         document.getElementById('phone').style.visibility = 'visible';
-//     }
-//     if(date === ''){
-//         document.getElementById('date').style.visibility = 'visible';
-//     }
-//     if(message === ''){
-//         document.getElementById('message').style.visibility = 'visible';
-//     }
-//     if(!name === '' && !email === "" && !phone === "" && !date === "" && !message === ""){}
-// }
+function nameInput(){
+    if(name === ''){
+        document.getElementById('name').style.visibility = 'visible';
+        return false
+    } else{
+        document.getElementById('name').style.visibility = 'hidden';
+        return true;
+    }
+}
+function emailInput(){
+    if(email === ''){
+        document.getElementById('email').style.visibility = 'visible';
+        return false;
+    } else{
+        document.getElementById('email').style.visibility = 'hidden';
+        return true;
+    }
+}
+function phoneInput(){
+    if(phone === ''){
+        document.getElementById('phone').style.visibility = 'visible';
+        return false;
+    } else{
+        document.getElementById('phone').style.visibility = 'hidden';
+        return true;
+    }
+}
+function dateInput(){
+    if(date === ''){
+        document.getElementById('date').style.visibility = 'visible';
+        return false;
+    } else{
+        document.getElementById('date').style.visibility = 'hidden';
+        return true;
+    }
+}
+function messageInput(){
+    if(message === ''){
+        document.getElementById('message').style.visibility = 'visible';
+        return false;
+    } else{
+        document.getElementById('message').style.visibility = 'hidden';
+        return true;
+    }
+}
