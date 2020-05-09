@@ -93,7 +93,7 @@
                         <span id="message" class="error"> * Please provide details of your inquiry</span>
                     </label>
                     <textarea name="message" value="<?php echo isset($_POST['message']) ? $message : ''; ?>"></textarea>
-                    <button type="submit" name="submit">SEND</button>
+                    <button type="submit" onclick="validateForm()" name="submit">SEND</button>
                 </form>
             </div>
 
