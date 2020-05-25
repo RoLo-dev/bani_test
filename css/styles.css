@@ -95,11 +95,9 @@ ul li{
 .text-content {
     display: none;
 }
-#Checking{
-    visibility: hidden;
-}
 #mobile-openBtn{
-    visibility: hidden;
+    /* visibility: hidden; */
+    display: none;
 }
 header{
     position: absolute;
