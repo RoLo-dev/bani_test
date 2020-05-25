@@ -247,7 +247,7 @@ header{
         justify-content: space-between;
     }
     .three-images .cake-samples{
-        overflow: hidden;
+        /* overflow: hidden; */
         width: 30%;
         opacity: 1;
         transition: 0.5s;
