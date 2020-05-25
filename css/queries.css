@@ -129,7 +129,7 @@
     }
     #mobile-openBtn{
         position: fixed;
-        display: block;
+        visibility: visible;
         background: #fff;
         bottom: 20px;
         right: 20px;

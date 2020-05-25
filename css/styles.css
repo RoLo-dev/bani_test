@@ -91,10 +91,15 @@ ul li{
 }
 
 /* Header */
-#mobile-openBtn,
 #mobile-nav,
 .text-content {
     display: none;
+}
+#Checking{
+    visibility: hidden;
+}
+#mobile-openBtn{
+    visibility: hidden;
 }
 header{
     position: absolute;
