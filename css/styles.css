@@ -65,6 +65,7 @@ ul li{
 }
 /* Holidays or Special events */
 #special {
+    display: none;
     background-color: #814d3b;
 }
 .specialTxt{
