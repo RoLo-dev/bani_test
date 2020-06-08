@@ -146,8 +146,8 @@
                     <h4>Store Hours</h4>
                     <ul>
                         <li>Monday closed</li>
-                        <li>Tues - Fri: 9am - 7pm</li>
-                        <li>Sat - Sun: 8am - 3pm</li>
+                        <li>Tues - Fri: 10am - 6pm</li>
+                        <li>Sat - Sun: 9am - 3pm</li>
                     </ul>
                 </div>
                 <div class="business-contact">
