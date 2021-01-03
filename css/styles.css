@@ -419,8 +419,9 @@ header{
 }
 /* Contact */
 #contact {
-    padding: 12rem 0 1.5rem 0;
+    background-color: #f5cdd5;
     color: #814d3b;
+    padding: 2rem 0;
 }
 #contact h2 {
     text-align: center;
