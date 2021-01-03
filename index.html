@@ -306,7 +306,7 @@
             All cake and sweet table orders should be placed <span class="boldTxt">8-10 days</span> prior from due date. Pastry and cookie orders should be placed at least <span class="boldTxt">6 days</span> prior from due date. We do require a 50% deposit for any order over $75, if no deposit is made, your order will be put on hold.</p>
 
             <div id="formMap">
-                <div class="contactForm">
+                <div class="col contactForm">
                     <form action="https://formsubmit.co/banibakery@gmail.com" enctype="multipart/form-data" method="POST">
                         <label for name>Full name:</label>
                         <input type="text" name="name">
@@ -316,21 +316,27 @@
             
                         <label for="phone">Phone:</label>
                         <input type="tel" name="phone">
-            
-                        <label for="date">Due date:</label>
-                        <input type="date" name="date">
 
-                        <label for="servings">Number of servings</label>
-                        <input type="number" name="servings">
+                        <div id="formSimplify">
+                            <div>
+                                <label for="date">Due date:</label>
+                                <input type="date" name="date">
+                            </div>
+
+                            <div>
+                                <label for="servings">Number of servings:</label>
+                                <input type="number" name="servings">
+                            </div>
+                        </div>
 
                         <input type="file" id="file-upload" name="attachment" accept="image/png, image/jpeg">
-            
+
                         <label for="message">Message:</label>
                         <textarea name="message"></textarea>
                         <button type="submit" onclick="validateForm()" name="submit">SEND</button>
                     </form>
                 </div>
-                <div class="map">
+                <div class="col map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.0578767952493!2d-117.92201634876362!3d33.75917024046908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcd80b68bcd7c1%3A0x595e516c978318ea!2sBani%20Bakery!5e0!3m2!1sen!2sus!4v1588195290219!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>
