@@ -61,7 +61,7 @@
             </br>
             All cake and sweet table orders should be placed <span class="boldTxt">8-10 days</span> prior from due date. Pastry and cookie orders should be placed at least <span class="boldTxt">6 days</span> prior from due date. We do require a 50% deposit for any order over $75, if no deposit is made, your order will be put on hold.</p>
 
-            <div class="cntctForm">
+            <div class="contactForm">
                 <form method="post" id="messageForm" action="test.php" name="contactForm">
                 <!-- <form method="post" action="test.php" name="contactForm" onsubmit="return validateForm()"> -->
                     <label>
