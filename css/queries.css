@@ -286,6 +286,9 @@
     #formMap {
         flex-direction: column;
     }
+    #formMap .contactForm {
+        margin-bottom: 3rem;
+    }
     .col {
         width: 100%;
     }
@@ -474,15 +477,6 @@
         height: auto;
     }
     /* Contact */
-    .backBtn{
-        width: 35%;
-    }
-    .other-errors{
-        height: 300px;
-    }
-    #contact{
-        padding-top: 9.5rem;
-    }
     #contact h2 {
         color: #814d3b;
         margin-bottom: 1rem;
@@ -541,9 +535,5 @@
     }
     .ftContent .ftLogo{
         width: 48%;
-    }
-    /* Contact */
-    #contact{
-        padding-top: 8.5rem;
     }
 }
