@@ -149,7 +149,8 @@ header{
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(../images/hero_img3.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(../images/mini_cupcakes2.jpg);
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(../images/hero_img3.jpeg); */
 }
 .bannerTxt{
     margin-left: 5%;
