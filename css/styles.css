@@ -453,7 +453,7 @@ header{
     display: flex;
     flex-direction: column;
 }
-#file-upload {
+.file-upload {
     border: 0;
     padding: 0;
     height: auto;
