@@ -419,7 +419,7 @@ header{
 }
 /* Contact */
 #contact {
-    background-color: #f5cdd5;
+    background-color: #f7d5dc;
     color: #814d3b;
     padding: 2rem 0;
 }
@@ -443,6 +443,11 @@ header{
 .map iframe{
     width: 100%;
     height: 30rem;
+}
+#file-upload {
+    border: 0;
+    padding: 0;
+    height: auto;
 }
 form {
     display: flex;
@@ -472,12 +477,12 @@ form textarea {
     transition: all 0.9s;
 }
 form input:focus,
-form textarea:focus{
+form textarea:focus {
     background-color: transparent;
 }
 form input:hover,
 form textarea:hover {
-    border-color: #E1C5AC;
+    border-color: #fff;
     transition: all 0.3s ease-in;
 }
 form input::placeholder,
@@ -490,7 +495,7 @@ form textarea::placeholder {
     transition: all 0.9s;
 }
 form button {
-    background-color: #F7ACB8;
+    background-color: #814d3b;
     outline: 0;
     border: 0;
     color: #fff;
@@ -505,7 +510,8 @@ form button {
 }
 form button:hover {
     cursor: pointer;
-    background-color: #814d3b;
+    color: #814d3b;
+    background-color: #E1C5AC;
     transition: all 0.3s ease-in;
 }
 /* Footer */
