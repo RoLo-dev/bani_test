@@ -38,29 +38,30 @@ let emailConfirm = document.forms['contact-form']['emailConfirm'].value;
 let date = document.forms['contact-form']['date'].value;
 const emailError = document.getElementById('emailError');
 
-form.addEventListener('click', validateForm);
+// form.addEventListener('click', validateForm);
 
-function validateForm() {
-    // nameInput();
-    emailInput();
-    e.preventDefault();
-}
+// function validateForm() {
+//     // nameInput();
+//     console.log('clicked');
+//     emailInput();
+//     e.preventDefault();
+// }
 
-function nameInput() {
-    if(fullName === ''){
-        return false;
-    } else {
-        return true;
-    }
-}
-function emailInput() {
-    if(email === emailConfirm){
-        emailError.visibility = "visible";
-        return false;
-    } else {
-        return true;
-    }
-}
+// function nameInput() {
+//     if(fullName === ''){
+//         return false;
+//     } else {
+//         return true;
+//     }
+// }
+// function emailInput() {
+//     if(email === emailConfirm){
+//         emailError.visibility = "visible";
+//         return false;
+//     } else {
+//         return true;
+//     }
+// }
 
 // This is for mobile
 const mobileOnly = window.matchMedia('(max-width: 900px)');
