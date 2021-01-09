@@ -29,6 +29,14 @@ function outsideClick(e) {
         modal.style.visibility = 'hidden';
     }
 }
+// Contact form validation
+const form = document.getElementById('contact-form');
+let name = document.forms['contact-form']['name'].value;
+let phone = document.forms['contact-form']['phone'].value;
+let email = document.forms['contact-form']['email'].value;
+let emailConfirm = document.forms['contact-form']['emailConfirm'].value;
+let date = document.forms['contact-form']['date'].value;
+
 // This is for mobile
 const mobileOnly = window.matchMedia('(max-width: 900px)');
 const swtBtnMobile = document.getElementById('swtBtn-mobile');
