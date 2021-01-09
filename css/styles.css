@@ -418,10 +418,8 @@ header{
     line-height: 1.5;
 }
 /* Contact */
-.error {
+#emailError {
     color: firebrick;
-}
-.emailError {
     visibility: hidden;
 }
 #contact {

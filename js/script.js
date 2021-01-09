@@ -36,11 +36,12 @@ let phone = document.forms['contact-form']['phone'].value;
 let email = document.forms['contact-form']['email'].value;
 let emailConfirm = document.forms['contact-form']['emailConfirm'].value;
 let date = document.forms['contact-form']['date'].value;
+const emailError = document.getElementById('emailError');
 
 form.addEventListener('click', validateForm);
 
 function validateForm() {
-    nameInput();
+    // nameInput();
     emailInput();
     e.preventDefault();
 }
@@ -54,6 +55,7 @@ function nameInput() {
 }
 function emailInput() {
     if(email === emailConfirm){
+        emailError.visibility = "visible";
         return false;
     } else {
         return true;
