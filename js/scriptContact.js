@@ -14,7 +14,7 @@ function openNavMenu(){
 }
 
 const form = document.getElementById('messageForm');
-let name = document.forms['contactForm']['name'].value;
+let fullName = document.forms['contactForm']['name'].value;
 let email = document.forms['contactForm']['email'].value;
 let phone = document.forms['contactForm']['phone'].value;
 let date = document.forms['contactForm']['date'].value;

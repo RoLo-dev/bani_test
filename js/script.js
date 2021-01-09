@@ -37,6 +37,29 @@ let email = document.forms['contact-form']['email'].value;
 let emailConfirm = document.forms['contact-form']['emailConfirm'].value;
 let date = document.forms['contact-form']['date'].value;
 
+form.addEventListener('click', validateForm);
+
+function validateForm() {
+    nameInput();
+    emailInput();
+    e.preventDefault();
+}
+
+function nameInput() {
+    if(fullName === ''){
+        return false;
+    } else {
+        return true;
+    }
+}
+function emailInput() {
+    if(email === emailConfirm){
+        return false;
+    } else {
+        return true;
+    }
+}
+
 // This is for mobile
 const mobileOnly = window.matchMedia('(max-width: 900px)');
 const swtBtnMobile = document.getElementById('swtBtn-mobile');
