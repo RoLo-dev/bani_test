@@ -448,7 +448,7 @@ header{
     display: flex;
     justify-content: space-between;
 }
-#formSimplify div {
+.formSimplify div {
     width: 48%;
     display: flex;
     flex-direction: column;
