@@ -286,6 +286,12 @@
     #formMap {
         flex-direction: column;
     }
+    #hiring {
+        padding-top: 7rem;
+    }
+    #hiring form {
+        width: 100%;
+    }
     #formMap .contactForm {
         margin-bottom: 3rem;
     }
