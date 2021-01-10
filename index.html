@@ -315,19 +315,19 @@
                         <div class="formSimplify">
                             <div>
                                 <label for="name">Full name:</label>
-                                <input type="text" name="name">
+                                <input type="text" name="name" required>
                             </div>
 
                             <div>
                                 <label for="phone">Phone:</label>
-                                <input type="tel" name="phone">
+                                <input type="tel" name="phone" required>
                             </div>
                         </div>
 
                         <div class="formSimplify">
                             <div>
                                 <label for="email">Email:</label>
-                                <input type="email" name="email">
+                                <input type="email" name="email" required>
                             </div>
 
                             <div>
@@ -339,16 +339,16 @@
                         <div class="formSimplify">
                             <div>
                                 <label for="date">Due date:</label>
-                                <input type="date" name="date">
+                                <input type="date" name="date" required>
                             </div>
 
                             <div>
                                 <label for="servings">Servings needed:</label>
-                                <input type="number" name="servings">
+                                <input type="number" name="servings" required>
                             </div>
                         </div>
 
-                        <input type="file" class="file-upload" name="attachment" accept="image/png, image/jpeg">
+                        <input type="file" class="file-upload" name="attachment" accept="image/png, image/jpeg" multiple>
 
                         <label for="message">Message:</label>
                         <textarea name="message"></textarea>
