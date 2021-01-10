@@ -657,3 +657,21 @@ footer{
     display: flex;
     align-content: center;
 }
+
+/*** These are the styles for the Hiring page ***/
+#hiring-header {
+    background-color: #814d3b;
+}
+#hiring {
+    padding-top: 10rem;
+    margin-bottom: 2rem;
+}
+h2 {
+    margin-bottom: 2rem;
+}
+.regular-weight {
+    font-weight: 300;
+}
+#hiring ul {
+    margin: 1rem 0;
+}
