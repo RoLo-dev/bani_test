@@ -675,3 +675,7 @@ h2 {
 #hiring ul {
     margin: 1rem 0;
 }
+#hiring form {
+    margin-top: 1rem;
+    width: 40%;
+}
