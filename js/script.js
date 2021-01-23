@@ -80,6 +80,17 @@ function openNavMenu(){
     mobileNav.classList.toggle('show-nav');
 }
 
+// Footer
+let today = new Date();
+let year = today.getFullYear();
+let footerYear = document.getElementById('footer-year');
+
+function updateYear() {
+    footerYear.innerText = year;
+    console.log(year);
+}
+updateYear();
+
 AOS.init({
     offset: 150,
     duration: 650
