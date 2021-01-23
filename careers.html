@@ -103,7 +103,7 @@
         <div class="wrapper ftContent">
             <div class="ftLogo">
                 <a href="index.html"><img loading="lazy" src="images/bani_logo_17.png" alt="Bani bakery logo" class="pics"></a>
-                <div class="copyRight">&copy; Copyright 2020 banibakery.com</div>
+                <div class="copyRight">&copy; <span id="footer-year"></span> banibakery.com</div>
             </div>
             <div class="ftLinks">
                 <h4>Bani Bakery</h4>
@@ -182,6 +182,17 @@
             openIcon.classList.toggle('animate');
             mobileNav.classList.toggle('show-nav');
         }
+
+        // Footer
+        let today = new Date();
+        let year = today.getFullYear();
+        let footerYear = document.getElementById('footer-year');
+
+        function updateYear() {
+            footerYear.innerText = year;
+            console.log(year);
+        }
+        updateYear();
     </script>
 </body>
 </html>
