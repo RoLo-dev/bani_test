@@ -19,6 +19,7 @@
     <link rel="stylesheet" type="text/html" href="gallery.html">
     <link rel="stylesheet" href="gallery2.html">
 
+    <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
     <script src="js/lightbox-plus-jquery.min.js"></script>
@@ -306,7 +307,7 @@
 
             <div id="formMap">
                 <div class="col contactForm">
-                    <form action="https://formsubmit.co/banibakery@gmail.com" enctype="multipart/form-data" method="POST" id="contact-form">
+                    <form action="https://getform.io/f/426cf8f6-5864-43aa-a629-e4e65c49a6bc"" enctype="multipart/form-data" method="POST" id="contact-form">
                         <input type="hidden" name="_template" value="table">
                         <input type="hidden" name="_subject" value="Contact form submission!">
                         <input type="text" name="_honey" style="display:none">
@@ -347,11 +348,12 @@
                             </div>
                         </div>
 
-                        <input type="file" class="file-upload" name="attachment" accept="image/png, image/jpeg, image/jpg">
+                        <input type="file" class="file-upload" name="photos[]" accept="image/png, image/jpeg, image/jpg" multiple>
 
                         <label for="message">Message:</label>
                         <textarea name="message"></textarea>
 
+                        <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
                         <button type="submit" onclick="validateForm()">SUBMIT</button>
                     </form>
                 </div>
@@ -431,5 +433,13 @@
 
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script>
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6LcL_IYaAAAAAI0cwwpXyOfbXPnYVddRq3-N8soX', {action: 'homepage'})
+            .then(function(token) {
+              document.getElementById('captchaResponse').value = token;
+            });
+          });
+     </script>
 </body>
 </html>
