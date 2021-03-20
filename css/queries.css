@@ -1,3 +1,15 @@
+@media only screen and (min-width: 2150px) {
+    .award .background-white {
+        border-radius: 170px;
+    }
+    /*** These are the styles for the Gallery page ***/
+    .gllryGrid {
+        grid-gap: 0.8rem;
+    }
+    .imgs {
+        height: 350px;
+    }
+}
 @media only screen and (max-width: 1350px){
     /* Header */
     .headTxt {
@@ -36,7 +48,7 @@
 
     /*** These are the styles for the Gallery page ***/
     .imgs {
-        height: 140px;
+        height: 170px;
     }
 }
 
@@ -323,15 +335,6 @@
     .main-head .logo{
         width: 45%;
     }
-    /* #mobile-nav{
-        width: 170px;
-        transform: translateY(-250px);
-        height: 250px;
-    }
-    #mobile-nav ul{
-        padding-left: 1.5rem;
-        padding-top: 85px;
-    } */
     /* Banner */
     .banner,
     .gallery-banner{
