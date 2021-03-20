@@ -1,4 +1,13 @@
 @media only screen and (min-width: 2150px) {
+    /* Universal styles */
+    /* .wrapper {
+        width: 80%;
+    } */
+    /* Footer */
+    .ftLogo a{
+        width: 80%;
+        margin: 0 auto;
+    }
     .award .background-white {
         border-radius: 170px;
     }
@@ -10,6 +19,9 @@
         height: 350px;
     }
 }
+
+
+
 @media only screen and (max-width: 1350px){
     /* Header */
     .headTxt {
