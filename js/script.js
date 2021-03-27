@@ -30,38 +30,19 @@ function outsideClick(e) {
     }
 }
 // Contact form validation
-const form = document.getElementById('contact-form');
-let name = document.forms['contact-form']['name'].value;
-let phone = document.forms['contact-form']['phone'].value;
-let email = document.forms['contact-form']['email'].value;
-let emailConfirm = document.forms['contact-form']['emailConfirm'].value;
-let date = document.forms['contact-form']['date'].value;
-const emailError = document.getElementById('emailError');
+const form = document.getElementById("contact-form");
+const email = document.getElementById("email");
+const emailConfirm = document.getElementById("emailConfirm");
+const emailError = document.getElementById("emailError");
 
-// form.addEventListener('click', validateForm);
+form.addEventListener('click', validateForm);
 
-// function validateForm() {
-//     // nameInput();
-//     console.log('clicked');
-//     emailInput();
-//     e.preventDefault();
-// }
-
-// function nameInput() {
-//     if(fullName === ''){
-//         return false;
-//     } else {
-//         return true;
-//     }
-// }
-// function emailInput() {
-//     if(email === emailConfirm){
-//         emailError.visibility = "visible";
-//         return false;
-//     } else {
-//         return true;
-//     }
-// }
+function validateForm() {
+    if (emailConfirm != email) {
+        e.preventDefault();
+        emailError.style.visibility = "visible";
+    }
+}
 
 // This is for mobile
 const mobileOnly = window.matchMedia('(max-width: 900px)');
