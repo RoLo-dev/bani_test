@@ -1,5 +1,3 @@
-const { name } = require("ejs");
-
 // This code is for smooth scrolling effect
 const scroll = new SmoothScroll('.navLink, .banner-btn', {
     speed: 300
