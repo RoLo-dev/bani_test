@@ -38,9 +38,10 @@ const emailError = document.getElementById("emailError");
 form.addEventListener('click', validateForm);
 
 function validateForm() {
-    if (emailConfirm != email) {
+    if (emailConfirm.value != email.value) {
         e.preventDefault();
         emailError.style.visibility = "visible";
+        console.log("hello world");
     }
 }
 
