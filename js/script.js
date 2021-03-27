@@ -1,3 +1,5 @@
+const { name } = require("ejs");
+
 // This code is for smooth scrolling effect
 const scroll = new SmoothScroll('.navLink, .banner-btn', {
     speed: 300
@@ -32,10 +34,10 @@ function outsideClick(e) {
 // Contact form validation
 const form = document.getElementById("contact-form");
 const email = document.getElementById("email");
-const emailConfirm = document.getElementById("emailConfirm");
-const emailError = document.getElementById("emailError");
+const emailConfirm = document.querySelector[name = "email"];
+const emailError = document.querySelector[name = "emailConfirm"];
 
-form.addEventListener('click', validateForm);
+form.addEventListener("submit", validateForm);
 
 function validateForm() {
     if (emailConfirm.value != email.value) {
