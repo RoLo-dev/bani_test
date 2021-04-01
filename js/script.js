@@ -32,18 +32,26 @@ function outsideClick(e) {
 // Contact form validation
 const form = document.getElementById("contact-form");
 const email = document.getElementById("email");
-const emailConfirm = document.querySelector[name = "email"];
-const emailError = document.querySelector[name = "emailConfirm"];
+const emailConfirm = document.getElementById("emailConfirm");
+const emailError = document.getElementById("emailError");
 
-form.addEventListener("submit", validateForm);
+// form.addEventListener('submit', (e) => {
+//     if (emailConfirm != email) {
+//         e.preventDefault();
+//         emailError.style.visibility = "visible";
+//         console.log("hello world");
+//     }
+// });
 
-function validateForm() {
-    if (emailConfirm.value != email.value) {
-        e.preventDefault();
-        emailError.style.visibility = "visible";
-        console.log("hello world");
-    }
-}
+// function validateForm(e) {
+//     if (emailConfirm != email) {
+//         e.preventDefault();
+//         emailError.style.visibility = "visible";
+//         console.log("hello world");
+//     } else {
+//         return true;
+//     }
+// }
 
 // This is for mobile
 const mobileOnly = window.matchMedia('(max-width: 900px)');
