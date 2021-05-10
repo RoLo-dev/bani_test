@@ -61,7 +61,7 @@ let submitBtn = document.querySelector(".submit-btn")
 submitBtn.addEventListener('click', addNameOfSender)
 
 function addNameOfSender(){
-  subject.setAttribute('value', 'New Submission from ' + nameValue.value)
+  subject.setAttribute('value', 'New email from ' + nameValue.value)
 }
 
 // This is for mobile
