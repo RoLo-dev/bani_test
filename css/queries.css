@@ -557,4 +557,7 @@
     .ftContent .ftLogo{
         width: 48%;
     }
+    .file-upload{
+        padding-top: 2rem;
+    }
 }
