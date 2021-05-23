@@ -385,6 +385,12 @@ header{
     text-align: center;
     color: #814d3b;
 }
+.warning p{
+    margin-bottom: 5px;
+}
+.warning p:last-child{
+    margin-bottom: 0;
+}
 /* About */
 #about {
     height: 85vh;
@@ -420,7 +426,8 @@ header{
 /* Contact */
 #emailError {
     color: firebrick;
-    visibility: hidden;
+    /* visibility: hidden; */
+    display: none;
 }
 #contact {
     background-color: #FEDFFC;
@@ -462,6 +469,7 @@ header{
     padding: 0;
     width: 55%;
     height: auto;
+    padding-top: 1.5rem;
 }
 form {
     display: flex;

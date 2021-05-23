@@ -253,11 +253,11 @@
                     <li>
                         <h3 class="listTitle">Fillings</h3>
                     </li>
-                    <li>Vanilla (signature buttercream) **</li>
+                    <li>Vanilla (signature buttercream) <span class="boldTxt">**</span></li>
                     <li>Lemon mousse</li>
-                    <li>Whipped cream ***</li>
+                    <li>Whipped cream <span class="boldTxt">***</span></li>
                     <li>Pineapple cream (contains real fruit)</li>
-                    <li>Chocolate buttercream **</li>
+                    <li>Chocolate buttercream <span class="boldTxt">**</span></li>
                     <li>Tiramisu cream</li>
                     <li>Strawberry mousse</li>
                     <li>Raspberry mousse</li>
@@ -267,11 +267,11 @@
                     <li>Chocolate mousse</li>
                     <li>Coconut cream</li>
                     <li>Cookies & Cream</li>
-                    <li>Mocha buttercream **</li>
+                    <li>Mocha buttercream <span class="boldTxt">**</span></li>
                     <li>Passion fruit cream</li>
                     <li>Green tea cream</li>
                     <li>Peanut butter cream (contains tree nuts)</li>
-                    <li>Hazelnut buttercream ** (contains tree nuts)</li>
+                    <li>Hazelnut buttercream (contains tree nuts) <span class="boldTxt">**</span></li>
                     <li>Banana cream (contains real fruit)</li>
                     <li><span class="boldTxt">Fresh fruit *</span> (contains real fruit)</li>
                     <li><span class="boldTxt">Cream cheese *</span></li>
@@ -281,9 +281,9 @@
                 </ul>
             </div>
             <div class="warning">
-                <p>* Additional charge for special flavor or filling.</p>
-                <p>** Italian buttercream made with real butter<br>and less sugar, not so sweet</p>
-                <p>*** non-dairy, airy cream, very light, fairly sweet and<br>only for fresh fruit or flower decorations.</p>
+                <p><span class="boldTxt">*</span> Additional charge for special flavor or filling.</p>
+                <p><span class="boldTxt">**</span> Italian buttercream made with real butter<br>and less sugar, not so sweet</p>
+                <p><span class="boldTxt">***</span> non-dairy, airy cream, very light, and sweet</p>
             </div>
 
         </div>
@@ -319,7 +319,6 @@
                                 <label for="name">Full name:</label>
                                 <input type="text" id="name" name="name" required>
                             </div>
-
                             <div>
                                 <label for="phone">Phone:</label>
                                 <input type="tel" name="phone" required>
@@ -331,7 +330,6 @@
                                 <label for="email">Email:</label>
                                 <input type="email" name="email" id="email" required>
                             </div>
-
                             <div>
                                 <label for="emailConfirm">Confirm email: <span id="emailError"> Email does not match</span></label>
                                 <input type="email" name="emailConfirm" id="emailConfirm">
@@ -343,14 +341,23 @@
                                 <label for="date">Due date:</label>
                                 <input type="date" name="date" required>
                             </div>
-
                             <div>
                                 <label for="servings">Servings needed:</label>
                                 <input type="number" name="servings" required>
                             </div>
                         </div>
 
-                        <input type="file" class="file-upload" name="attachment" accept="image/png, image/jpeg, image/jpg">
+                        <div class="formSimplify">
+                            <div>
+                                <label for="time">Time:</label>
+                                <input type="datetime" name="time">
+                            </div>
+                            <div>
+                                <input type="file" class="file-upload" name="attachment" accept="image/png, image/jpeg, image/jpg">
+                            </div>
+                        </div>
+
+                        
 
                         <label for="message">Message:</label>
                         <textarea name="message"></textarea>
