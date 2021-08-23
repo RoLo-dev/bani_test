@@ -85,15 +85,15 @@ function validateForm() {
 }
                                
 // FORM SUBMISSION VALUE FROM NAME INPUT
-let nameValue = document.getElementById("name")
-let subject = document.getElementById("subject")
-let submitBtn = document.querySelector(".submit-btn")
+// let nameValue = document.getElementById("name")
+// let subject = document.getElementById("subject")
+// let submitBtn = document.querySelector(".submit-btn")
 
-submitBtn.addEventListener('click', addNameOfSender)
+// submitBtn.addEventListener('click', addNameOfSender)
 
-function addNameOfSender(){
-  subject.setAttribute('value', 'New email from ' + nameValue.value)
-}
+// function addNameOfSender(){
+//   subject.setAttribute('value', 'New email from ' + nameValue.value)
+// }
 
 // This is for mobile
 const mobileOnly = window.matchMedia('(max-width: 900px)');
