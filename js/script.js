@@ -52,7 +52,7 @@ const emailError = document.getElementById("emailError");
 //         return true;
 //     }
 // }
-
+                               
 // FORM SUBMISSION VALUE FROM NAME INPUT
 let nameValue = document.getElementById("name")
 let subject = document.getElementById("subject")
