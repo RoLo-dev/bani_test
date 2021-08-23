@@ -305,7 +305,7 @@
             <p>Have any questions? Please feel free to send us any questions or comments. For a quote request or placing an order, please provide detailed information (cake flavor, filling, servings and picture) as well as the date of the event.
             </br>
             </br>
-            All cake and sweet table orders should be placed <span class="boldTxt">8-10 days</span> prior from due date. Pastry and cookie orders should be placed at least <span class="boldTxt">6 days</span> prior from due date. We do require a 50% deposit for any order over $75, if no deposit is made, your order will be put on hold.</p>
+            All cake and sweet table orders should be placed <span class="boldTxt">7-10 days</span> prior from due date. Pastry and cookie orders should be placed at least <span class="boldTxt">6 days</span> prior from due date. We do require a 50% deposit for any order over $75, if no deposit is made, your order will be put on hold.</p>
 
             <div id="formMap">
                 <div class="col contactForm">
@@ -317,21 +317,25 @@
                         <div class="formSimplify">
                             <div>
                                 <label for="name">Full name:</label>
+                                <span id="name-errorMsg" class="form-error">Enter full name</span>
                                 <input type="text" id="name" name="name" required>
                             </div>
                             <div>
                                 <label for="phone">Phone:</label>
-                                <input type="tel" name="phone" required>
+                                <span id="phone-errorMsg" class="form-error">Enter phone number</span>
+                                <input id="phone" type="tel" name="phone" required>
                             </div>
                         </div>
 
                         <div class="formSimplify">
                             <div>
                                 <label for="email">Email:</label>
+                                <span id="email-errorMsg" class="form-error">Enter email</span>
                                 <input type="email" name="email" id="email" required>
                             </div>
                             <div>
-                                <label for="emailConfirm">Confirm email: <span id="emailError"> Email does not match</span></label>
+                                <label for="emailConfirm">Confirm email:</label>
+                                <span id="emailConfirm-errorMsg" class="form-error"> Email does not match</span>
                                 <input type="email" name="emailConfirm" id="emailConfirm">
                             </div>
                         </div>
@@ -339,18 +343,21 @@
                         <div class="formSimplify">
                             <div>
                                 <label for="date">Due date:</label>
-                                <input type="date" name="date" required>
+                                <span id="date-errorMsg" class="form-error">Enter due date</span>
+                                <input id="date" type="date" name="date" required>
                             </div>
                             <div>
-                                <label for="time">Time:</label>
-                                <input type="time" name="time">
+                                <label for="time">Pickup Time:</label>
+                                <span id="time-errorMsg" class="form-error">Enter pickup time</span>
+                                <input id="time" type="time" name="time">
                             </div>
                         </div>
 
                         <div class="formSimplify">
                             <div>
                                 <label for="servings">Servings needed:</label>
-                                <input type="number" name="servings" required>
+                                <span id="servings-errorMsg" class="form-error">How many servings?</span>
+                                <input id="servings" type="number" name="servings" required>
                             </div>
                             <div>
                                 <input type="file" class="file-upload" name="attachment" accept="image/png, image/jpeg, image/jpg">
@@ -362,7 +369,9 @@
                         <label for="message">Message:</label>
                         <textarea name="message"></textarea>
 
-                        <button type="submit" class="submit-btn">SUBMIT</button>
+                        <!-- <button type="submit" class="submit-btn">SUBMIT</button> -->
+                        <div class="submit-btn" onclick="validateForm()">SUBMIT</div>
+                        <input id="validation-complete" type="submit" value="submit" style="display: none;">
                     </form>
                 </div>
                 <div class="col map">

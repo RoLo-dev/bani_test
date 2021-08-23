@@ -424,9 +424,8 @@ header{
     line-height: 1.5;
 }
 /* Contact */
-#emailError {
+.form-error {
     color: firebrick;
-    /* visibility: hidden; */
     display: none;
 }
 #contact {
@@ -516,27 +515,34 @@ form textarea::placeholder {
     letter-spacing: 1px;
     transition: all 0.9s;
 }
-form button {
+form button,
+form .submit-btn {
     background-color: #814d3b;
     outline: 0;
     border: 0;
     color: #fff;
-    height: 2.5rem;
+    /* height: 2.5rem; */
     font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 2px;
     width: 68%;
     border-radius: 30px;
+    cursor: pointer;
     margin: 0 auto;
+
+    /* styling for the div button aka fake button */
+    text-align: center;
+    padding: 1rem 0;
     transition: all 0.9s;
 }
-form button:hover {
-    cursor: pointer;
+form button:hover,
+form .submit-btn:hover {
     color: #814d3b;
     background-color: #E1C5AC;
     transition: all 0.3s ease-in;
 }
-form button:focus {
+form button:focus,
+form .submit-btn:focus {
     border: 3px solid #fff;
 }
 /* Footer */

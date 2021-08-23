@@ -29,29 +29,59 @@ function outsideClick(e) {
         modal.style.visibility = 'hidden';
     }
 }
-// Contact form validation
+// CONTACT FORM VALIDATION
 const form = document.getElementById("contact-form");
-const email = document.getElementById("email");
+const nameInput = document.getElementById('name');
+const phoneInput = document.getElementById('phone');
+const emailInput = document.getElementById("email");
 const emailConfirm = document.getElementById("emailConfirm");
-const emailError = document.getElementById("emailError");
+const dateInput = document.getElementById("date");
+const timeInput = document.getElementById("time");
+const servingsInput = document.getElementById("servings");
 
-// form.addEventListener('submit', (e) => {
-//     if (emailConfirm != email) {
-//         e.preventDefault();
-//         emailError.style.visibility = "visible";
-//         console.log("hello world");
-//     }
-// });
+const nameErrorMsg = document.getElementById('name-errorMsg')
+const phoneErrorMsg = document.getElementById('phone-errorMsg')
+const emailErrorMsg = document.getElementById('email-errorMsg')
+const emailConfirmErrorMsg = document.getElementById("emailConfirm-errorMsg");
+const dateErrorMsg = document.getElementById('date-errorMsg')
+const timeErrorMsg = document.getElementById('time-errorMsg')
+const servingsErrorMsg = document.getElementById('servings-errorMsg')
 
-// function validateForm(e) {
-//     if (emailConfirm != email) {
-//         e.preventDefault();
-//         emailError.style.visibility = "visible";
-//         console.log("hello world");
-//     } else {
-//         return true;
-//     }
-// }
+function validateForm() {
+    if (nameInput.value == '') {
+        nameErrorMsg.style.display = "block";
+        console.log("*** Error message: Name field empty ***");
+    }
+    if (phoneInput.value == '') {
+        phoneErrorMsg.style.display = "block";
+        console.log("*** Error message: Phone field empty ***");
+    }
+    if (emailInput.value == '') {
+        emailErrorMsg.style.display = "block";
+        console.log("*** Error message: Email field empty ***");
+    }
+    if (emailConfirm.value != emailInput.value) {
+        emailConfirmErrorMsg.style.display = "block";
+        console.log(emailConfirm.value)
+        console.log("*** Error message: Email's don't match ***");
+    }
+    if (dateInput.value == '') {
+        dateErrorMsg.style.display = "block";
+        console.log("*** Error message: Date field empty ***");
+    }
+    if (timeInput.value == '') {
+        timeErrorMsg.style.display = "block";
+        console.log("*** Error message: Time field empty ***");
+    }
+    if (servingsInput.value == '') {
+        servingsErrorMsg.style.display = "block";
+        console.log("*** Error message: Servings field empty ***");
+    }   
+    else {
+        document.getElementById('validation-complete').click()
+
+    }
+}
                                
 // FORM SUBMISSION VALUE FROM NAME INPUT
 let nameValue = document.getElementById("name")
