@@ -78,6 +78,7 @@ function validateForm() {
         console.log("*** Error message: Servings field empty ***");
     }   
     else {
+        subject.setAttribute('value', 'New email from ' + nameValue.value)
         document.getElementById('validation-complete').click()
 
     }
