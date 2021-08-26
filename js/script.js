@@ -30,6 +30,8 @@ function outsideClick(e) {
     }
 }
 // CONTACT FORM VALIDATION
+
+let nameValue = document.getElementById("name")
 const form = document.getElementById("contact-form");
 const nameInput = document.getElementById('name');
 const phoneInput = document.getElementById('phone');
