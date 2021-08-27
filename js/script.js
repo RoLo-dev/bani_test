@@ -67,18 +67,18 @@ function validateForm() {
         console.log(emailConfirm.value)
         console.log("*** Error message: Email's don't match ***");
     }
-    if (dateInput.value == '') {
-        dateErrorMsg.style.display = "block";
-        console.log("*** Error message: Date field empty ***");
-    }
-    if (timeInput.value == '') {
-        timeErrorMsg.style.display = "block";
-        console.log("*** Error message: Time field empty ***");
-    }
-    if (servingsInput.value == '') {
-        servingsErrorMsg.style.display = "block";
-        console.log("*** Error message: Servings field empty ***");
-    }   
+    // if (dateInput.value == '') {
+    //     dateErrorMsg.style.display = "block";
+    //     console.log("*** Error message: Date field empty ***");
+    // }
+    // if (timeInput.value == '') {
+    //     timeErrorMsg.style.display = "block";
+    //     console.log("*** Error message: Time field empty ***");
+    // }
+    // if (servingsInput.value == '') {
+    //     servingsErrorMsg.style.display = "block";
+    //     console.log("*** Error message: Servings field empty ***");
+    // }
     else {
         subject.setAttribute('value', 'New email from ' + nameValue.value)
         document.getElementById('validation-complete').click()
