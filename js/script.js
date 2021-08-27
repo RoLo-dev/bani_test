@@ -50,14 +50,14 @@ const timeErrorMsg = document.getElementById('time-errorMsg')
 const servingsErrorMsg = document.getElementById('servings-errorMsg')
 
 function validateForm() {
-    if (nameInput.value == '') {
-        nameErrorMsg.style.display = "block";
-        console.log("*** Error message: Name field empty ***");
-    }
-    if (phoneInput.value == '') {
-        phoneErrorMsg.style.display = "block";
-        console.log("*** Error message: Phone field empty ***");
-    }
+    // if (nameInput.value == '') {
+    //     nameErrorMsg.style.display = "block";
+    //     console.log("*** Error message: Name field empty ***");
+    // }
+    // if (phoneInput.value == '') {
+    //     phoneErrorMsg.style.display = "block";
+    //     console.log("*** Error message: Phone field empty ***");
+    // }
     if (emailInput.value == '') {
         emailErrorMsg.style.display = "block";
         console.log("*** Error message: Email field empty ***");
