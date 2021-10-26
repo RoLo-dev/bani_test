@@ -30,7 +30,6 @@ function outsideClick(e) {
     }
 }
 // CONTACT FORM VALIDATION
-
 let nameValue = document.getElementById('name')
 const form = document.getElementById('contact-form');
 const nameInput = document.getElementById('name');
@@ -59,13 +58,10 @@ function validateForm() {
     //     console.log("*** Error message: Phone field empty ***");
     // }
     if (emailInput.value == '') {
-        emailErrorMsg.style.display = "block";
-        console.log("*** Error message: Email field empty ***");
+        emailErrorMsg.style.display = 'block';
     }
     if (emailConfirm.value != emailInput.value) {
-        emailConfirmErrorMsg.style.display = "block";
-        console.log(emailConfirm.value)
-        console.log("*** Error message: Email's don't match ***");
+        emailConfirmErrorMsg.style.display = 'block';
     }
     // if (dateInput.value == '') {
     //     dateErrorMsg.style.display = "block";
@@ -82,7 +78,6 @@ function validateForm() {
     else {
         subject.setAttribute('value', 'New email from ' + nameValue.value)
         document.getElementById('validation-complete').click()
-
     }
 }
 // FORM SUBMISSION VALUE FROM NAME INPUT
