@@ -31,20 +31,20 @@ function outsideClick(e) {
 }
 // CONTACT FORM VALIDATION
 
-let nameValue = document.getElementById("name")
-const form = document.getElementById("contact-form");
+let nameValue = document.getElementById('name')
+const form = document.getElementById('contact-form');
 const nameInput = document.getElementById('name');
 const phoneInput = document.getElementById('phone');
-const emailInput = document.getElementById("email");
-const emailConfirm = document.getElementById("emailConfirm");
-const dateInput = document.getElementById("date");
-const timeInput = document.getElementById("time");
-const servingsInput = document.getElementById("servings");
+const emailInput = document.getElementById('email');
+const emailConfirm = document.getElementById('emailConfirm');
+const dateInput = document.getElementById('date');
+const timeInput = document.getElementById('time');
+const servingsInput = document.getElementById('servings');
 
 const nameErrorMsg = document.getElementById('name-errorMsg')
 const phoneErrorMsg = document.getElementById('phone-errorMsg')
 const emailErrorMsg = document.getElementById('email-errorMsg')
-const emailConfirmErrorMsg = document.getElementById("emailConfirm-errorMsg");
+const emailConfirmErrorMsg = document.getElementById('emailConfirm-errorMsg');
 const dateErrorMsg = document.getElementById('date-errorMsg')
 const timeErrorMsg = document.getElementById('time-errorMsg')
 const servingsErrorMsg = document.getElementById('servings-errorMsg')
@@ -85,7 +85,6 @@ function validateForm() {
 
     }
 }
-                               
 // FORM SUBMISSION VALUE FROM NAME INPUT
 // let nameValue = document.getElementById("name")
 // let subject = document.getElementById("subject")
