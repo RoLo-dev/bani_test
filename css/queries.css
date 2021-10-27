@@ -1,38 +1,16 @@
 @media only screen and (min-width: 2150px) {
-    /* Universal styles */
-    /* .wrapper {
-        width: 80%;
-    } */
     /* Footer */
-    .ftLogo a{
-        width: 80%;
-        margin: 0 auto;
-    }
-    .award .background-white {
-        border-radius: 170px;
-    }
+    .ftLogo a{ width: 80%;margin: 0 auto; }
+    .award .background-white { border-radius: 170px; }
     /*** These are the styles for the Gallery page ***/
-    .gllryGrid {
-        grid-gap: 0.8rem;
-    }
-    .imgs {
-        height: 350px;
-    }
+    .gllryGrid { grid-gap: 0.8rem; }
+    .imgs { height: 350px; }
 }
-
-
-
 @media only screen and (max-width: 1350px){
     /* Header */
-    .headTxt {
-        width: 60%;
-        top: 45%;
-        left: 20%;
-    }
+    .headTxt { width: 60%;top: 45%;left: 20%; }
     /* Banner */
-    .banner-btn{
-        width: 35%;
-    }
+    .banner-btn{ width: 35%; }
     /* Introduction */
     .secOneTxt,
     .secThreeTxt{
@@ -41,35 +19,19 @@
         top: 35%;
         left: 35%;
     }
-    .secTwoTxt{
-        height: 30%;
-    }
+    .secTwoTxt{ height: 30%; }
     /* About */
-    #about {
-        width: 87%;
-    }
+    #about { width: 87%; }
     /* Cake & Fillings */
-    .list-container .secTitle{
-        width: 30%;
-        left: 35%;
-    }
+    .list-container .secTitle{ width: 30%;left: 35%; }
     /* Footer */
-    .award{
-        width: 12%;
-    }
-
+    .award{ width: 12%; }
     /*** These are the styles for the Gallery page ***/
-    .imgs {
-        height: 170px;
-    }
+    .imgs { height: 170px; }
 }
-
-
 @media only screen and (max-width: 1024px){
     /* Universal Styles */
-    html {
-        font-size: 16px;
-    }
+    html { font-size: 16px; }
     /* Header */
     .banner,
     .gallery-banner{
@@ -77,24 +39,12 @@
         background-attachment: inherit;
         background-position: center;
     }
-    .bannerTxt{
-        width: 65%;
-    }
-    .nav ul li a{
-        margin-left: 0.15rem;
-        padding: 2px 10px;
-    }
+    .bannerTxt{ width: 65%; }
+    .nav ul li a{ margin-left: 0.15rem;padding: 2px 10px; }
     /* Introduction */
-    .introSections-styles{
-        height: 780px;
-    }
-    #themeCakes{
-        height: 700px;
-    }
-    .secTwoTxt{
-        width: 85%;
-        height: 45%;
-    }
+    .introSections-styles{ height: 780px; }
+    #themeCakes{ height: 700px; }
+    .secTwoTxt{ width: 85%;height: 45%; }
     .secOneTxt,
     .secThreeTxt{
         height: 42%;
@@ -103,9 +53,7 @@
         left: 31.5%;
     }
     /* About */
-    #about{
-        height: 65vh;
-    }
+    #about{ height: 65vh; }
     /* Cake & Fillings */
     .list-container .secTitle {
         width: 27%;
@@ -114,35 +62,17 @@
         top: 35%;
     }
     /* Footer */
-    .ftLogo {
-        width: 20%;
-    }
-    .award{
-        width: 15%;
-    }
-    .award .background-white{
-        padding: 9px;
-    }
-    .business-info{
-        width: 22%;
-    }
+    .ftLogo { width: 20%; }
+    .award{ width: 15%; }
+    .award .background-white{ padding: 9px; }
+    .business-info{ width: 22%; }
 }
-
-
 @media only screen and (max-width: 850px){
-    .smaller-wrapper{
-        width: 90%;
-    }
-    h2{
-        font-size: 2rem;
-    }
+    .smaller-wrapper{ width: 90%; }
+    h2{ font-size: 2rem; }
     /* Header */
-    .main-head .logo{
-        width: 30%;
-    }
-    .main-head .nav{
-        display: none;
-    }
+    .main-head .logo{ width: 30%; }
+    .main-head .nav{ display: none; }
     #mobile-openBtn{
         position: fixed;
         display: block;
@@ -154,44 +84,25 @@
         padding: 1.75rem 0.95rem;
         box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.3);
     }
-    #mobile-openBtn:hover{
-        cursor: pointer;
-    }
-    #mobile-openBtn:active{
-        transform: scale(0.95);
-    }
-    .openIcon{
-    display: block;
-    position: relative;
-    }
+    #mobile-openBtn:hover{ cursor: pointer; }
+    #mobile-openBtn:active{ transform: scale(0.95); }
+    .openIcon{ display: block;position: relative; }
     .openIcon,
     .openIcon::before,
     .openIcon::after{
-    width: 1.75rem;
-    height: 3px;
-    background: #F7ACBB;
-    border-radius: 30px;
-
-    transition: transform 300ms ease-in-out, opacity 200ms linear;
-    }
+        width: 1.75rem;
+        height: 3px;
+        background: #F7ACBB;
+        border-radius: 30px;
+        transition: transform 300ms ease-in-out, opacity 200ms linear;
+        }
     .openIcon::before,
-    .openIcon::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    }
+    .openIcon::after{ content: '';position: absolute;left: 0; }
     .openIcon::before{bottom: 9px;}
     .openIcon::after{top: 9px;}
-
-    .animate{
-    transform: rotate(45deg);
-    }
-    .animate::before{
-    opacity: 0;
-    }
-    .animate::after{
-    transform: rotate(90deg) translate(-9px);
-    }
+    .animate{ transform: rotate(45deg); }
+    .animate::before{ opacity: 0; }
+    .animate::after{ transform: rotate(90deg) translate(-9px); }
     #mobile-nav{
         display: flex;
         justify-content: center;
@@ -212,32 +123,14 @@
         transform: translateY(0);
         transition: all 0.2s ease-in;
     }
-    #mobile-nav ul li{
-        /* text-align: center; */
-        margin-bottom: 1.25rem;
-    }
-    #mobile-nav ul li a{
-        color: #FFF;
-        text-decoration: none;
-        font-size: 2rem;
-    }
-    #mobile-nav ul li:last-child{
-        margin-bottom: 0;
-    }
+    #mobile-nav ul li{ margin-bottom: 1.25rem; }
+    #mobile-nav ul li a{ color: #FFF;text-decoration: none;font-size: 2rem; }
+    #mobile-nav ul li:last-child{ margin-bottom: 0; }
     /* Banner */
-    .bannerTxt h1{
-        font-size: 3rem;
-    }
-    .banner-btn{
-        padding: 10px 0;
-        width: 45%;
-    }
+    .bannerTxt h1{ font-size: 3rem; }
+    .banner-btn{ padding: 10px 0;width: 45%; }
     /* Introduction */
-    .secOneTxt,
-    .secThreeTxt,
-    .three-images{
-        display: none;
-    }
+    .secOneTxt, .secThreeTxt, .three-images{ display: none; }
     .text-content{
         display: flex;
         flex-direction: column;
@@ -251,44 +144,24 @@
         height: 100%;
         width: 100%;
     }
-    .introSections-styles{
-        height: 60vh;
-    }
-    #themeCakes{
-        height: 50vh;
-    }
+    .introSections-styles{ height: 60vh; }
+    #themeCakes{ height: 50vh; }
     /* Cake & Fillings */
-    #listBox{
-        align-items: flex-start;
-    }
-    #listBox2{
-        align-items: flex-end;
-    }
+    #listBox{ align-items: flex-start; }
+    #listBox2{ align-items: flex-end; }
     /* About */
-    #about{
-        height: 58vh;
-    }
+    #about{ height: 58vh; }
     /* Footer */
     .ftContent{
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
     }
-    .ftContent .ftLogo{
-        width: 50%;
-    }
-    .ftContent .ftLinks{
-        width: 40%;
-        margin-bottom: 1.5rem;
-    }
-    .ftContent .award{
-        width: 45%;
-    }
-    .ftContent .business-info{
-        width: 50%;
-    }
+    .ftContent .ftLogo{ width: 50%; }
+    .ftContent .ftLinks{ width: 40%;margin-bottom: 1.5rem; }
+    .ftContent .award{ width: 45%; }
+    .ftContent .business-info{ width: 50%; }
 }
-
 @media only screen and (max-width: 780px){
     /* About */
     #about{
@@ -298,114 +171,50 @@
         margin-bottom: 2rem;
     }
     #about .baniImg,
-    #about .aboutTxt{
-        width: 100%;
-    }
+    #about .aboutTxt{ width: 100%; }
     #about .baniImg{
         margin: 0 auto;
         height: 485px;
         width: 65%;
     }
     /* Contact */
-    #formMap {
-        flex-direction: column;
-    }
-    #hiring {
-        padding-top: 7rem;
-    }
-    #hiring form {
-        width: 100%;
-    }
-    #formMap .contactForm {
-        margin-bottom: 3rem;
-    }
-    .col {
-        width: 100%;
-    }
+    #formMap{ flex-direction: column; }
+    #hiring{ padding-top: 7rem; }
+    #hiring form{ width: 100%; }
+    #formMap .contactForm { margin-bottom: 3rem; }
+    .col { width: 100%; }
     /* Footer */
-    .ftLogo{
-        width: 20%;
-    }
-    .award .background-white{
-        padding: 7px;
-    }
+    .ftLogo{ width: 20%; }
+    .award .background-white{ padding: 7px; }
 }
-
-
 @media only screen and (max-width: 690px) {
     /* Universal Styles */
-    html{
-        font-size: 14px;
-    }
-    p{
-        line-height: 1.3
-    }
-    h3{
-        font-size: 1.35rem;
-    }
+    html{ font-size: 14px; }
+    p{ line-height: 1.3 }
+    h3{ font-size: 1.35rem; }
     /* Header */
-    .main-head .logo{
-        width: 45%;
-    }
+    .main-head .logo{ width: 45%; }
     /* Banner */
-    .banner,
-    .gallery-banner{
-        height: 555px;
-    }
-    .bannerTxt{
-        padding-top: 2.5rem;
-        width: 70%;
-    }
-    .banner-btn{
-        width: 65%;
-        padding: 9px;
-    }
+    .banner, .gallery-banner{ height: 555px; }
+    .bannerTxt{ padding-top: 2.5rem;width: 70%; }
+    .banner-btn{ width: 65%;padding: 9px; }
     /* Introduction */
-    .introSections-styles{
-        height: auto;
-    }
-    .introPic-gone,
-    .sweet-rightCol{
-        display: none;
-    }
-    #lessSugar{
-        flex-direction: column;
-    }
-    .introTxtStyle{
-        padding: 0;
-    }
+    .introSections-styles{ height: auto; }
+    .introPic-gone, .sweet-rightCol{ display: none; }
+    #lessSugar{ flex-direction: column; }
+    .introTxtStyle{ padding: 0; }
     .lessSugar-leftCol,
     .lessSugar-rightCol,
     .theme-leftCol,
     .theme-rightCol,
-    .sweet-leftCol{
-        width: 100%;
-    }
-    .imgHeight-50{
-        height: 325px;
-    }
-    .theme-leftCol img{
-        height: 350px;
-    }
-    .lessSugar-rightCol{
-        justify-content: flex-start;
-    }
-    .text-content{
-        height: auto;
-        padding: 1.5rem 0;
-    }
-    #themeCakes{
-        height: auto;
-        flex-direction: column;
-    }
-    .theme-rightCol{
-        padding-top: 1rem;
-        padding-left: 0;
-        width: 100%;
-    }
-    .secTwoTxt{
-        margin-bottom: 0;
-    }
+    .sweet-leftCol{ width: 100%; }
+    .imgHeight-50{ height: 325px; }
+    .theme-leftCol img{ height: 350px; }
+    .lessSugar-rightCol{ justify-content: flex-start; }
+    .text-content{ height: auto;padding: 1.5rem 0; }
+    #themeCakes{ height: auto;flex-direction: column; }
+    .theme-rightCol{ padding-top: 1rem;padding-left: 0;width: 100%; }
+    .secTwoTxt{ margin-bottom: 0; }
     .sweet-leftCol .text-content .swtBtn{
         padding: 0.75rem 0;
         width: 100%;
@@ -414,29 +223,13 @@
         letter-spacing: 0.5px;
     }
     /* How it works */
-    .steps{
-        padding: 2rem 0;
-    }
+    .steps{ padding: 2rem 0; }
     /* Cake & Fillings */
-    .listTitle-btn,
-    #flavorFill-mobile{
-        display: block;
-    }
-    #flavorFill-desktop,
-    .listTitle{
-        display: none;
-    }
-    .list-container{
-        padding: 2rem 0;
-        flex-direction: column;
-    }
-    .list-container #flavorFill-mobile{
-        margin-bottom: 2rem;
-        color: #814d3b;
-    }
-    #listBox2{
-        align-items: flex-start;
-    }
+    .listTitle-btn, #flavorFill-mobile{ display: block; }
+    #flavorFill-desktop, .listTitle{ display: none; }
+    .list-container{ padding: 2rem 0;flex-direction: column; }
+    .list-container #flavorFill-mobile{ margin-bottom: 2rem;color: #814d3b; }
+    #listBox2{ align-items: flex-start; }
     .listTitle-btn{
         background-color: #814d3b;
         width: 100%;
@@ -445,39 +238,23 @@
         margin-bottom: 1rem;
         transition: all 0.5s ease-out;
     }
-    .active{
-        background-color: #F7ACBB;
-        color: #FFF;
-    }
+    .active{ background-color: #F7ACBB;color: #FFF; }
     .listTitle-btn:hover{
         cursor: pointer;
         background-color: #F7ACBB;
         color: #FFF;
         transition: all 0.3s ease-in;
     }
-    .listTitle-btn:active{
-        transform: scale(0.95);
-    }
-    .list-container .list{
-        width: 100%;
-        text-align: center;
-    }
+    .listTitle-btn:active{ transform: scale(0.95); }
+    .list-container .list{ width: 100%;text-align: center; }
     .list-container .list ul{
         display: none;
         width: 100%;
         margin-bottom: 1rem;
     }
-    .list-container .list ul li{
-        margin-bottom: 10px;
-        font-size: 1.1rem;
-    }
-    .list-container .list ul li:last-child{
-        margin-bottom: 0;
-    }
-    .list-container .warning{
-        position: static;
-        width: 100%;
-    }
+    .list-container .list ul li{ margin-bottom: 10px;font-size: 1.1rem; }
+    .list-container .list ul li:last-child{ margin-bottom: 0; }
+    .list-container .warning{ position: static;width: 100%; }
     /* About */
     #about {
         flex-direction: column;
@@ -490,74 +267,33 @@
         margin-bottom: 1rem;
         padding: 0;
     }
-    #about .aboutTxt h2 {
-        margin-bottom: 1rem;
-    }
-    #about .aboutTxt {
-        width: 100%;
-        height: auto;
-    }
+    #about .aboutTxt h2{ margin-bottom: 1rem; }
+    #about .aboutTxt{ width: 100%;height: auto; }
     /* Contact */
-    #contact h2 {
-        color: #814d3b;
-        margin-bottom: 1rem;
-    }
-    #contact .map iframe{
-        height: 430px;
-    }
-    form label{
-        margin-bottom: 5px;
-        font-size: 1.1rem;
-    }
+    #contact h2 { color: #814d3b;margin-bottom: 1rem; }
+    #contact .map iframe{ height: 430px; }
+    form label{ margin-bottom: 5px;font-size: 1.1rem; }
     /* Footer */
-    footer{
-        text-align: left;
-    }
+    footer{ text-align: left; }
     .ftContent{
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
-    .ftContent .ftLogo{
-        width: 55%;
-        margin: 0 auto 1rem auto;
-    }
-    .ftContent .ftLinks,
-    .ftContent .business-info{
-        width: 100%;
-    }
-    .ftContent .ftLinks{
-        margin-bottom: 1rem;
-    }
-    .ftLinks .socialList li{
-        font-size: 2rem;
-        margin:0 1.5rem 0 0;
-    }
-    .ftContent .award{
-        display: none;
-    }
+    .ftContent .ftLogo{ width: 55%;margin: 0 auto 1rem auto; }
+    .ftContent .ftLinks, .ftContent .business-info{ width: 100%; }
+    .ftContent .ftLinks{ margin-bottom: 1rem; }
+    .ftLinks .socialList li{ font-size: 2rem;margin:0 1.5rem 0 0; }
+    .ftContent .award{ display: none; }
 
     /*** These are the styles for the Gallery page ***/
-    .gllryGrid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-        .imgs {
-            height: 200px;
-        }
-    #socialM .icons li {
-        font-size: 2.5rem;
-    }
+    .gllryGrid { grid-template-columns: repeat(2, 1fr); }
+    .imgs { height: 200px; }
+    #socialM .icons li { font-size: 2.5rem; }
 }
-
 @media only screen and (max-width: 580px){
-    .logo {
-        width: 43%;
-    }
-    .ftContent .ftLogo{
-        width: 48%;
-    }
-    .file-upload{
-        padding-top: 2rem;
-    }
+    .logo { width: 43%; }
+    .ftContent .ftLogo{ width: 48%; }
+    .file-upload{ padding-top: 2rem; }
 }
