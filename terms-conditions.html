@@ -75,5 +75,21 @@
         <p> In the case of fresh flower usage on the cake, the responsibility of the flower safety and safe food practices will rest with the florist and not with Bani Bakery. The person placing this order should obtain a notice of plant safety, in question, from the florist. Bani bakery is not responsible for any damage to the cake caused by the placement of flowers by another party or other items on the cake.</p>
     </section>
 
+    <script>
+        // This code is for smooth scrolling effect
+        const scroll = new SmoothScroll('.navLink', {
+            speed: 300
+        })
+        const mobileNav = document.getElementById('mobile-nav');
+        const openIcon = document.querySelector('.openIcon');
+        const openNavBtn = document.getElementById('mobile-openBtn');
+
+        openNavBtn.addEventListener('click', openNavMenu);
+
+        function openNavMenu(){
+            openIcon.classList.toggle('animate');
+            mobileNav.classList.toggle('show-nav');
+        }
+    </script>
 </body>
 </html>
