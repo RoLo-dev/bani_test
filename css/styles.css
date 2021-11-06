@@ -326,7 +326,7 @@ form button:focus, form .submit-btn:focus{ border: 3px solid #fff; }
 footer{ background-color: #814d3b;height: auto; }
 .ftContent{ display: flex;justify-content: space-between;padding: 2.5rem 0 2rem 0; }
 .ftLogo{ display: flex;flex-direction: column;width: 20%; }
-.copyRight{ color: #FFF;text-align: center;margin-top: 1rem; }
+.copyRight{ color: #FFF;text-align: center;margin-top: 1rem;text-decoration: none; }
 .business-info{ color: #FFF;width: 15%; }
 .business-info .storehrs{ margin-bottom: 1rem; }
 .business-info h4{ margin-bottom: 12px; }
