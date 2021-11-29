@@ -488,7 +488,7 @@ h2 { margin-bottom: 2rem; }
 }
 @media screen and (max-height: 1024px) and (max-width: 1366px){
     .banner, .gallery-banner{
-        height: 970px;
+        height: 850px;
         background-attachment: scroll;
         background-position: center;
     }
