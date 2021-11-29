@@ -492,8 +492,9 @@ h2 { margin-bottom: 2rem; }
     /* Header */
     .banner,
     .gallery-banner{
-        height: 780px;
-        background-attachment: inherit;
+        /* height: 780px; */
+        height: 650px;
+        background-attachment: scroll;
         background-position: center;
     }
     .bannerTxt{ width: 65%; }
