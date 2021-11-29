@@ -486,12 +486,18 @@ h2 { margin-bottom: 2rem; }
     /*** These are the styles for the Gallery page ***/
     .imgs { height: 170px; }
 }
+@media screen and (max-height: 1024px) and (max-width: 1366px){
+    .banner, .gallery-banner{
+        height: 970px;
+        background-attachment: scroll;
+        background-position: center;
+    }
+}
 @media only screen and (max-width: 1024px){
     /* Universal Styles */
     html { font-size: 16px; }
     /* Header */
-    .banner,
-    .gallery-banner{
+    .banner, .gallery-banner{
         /* height: 780px; */
         height: 650px;
         background-attachment: scroll;
