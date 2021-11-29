@@ -269,7 +269,7 @@ font-size: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 3rem 0;
+    padding: 3rem 0 8rem;
 }
 .list-container .list{
     width: 40%;
@@ -294,16 +294,16 @@ font-size: 5rem;
 .secTitle h2 { padding: 0 1rem;text-align: center; }
 .list-container .warning {
     position: absolute;
-    top: 85%;
-    right: 32.5%;
-    width: 35%;
+    bottom: 15px;
+    right: 25%;
+    width: 50%;
     text-align: center;
     color: #814d3b;
 }
 .warning p{ margin-bottom: 5px; }
 .warning p:last-child{ margin-bottom: 0; }
 /* ABOUT */
-#about { height: 85vh;display: flex;justify-content: space-between; }
+#about { height: 65vh;display: flex;justify-content: space-between; }
 #about .baniImg{ width: 45%; }
 #about .aboutTxt{ width: 48%; }
 #about .baniImg { padding: 2rem 0; }
@@ -319,7 +319,7 @@ font-size: 5rem;
 #about .aboutTxt p{ line-height: 1.5; }
 /* CONTACT */
 .form-error { color: firebrick;display: none; }
-#contact { background-color: #FEDFFC;color: #814d3b;padding: 2rem 0; }
+#contact { background-color: #E1C5AC;color: #814d3b;padding: 2rem 0; }
 #contact h2 { text-align: center;margin-bottom: 2rem; }
 #contact p { line-height: 1.5;margin:0 auto 2rem auto; }
 #formMap{ display: flex;justify-content: space-between;width: 100%; }
@@ -517,7 +517,7 @@ h2 { margin-bottom: 2rem; }
         left: 31.5%;
     }
     /* About */
-    #about{ height: 65vh; }
+    #about{ height: 50vh; }
     /* Cake & Fillings */
     .list-container .secTitle {
         width: 27%;
