@@ -52,7 +52,6 @@ header{
 #contact-page, #contact-header{ background-color: #814d3b; }
 .main-head{ display: flex;justify-content: space-between;align-items: center; }
 .logo{ width: 18%; }
-
 #mobile-nav{
     display: flex;
     justify-content: center;
@@ -140,6 +139,7 @@ header{
 .banner-btn:hover{ background-color: #814d3b;transition: background-color 0.2s ease-in; }
 .banner-btn:active{ transform: scale(0.95); }
 /* INTRODUCTION */
+#lessSugar{ height: 1000px; }
 #intro{ color: #814d3b;margin-top: 2.5rem;margin-bottom: 2.5rem; }
 .introSections-styles{
     height: 850px;
@@ -254,6 +254,7 @@ header{
 .list-container .secTitle{ color: #814d3b;width: 20%;height: 35%; }
 .secTitle h2{ padding: 0 1rem;text-align: center; }
 .list-container .warning{
+    width: 60%;
     position: absolute;
     bottom: 60px;
     left: 0;
@@ -262,7 +263,7 @@ header{
 .warning p{ margin-bottom: 5px; }
 .warning p:last-child{ margin-bottom: 0; }
 /* ABOUT */
-#about { height: 800px;display: flex;justify-content: space-between; }
+#about{ height: 800px;display: flex;justify-content: space-between; }
 #about .baniImg{ width: 45%; }
 #about .aboutTxt{ width: 48%; }
 #about .baniImg{ padding: 2rem 0; }
@@ -296,8 +297,7 @@ header{
 form{ display: flex;flex-direction: column;width: 100%; }
 form input{ height: 2.25rem;padding: 0 7px;margin-bottom: 1rem; }
 form textarea{ height: 10rem;padding: 10px 7px;margin-bottom: 1.75rem; }
-form input,
-form textarea{
+form input, form textarea{
     border: 2px solid #814d3b;
     background: transparent;
     color: #814d3b;
@@ -450,7 +450,6 @@ h2{ margin-bottom: 2rem; }
     html{ font-size: 16px; }
     /* Header */
     .banner, .gallery-banner{
-        /* height: 780px; */
         height: 650px;
         background-attachment: scroll;
         background-position: center;
