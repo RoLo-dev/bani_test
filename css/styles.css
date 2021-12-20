@@ -33,14 +33,12 @@ ul li{ list-style: none; }
 #special{ display: block;background-color: #814d3b; }
 .specialTxt{ color: #fff;padding: 2rem 0; }
 .specialTxt h2{ font-size:1.5rem;margin-bottom: 1.25rem; }
-.specialTxt .stepsTitle{ margin-bottom: 10px; }
-.specialTxt p{ line-height: 1.35; }
 .specialTxt ul{ margin-top: 10px; }
 .specialTxt ul li{
     margin-bottom: 5px;
     display: flex;
     justify-content: space-between;
-    width:28%;
+    width:35%;
 }
 .specialTxt ul li:last-child{ margin-bottom: 0; }
 
@@ -144,7 +142,6 @@ header{
 .banner-btn:hover{ background-color: #814d3b;transition: background-color 0.2s ease-in; }
 .banner-btn:active{ transform: scale(0.95); }
 /* INTRODUCTION */
-#lessSugar{ height: 1000px; }
 #intro{ color: #814d3b;margin-top: 2.5rem;margin-bottom: 2.5rem; }
 .introSections-styles{
     height: 850px;
