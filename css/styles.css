@@ -32,11 +32,16 @@ ul li{ list-style: none; }
 /* Holidays or Special events */
 #special{ display: block;background-color: #814d3b; }
 .specialTxt{ color: #fff;padding: 2rem 0; }
-.specialTxt h2{ margin-bottom: 1.25rem; }
+.specialTxt h2{ font-size:1.5rem;margin-bottom: 1.25rem; }
 .specialTxt .stepsTitle{ margin-bottom: 10px; }
 .specialTxt p{ line-height: 1.35; }
 .specialTxt ul{ margin-top: 10px; }
-.specialTxt ul li{ margin-bottom: 5px; }
+.specialTxt ul li{
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    width:28%;
+}
 .specialTxt ul li:last-child{ margin-bottom: 0; }
 
 /* HEADER */
@@ -663,4 +668,5 @@ h2{ margin-bottom: 2rem; }
     .logo{ width: 43%; }
     .ftContent .ftLogo{ width: 48%; }
     .file-upload{ padding-top: 2rem; }
+    .specialTxt ul li{ width: 60%; }
 }
