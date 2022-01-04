@@ -107,6 +107,9 @@ function openNavMenu(){
     openIcon.classList.toggle('animate');
     mobileNav.classList.toggle('show-nav');
 }
+document.getElementById('mobile-nav').addEventListener('click', function() {
+    mobileNav.classList.remove('show-nav')
+})
 
 // Footer
 let today = new Date();
