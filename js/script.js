@@ -109,6 +109,7 @@ function openNavMenu(){
 }
 document.getElementById('mobile-nav').addEventListener('click', function() {
     mobileNav.classList.remove('show-nav')
+    openIcon.classList.toggle('animate')
 })
 
 // Footer
