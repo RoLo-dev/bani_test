@@ -82,6 +82,10 @@
         const openNavBtn = document.getElementById('mobile-openBtn');
 
         openNavBtn.addEventListener('click', openNavMenu);
+        document.getElementById('mobile-nav').addEventListener('click', function() {
+            mobileNav.classList.remove('show-nav')
+            openIcon.classList.toggle('animate')
+        })
 
         function openNavMenu(){
             openIcon.classList.toggle('animate');
