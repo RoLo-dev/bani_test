@@ -269,7 +269,8 @@ header{
 #about .baniImg{ width: 45%; }
 #about .aboutTxt{ width: 48%; }
 #about .baniImg{ padding: 2rem 0; }
-#about .baniImg img{ object-position: top; }
+/* #about .baniImg img{ object-position: top; } */
+#about .baniImg img{ object-fit: contain; }
 #about .aboutTxt{
     color: #814d3b;
     display: flex;
