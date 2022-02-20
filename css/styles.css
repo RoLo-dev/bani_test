@@ -468,6 +468,7 @@ h2{ margin-bottom: 2rem; }
     .imgs{ height: 170px; }
 }
 @media screen and (max-height: 1024px) and (max-width: 1366px){
+    .banner{ height: 850px; }
     .gallery-banner{
         height: 850px;
         background-attachment: scroll;
@@ -691,6 +692,7 @@ h2{ margin-bottom: 2rem; }
 }
 @media only screen and (max-width: 580px){
     .logo{ width: 43%; }
+    .banner, .gallery-banner{ height: 450px; }
     .banner-img{ display: none; }
     .banner .bannerTxt,
     .bannerTxt .text-container{ width: 100%; }
