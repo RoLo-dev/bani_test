@@ -126,7 +126,11 @@ header{
 }
 .banner-img{
     width: 50%;
-    background: #ddd;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/mint_cake.jpg); */
+    background-image: url(../images/mint_cake.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .bannerTxt{
     color: #fff;
