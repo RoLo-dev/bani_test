@@ -405,10 +405,7 @@ footer{ background-color: #814d3b;height: auto; }
     background-position: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(../images/16.jpg);
 }
-.gallery-banner .bannerTxt{
-    color: #fff;
-    width: 60%;
-}
+.gallery-banner .bannerTxt{ color: #fff;width: 55%; }
 .gllryGrid{
     margin: 2rem auto;
     display: grid;
