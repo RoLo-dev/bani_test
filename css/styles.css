@@ -476,9 +476,9 @@ h2{ margin-bottom: 2rem; }
     }
  } */
 @media screen and (max-height: 1024px) and (max-width: 1368px){
-    .banner{ height: 900px; }
+    .banner{ height: 915px; }
     .gallery-banner{
-        height: 900px;
+        height: 915px;
         background-attachment: scroll;
         background-position: center;
     }
