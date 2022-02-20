@@ -132,11 +132,10 @@ header{
     background-size: cover;
     background-position: center;
 }
-.bannerTxt{
+.banner .bannerTxt{
     color: #fff;
     background: #814d3b;
     width: 50%;
-    /* padding-right: 1.5rem; */
     padding: 0 1.5rem 0 3.3rem;
     display: flex;
     justify-content: center;
@@ -405,6 +404,10 @@ footer{ background-color: #814d3b;height: auto; }
     background-attachment: fixed;
     background-position: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(../images/16.jpg);
+}
+.gallery-banner .bannerTxt{
+    color: #fff;
+    width: 60%;
 }
 .gllryGrid{
     margin: 2rem auto;
