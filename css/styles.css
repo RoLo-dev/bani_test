@@ -107,24 +107,44 @@ header{
 
 /* BANNER */
 .banner{
-    height: 100vh;
     width: 100%;
+    height: 800px;
+    background: #814d3b;
+    /* height: 100vh;
     display: flex;
     align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(../images/hero_img3.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(../images/hero_img3.jpeg); */
 }
-.bannerTxt{ color: #FFF;width: 55%; }
+/* .bannerTxt{ color: #FFF;width: 55%; } */
+.banner-container{
+    display: flex;
+    height: 100%;
+}
+.banner-img{
+    width: 50%;
+    background: #ddd;
+}
+.bannerTxt{
+    color: #fff;
+    background: #814d3b;
+    width: 50%;
+    /* padding-right: 1.5rem; */
+    padding: 0 1.5rem 0 3.3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .bannerTxt h1{
-    font-size: 5rem;
+    font-size: 3.85rem;
     line-height: 1;
     font-family: 'DM Serif Text', serif;
     margin-bottom: 7px;
 }
-.bannerTxt p{ font-size: 1.25rem; }
+.bannerTxt p{ font-size: 1.15rem; }
 .banner-btn{
     display: block;
     text-decoration: none;
@@ -133,13 +153,15 @@ header{
     font-weight: 700;
     font-size: 1.1rem;
     background-color: #F7ACB8;
+    border: 2px solid #F7ACB8;
     border-radius: 30px;
     margin-top: 1rem;
-    width: 25%;
+    /* width: 25%; */
+    width: 250px;
     padding: 13px 0;
-    transition: all 0.5s ease-in;
+    transition: all 0.3s ease-in;
 }
-.banner-btn:hover{ background-color: #814d3b;transition: background-color 0.2s ease-in; }
+.banner-btn:hover{ background-color: transparent; }
 .banner-btn:active{ transform: scale(0.95); }
 /* INTRODUCTION */
 #intro{ color: #814d3b;margin-top: 2.5rem;margin-bottom: 2.5rem; }
@@ -325,7 +347,7 @@ form textarea::placeholder{
 form button, form .submit-btn{
     background-color: #814d3b;
     outline: 0;
-    border: 0;
+    border: 2px solid #814d3b;
     color: #fff;
     font-size: 1.2rem;
     font-weight: 600;
@@ -337,11 +359,11 @@ form button, form .submit-btn{
 
     /* styling for the div button aka fake button */
     text-align: center;
-    padding: 1rem 0;
-    transition: all 0.9s;
+    padding: 0.9rem 0;
+    transition: all 0.3s;
 }
 form button:hover,
-form .submit-btn:hover{ color: #814d3b;background-color: #E1C5AC;transition: all 0.3s ease-in; }
+form .submit-btn:hover{ background: transparent;color: #814d3b; }
 form button:focus, form .submit-btn:focus{ border: 3px solid #fff; }
 /* Footer */
 footer{ background-color: #814d3b;height: auto; }
@@ -442,7 +464,7 @@ h2{ margin-bottom: 2rem; }
     .imgs{ height: 170px; }
 }
 @media screen and (max-height: 1024px) and (max-width: 1366px){
-    .banner, .gallery-banner{
+    .gallery-banner{
         height: 850px;
         background-attachment: scroll;
         background-position: center;
@@ -452,12 +474,13 @@ h2{ margin-bottom: 2rem; }
     /* Universal Styles */
     html{ font-size: 16px; }
     /* Header */
-    .banner, .gallery-banner{
+    .banner{ height: 650px; }
+    .gallery-banner{
         height: 650px;
         background-attachment: scroll;
         background-position: center;
     }
-    .bannerTxt{ width: 65%; }
+    .gallery-banner .bannerTxt{ width: 65%; }
     .nav ul li a{ margin-left: 0.15rem;padding: 2px 10px; }
     /* Introduction */
     #themeCakes{ height: 700px; }
@@ -664,6 +687,10 @@ h2{ margin-bottom: 2rem; }
 }
 @media only screen and (max-width: 580px){
     .logo{ width: 43%; }
+    .banner-img{ display: none; }
+    .banner .bannerTxt,
+    .bannerTxt .text-container{ width: 100%; }
+    .banner .bannerTxt{ padding: 0;width: 90%;margin: 0 auto; }
     .ftContent .ftLogo{ width: 48%; }
     .file-upload{ padding-top: 2rem; }
     .specialTxt ul li{ width: 60%; }
