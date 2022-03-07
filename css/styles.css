@@ -65,12 +65,13 @@ header{
     right: 0;
     width: 100%;
     height: 100vh;
-    transform: translate(100%,100%);
+    transform: translate(100%,0);
+    /* transform: translate(100%,100%); */
     background: #814d3b;
     z-index: 4;
-    transition: all 0.4s ease-out;
+    transition: all 0.3s ease-out;
 }
-#mobile-nav.show-nav{ opacity: 0.95;transform: translateY(0);transition: all 0.2s ease-in; }
+#mobile-nav.show-nav{ opacity: 0.98;transform: translateY(0); }
 #mobile-nav ul li{ margin-bottom: 1.25rem; }
 #mobile-nav ul li a{ color: #FFF;text-decoration: none;font-size: 2rem; }
 #mobile-nav ul li:last-child{ margin-bottom: 0; }
@@ -107,24 +108,47 @@ header{
 
 /* BANNER */
 .banner{
-    height: 100vh;
     width: 100%;
+    height: 800px;
+    background: #814d3b;
+    /* height: 100vh;
     display: flex;
     align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(../images/hero_img3.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(../images/hero_img3.jpeg); */
 }
-.bannerTxt{ color: #FFF;width: 55%; }
+/* .bannerTxt{ color: #FFF;width: 55%; } */
+.banner-container{
+    display: flex;
+    height: 100%;
+}
+.banner-img{
+    width: 50%;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/mint_cake.jpg); */
+    background-image: url(../images/mint_cake.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.banner .bannerTxt{
+    color: #fff;
+    background: #814d3b;
+    width: 50%;
+    padding: 0 1.5rem 0 3.3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .bannerTxt h1{
-    font-size: 5rem;
+    font-size: 3.85rem;
     line-height: 1;
     font-family: 'DM Serif Text', serif;
     margin-bottom: 7px;
 }
-.bannerTxt p{ font-size: 1.25rem; }
+.bannerTxt p{ font-size: 1.15rem; }
 .banner-btn{
     display: block;
     text-decoration: none;
@@ -133,13 +157,15 @@ header{
     font-weight: 700;
     font-size: 1.1rem;
     background-color: #F7ACB8;
+    border: 2px solid #F7ACB8;
     border-radius: 30px;
     margin-top: 1rem;
-    width: 25%;
+    /* width: 25%; */
+    width: 250px;
     padding: 13px 0;
-    transition: all 0.5s ease-in;
+    transition: all 0.3s ease-in;
 }
-.banner-btn:hover{ background-color: #814d3b;transition: background-color 0.2s ease-in; }
+.banner-btn:hover{ background-color: transparent; }
 .banner-btn:active{ transform: scale(0.95); }
 /* INTRODUCTION */
 #intro{ color: #814d3b;margin-top: 2.5rem;margin-bottom: 2.5rem; }
@@ -325,23 +351,23 @@ form textarea::placeholder{
 form button, form .submit-btn{
     background-color: #814d3b;
     outline: 0;
-    border: 0;
+    border: 2px solid #814d3b;
     color: #fff;
     font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 2px;
-    width: 68%;
+    width: 50%;
     border-radius: 30px;
     cursor: pointer;
     margin: 0 auto;
 
     /* styling for the div button aka fake button */
     text-align: center;
-    padding: 1rem 0;
-    transition: all 0.9s;
+    padding: 0.75rem 0;
+    transition: all 0.3s;
 }
 form button:hover,
-form .submit-btn:hover{ color: #814d3b;background-color: #E1C5AC;transition: all 0.3s ease-in; }
+form .submit-btn:hover{ background: transparent;color: #814d3b; }
 form button:focus, form .submit-btn:focus{ border: 3px solid #fff; }
 /* Footer */
 footer{ background-color: #814d3b;height: auto; }
@@ -380,6 +406,7 @@ footer{ background-color: #814d3b;height: auto; }
     background-position: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(../images/16.jpg);
 }
+.gallery-banner .bannerTxt{ color: #fff;width: 55%; }
 .gllryGrid{
     margin: 2rem auto;
     display: grid;
@@ -441,9 +468,18 @@ h2{ margin-bottom: 2rem; }
     /*** These are the styles for the Gallery page ***/
     .imgs{ height: 170px; }
 }
-@media screen and (max-height: 1024px) and (max-width: 1366px){
-    .banner, .gallery-banner{
-        height: 850px;
+/* @media screen and (max-height: 930px) and (max-width: 1380px) { 
+    .banner{ height: 900px; }
+    .gallery-banner{
+        height: 900px;
+        background-attachment: scroll;
+        background-position: center;
+    }
+ } */
+@media screen and (max-height: 1024px) and (max-width: 1368px){
+    .banner{ height: 915px; }
+    .gallery-banner{
+        height: 915px;
         background-attachment: scroll;
         background-position: center;
     }
@@ -452,12 +488,13 @@ h2{ margin-bottom: 2rem; }
     /* Universal Styles */
     html{ font-size: 16px; }
     /* Header */
-    .banner, .gallery-banner{
+    .banner{ height: 650px; }
+    .gallery-banner{
         height: 650px;
         background-attachment: scroll;
         background-position: center;
     }
-    .bannerTxt{ width: 65%; }
+    .gallery-banner .bannerTxt{ width: 65%; }
     .nav ul li a{ margin-left: 0.15rem;padding: 2px 10px; }
     /* Introduction */
     #themeCakes{ height: 700px; }
@@ -664,6 +701,11 @@ h2{ margin-bottom: 2rem; }
 }
 @media only screen and (max-width: 580px){
     .logo{ width: 43%; }
+    .banner, .gallery-banner{ height: 450px; }
+    .banner-img{ display: none; }
+    .banner .bannerTxt,
+    .bannerTxt .text-container{ width: 100%; }
+    .banner .bannerTxt{ padding: 0;width: 90%;margin: 0 auto; }
     .ftContent .ftLogo{ width: 48%; }
     .file-upload{ padding-top: 2rem; }
     .specialTxt ul li{ width: 60%; }
