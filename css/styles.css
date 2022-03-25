@@ -436,10 +436,11 @@ h2{ margin-bottom: 2rem; }
 
 /* These are the styles for the Terms and Condition page */
 .termsConditions-body{ background: #814d3b; }
-.termsConditions-container{ color: #fff;margin: 13rem auto 0;width: 70%; }
+.termsConditions-container{ color: #fff;margin: 13rem auto 5rem;width: 70%; }
 .termsConditions-container h1{ margin-bottom: 2.5rem; }
 .termsConditions-container h3{ margin-bottom: 5px; }
 .termsConditions-container p{ line-height:1.5;margin-bottom: 1rem; }
+.termsConditions-container p:last-child{ margin-bottom: 0; }
 
 
 /******* MEDIA QUERIES FOR ALL PAGES *******/
