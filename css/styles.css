@@ -10,13 +10,9 @@ html{
 }
 .wrapper{ width: 90%;margin: 0 auto;max-width: 1600px; }
 .smaller-wrapper{ width: 70%;margin: 0 auto; }
-.pics{
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+.pics{ display: block;width: 100%;height: 100%;object-fit: cover; }
 .introTitle{ font-size: 1.65rem;margin-bottom: 1rem; }
+.bodyBckgrd{ background: #814d3b; }
 .introTxtStyle{
     display: flex;
     flex-direction: column;
@@ -394,7 +390,7 @@ footer{ background-color: #814d3b;height: auto; }
 .ftLinks ul li a{ text-decoration: none;color: #FFF;transition: all 0.9s; }
 .ftLinks ul li a:hover{ color: #F7ACB8;transition: 0.3s ease-in; }
 
-/*** These are the styles for the Gallery page ***/
+/*** --- STYLING FOR Gallery page --- ***/
 .gallery-banner{
     height: 100vh;
     width: 100%;
@@ -426,7 +422,7 @@ footer{ background-color: #814d3b;height: auto; }
 #socialM .icons a{ text-decoration: none;color: #814d3b; }
 #socialM .icons{ display: flex;align-content: center; }
 
-/*** These are the styles for the Hiring page ***/
+/*** --- STYLING FOR Hiring page --- ***/
 #hiring-header{ background-color: #814d3b; }
 #hiring{ padding-top: 10rem;margin-bottom: 2rem; }
 h2{ margin-bottom: 2rem; }
@@ -434,18 +430,21 @@ h2{ margin-bottom: 2rem; }
 #hiring ul{ margin: 1rem 0; }
 #hiring form{ margin-top: 1rem;width: 40%; }
 
-/* These are the styles for the Terms and Condition page */
-.termsConditions-body{ background: #814d3b; }
+/*** --- STYLING FOR Terms and Condition page --- ++*/
 .termsConditions-container{ color: #fff;margin: 13rem auto 5rem;width: 70%; }
 .termsConditions-container h1{ margin-bottom: 2.5rem; }
 .termsConditions-container h3{ margin-bottom: 5px; }
 .termsConditions-container p{ line-height:1.5;margin-bottom: 1rem; }
 .termsConditions-container p:last-child{ margin-bottom: 0; }
 
+/*** --- STYLING FOR Reviews page --- ++*/
+
+
+
 
 /******* MEDIA QUERIES FOR ALL PAGES *******/
 @media only screen and (min-width: 2150px) {
-    /*** These are the styles for the Gallery page ***/
+    /*** --- STYLING FOR Gallery page --- ***/
     .gllryGrid{ grid-gap: 0.8rem; }
     .imgs{ height: 350px; }
 }
@@ -466,10 +465,10 @@ h2{ margin-bottom: 2rem; }
     .list-container .secTitle{ width: 30%;left: 35%; }
     /* Footer */
     .award{ width: 12%; }
-    /*** These are the styles for the Gallery page ***/
+    /*** --- STYLING FOR Gallery page --- ***/
     .imgs{ height: 170px; }
 }
-/* @media screen and (max-height: 930px) and (max-width: 1380px) { 
+/* @media screen and (max-height: 930px) and (max-width: 1380px) {
     .banner{ height: 900px; }
     .gallery-banner{
         height: 900px;
@@ -490,30 +489,16 @@ h2{ margin-bottom: 2rem; }
     html{ font-size: 16px; }
     /* Header */
     .banner{ height: 650px; }
-    .gallery-banner{
-        height: 650px;
-        background-attachment: scroll;
-        background-position: center;
-    }
+    .gallery-banner{ height: 650px;background-attachment: scroll;background-position: center; }
     .gallery-banner .bannerTxt{ width: 65%; }
     .nav ul li a{ margin-left: 0.15rem;padding: 2px 10px; }
     /* Introduction */
     #themeCakes{ height: 700px; }
     .secTwoTxt{ width: 85%;height: 45%; }
     .secOneTxt,
-    .secThreeTxt{
-        height: 42%;
-        top: 29%;
-        width: 37%;
-        left: 31.5%;
-    }
+    .secThreeTxt{ height: 42%;top: 29%;width: 37%;left: 31.5%; }
     /* Cake & Fillings */
-    .list-container .secTitle{
-        width: 27%;
-        height: 30%;
-        right: 34%;
-        top: 35%;
-    }
+    .list-container .secTitle{ width: 27%;height: 30%;right: 34%;top: 35%; }
     /* Footer */
     .ftLogo { width: 20%; }
     .award{ width: 15%; }
@@ -569,11 +554,7 @@ h2{ margin-bottom: 2rem; }
     /* About */
     #about{ height: 58vh; }
     /* Footer */
-    .ftContent{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-    }
+    .ftContent{ display: grid;grid-template-columns: 1fr 1fr;justify-items: center; }
     .ftContent .ftLogo{ width: 50%; }
     .ftContent .ftLinks{ width: 40%;margin-bottom: 1.5rem; }
     .ftContent .award{ width: 45%; }
@@ -659,22 +640,13 @@ h2{ margin-bottom: 2rem; }
     }
     .listTitle-btn:active{ transform: scale(0.95); }
     .list-container .list{ width: 100%;text-align: center; }
-    .list-container .list ul{
-        display: none;
-        width: 100%;
-        margin-bottom: 1rem;
-    }
+    .list-container .list ul{ display: none;width: 100%;margin-bottom: 1rem; }
     .list-container .list ul li{ margin-bottom: 10px;font-size: 1.1rem; }
     .list-container .list ul li:last-child{ margin-bottom: 0; }
     .list-container .warning{ position: static;width: 100%; }
     /* About */
     #about{ flex-direction: column;margin-bottom: 1.5rem;margin-top: 1.5rem; }
-    #about .baniImg {
-        height: 400px;
-        width: 100%;
-        margin-bottom: 1rem;
-        padding: 0;
-    }
+    #about .baniImg{ height: 400px;width: 100%;margin-bottom: 1rem;padding: 0; }
     #about .aboutTxt h2{ margin-bottom: 1rem; }
     #about .aboutTxt{ width: 100%;height: auto; }
     /* Contact */
@@ -695,7 +667,7 @@ h2{ margin-bottom: 2rem; }
     .ftLinks .socialList li{ font-size: 2rem;margin:0 1.5rem 0 0; }
     .ftContent .award{ display: none; }
 
-    /*** These are the styles for the Gallery page ***/
+    /*** --- STYLING FOR Gallery page --- ***/
     .gllryGrid{ grid-template-columns: repeat(2, 1fr); }
     .imgs{ height: 200px; }
     #socialM .icons li{ font-size: 2.5rem; }
