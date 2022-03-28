@@ -117,10 +117,7 @@ header{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(../images/hero_img3.jpeg); */
 }
 /* .bannerTxt{ color: #FFF;width: 55%; } */
-.banner-container{
-    display: flex;
-    height: 100%;
-}
+.banner-container{ display: flex;height: 100%; }
 .banner-img{
     width: 50%;
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/mint_cake.jpg); */
@@ -253,10 +250,7 @@ header{
 .steps p{ line-height: 1.35; }
 /* CAKE & FILLINGS */
 .listTitle-btn, #flavorFill-mobile{ display: none; }
-#flavorFill{
-    width: 100%;
-    height: auto;
-    background-color: #E1C5AC;
+#flavorFill{ width: 100%;height: auto;background-color: #E1C5AC;
     color: #fff;
 }
 .list-container{
