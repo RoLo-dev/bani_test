@@ -668,10 +668,11 @@ h2{ margin-bottom: 2rem; }
     .ftLinks .socialList li{ font-size: 2rem;margin:0 1.5rem 0 0; }
     .ftContent .award{ display: none; }
 
-    /*** --- STYLING FOR Gallery page --- ***/
     .gllryGrid, .reviewGrid-container{ grid-template-columns: repeat(2, 1fr); }
     .imgs{ height: 200px; }
     #socialM .icons li{ font-size: 2.5rem; }
+    .reviewGrid-container div{ height: 180px; }
+    .reviewGrid-container div a img{ object-position: top; }
 }
 @media only screen and (max-width: 580px){
     .logo{ width: 43%; }
