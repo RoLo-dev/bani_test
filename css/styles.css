@@ -432,10 +432,14 @@ h2{ margin-bottom: 2rem; }
 .termsConditions-container p:last-child{ margin-bottom: 0; }
 
 /*** --- STYLING FOR Reviews page --- ++*/
-.review-section{ margin: 12rem auto 2.5rem;color: #fff; }
-.review-section p{ margin: 1rem 0 }
+#reviews{ margin: 12rem auto 2.5rem;color: #fff; }
+#reviews p{ margin: 1rem 0 }
 .yelp-link a{ font-weight: 700;color: #fff; }
-
+.reviewGrid-container{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+}
 
 
 /******* MEDIA QUERIES FOR ALL PAGES *******/
