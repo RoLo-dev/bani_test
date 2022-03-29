@@ -669,7 +669,7 @@ h2{ margin-bottom: 2rem; }
     .ftContent .award{ display: none; }
 
     /*** --- STYLING FOR Gallery page --- ***/
-    .gllryGrid{ grid-template-columns: repeat(2, 1fr); }
+    .gllryGrid, .reviewGrid-container{ grid-template-columns: repeat(2, 1fr); }
     .imgs{ height: 200px; }
     #socialM .icons li{ font-size: 2.5rem; }
 }
