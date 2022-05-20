@@ -123,10 +123,10 @@ function updateYear() {
 }
 updateYear();
 
-AOS.init({
-    offset: 150,
-    duration: 650
-});
+// AOS.init({
+//     offset: 150,
+//     duration: 650
+// });
 
 // CURRENT HOURS
 var sunday = '9:00AM - 4:00PM';
