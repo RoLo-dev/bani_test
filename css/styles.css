@@ -42,7 +42,7 @@ ul li{ list-style: none; }
 .special-topRow p{margin-bottom: 10px;}
 .special-topRow p:last-of-type{margin-bottom: 0;}
 .special-topRow a{color: #814d3b;}
-.directions-link{display: block;margin-bottom: 8px;}
+.directions-link{display: block;margin-bottom: 10px;}
 .map-one{width: 45%;height: 500px;}
 .map-one iframe{height: 100%;width: 100%;}
 
