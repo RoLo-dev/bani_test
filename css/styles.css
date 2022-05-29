@@ -289,7 +289,7 @@ header{
 .warning p{ margin-bottom: 5px; }
 .warning p:last-child{ margin-bottom: 0; }
 /* ABOUT */
-#about{ height: 800px;display: flex;justify-content: space-between; }
+#about{ height: auto;display: flex;justify-content: space-between;padding: 2rem 0;}
 #about .baniImg{ width: 45%; }
 #about .aboutTxt{ width: 48%; }
 #about .baniImg{ padding: 2rem 0; }
