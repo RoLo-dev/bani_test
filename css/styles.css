@@ -31,7 +31,7 @@ ul li{ list-style: none; }
 .special-topRow{display: flex;justify-content: space-between;}
 .store-info{width: 45%;}
 .specialTxt h2{ font-size:1.5rem;margin-bottom: 1rem; }
-.specialTxt ul{ margin: 10px 0; }
+.specialTxt ul{ margin-bottom: 1rem;}
 .specialTxt ul li{
     margin-bottom: 5px;
     display: flex;
@@ -42,7 +42,7 @@ ul li{ list-style: none; }
 .special-topRow p{margin-bottom: 10px;}
 .special-topRow p:last-of-type{margin-bottom: 0;}
 .special-topRow a{color: #814d3b;}
-.directions-link{display: block;margin-bottom: 10px;}
+.directions-link{display: block;margin-bottom: 1rem;}
 .map-one{width: 45%;height: 500px;}
 .map-one iframe{height: 100%;width: 100%;}
 
