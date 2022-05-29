@@ -13,6 +13,7 @@ html{
 .pics{ display: block;width: 100%;height: 100%;object-fit: cover; }
 .introTitle{ font-size: 1.65rem;margin-bottom: 1rem; }
 .bodyBckgrd{ background: #814d3b; }
+.bold{font-weight: 800;}
 .introTxtStyle{
     display: flex;
     flex-direction: column;
@@ -26,17 +27,24 @@ h3,h4{ font-weight: 700; }
 ul li{ list-style: none; }
 .boldTxt{ font-weight: 700;letter-spacing: 0.5px; }
 /* Holidays or Special events */
-#special{ display: none;background-color: #814d3b; }
-.specialTxt{ color: #fff;padding: 2rem 0; }
-.specialTxt h2{ font-size:1.5rem;margin-bottom: 1.25rem; }
-.specialTxt ul{ margin-top: 10px; }
+#special{margin: 2rem 0;color: #814d3b; }
+.special-topRow{display: flex;justify-content: space-between;}
+.store-info{width: 45%;}
+.specialTxt h2{ font-size:1.5rem;margin-bottom: 1rem; }
+.specialTxt ul{ margin: 10px 0; }
 .specialTxt ul li{
     margin-bottom: 5px;
     display: flex;
     justify-content: space-between;
-    width:35%;
+    width:350px;
 }
 .specialTxt ul li:last-child{ margin-bottom: 0; }
+.special-topRow p{margin-bottom: 10px;}
+.special-topRow p:last-of-type{margin-bottom: 0;}
+.special-topRow a{color: #814d3b;}
+.directions-link{display: block;margin-bottom: 8px;}
+.map-one{width: 45%;height: 500px;}
+.map-one iframe{height: 100%;width: 100%;}
 
 /* HEADER */
 .nav, .text-content{ display: none; }
@@ -533,6 +541,11 @@ h2{ margin-bottom: 2rem; }
     /* Banner */
     .bannerTxt h1{ font-size: 3rem; }
     .banner-btn{ padding: 10px 0;width: 45%; }
+    /* Special txt or Store Info */
+    .special-topRow{flex-direction: column;}
+    .store-info{margin-bottom: 2rem;}
+    .map-one{height: 425px;}
+    .store-info, .map-one{width: 100%;}
     /* Introduction */
     .secOneTxt, .secThreeTxt, .three-images{ display: none; }
     .text-content{
@@ -675,6 +688,7 @@ h2{ margin-bottom: 2rem; }
     .reviewGrid-container div a img{ object-position: top; }
 }
 @media only screen and (max-width: 580px){
+    .specialTxt ul li{width: 100%;}
     .logo{ width: 43%; }
     .banner, .gallery-banner{ height: 450px; }
     .banner-img{ display: none; }
@@ -683,6 +697,5 @@ h2{ margin-bottom: 2rem; }
     .banner .bannerTxt{ padding: 0;width: 90%;margin: 0 auto; }
     .ftContent .ftLogo{ width: 48%; }
     .file-upload{ padding-top: 2rem; }
-    .specialTxt ul li{ width: 60%; }
     .termsConditions-container, #reviews{ margin-top: 7rem; }
 }

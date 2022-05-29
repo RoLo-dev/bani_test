@@ -144,6 +144,31 @@ var endMinutes;
 var date = new Date();
 var today = date.getDay();
 
+switch(today){
+    case 0:
+        document.querySelector('.sunday').classList.toggle('bold')
+        console.log(today)
+        break;
+    case 1:
+        document.querySelector('.monday').classList.toggle('bold')
+        break;
+    case 2:
+        document.querySelector('.tuesday').classList.toggle('bold')
+        break;
+    case 3:
+        document.querySelector('.wednesday').classList.toggle('bold')
+        break;
+    case 4:
+        document.querySelector('.thursday').classList.toggle('bold')
+        break;
+    case 5:
+        document.querySelector('.friday').classList.toggle('bold')
+        break;
+    case 6:
+        document.querySelector('.saturday').classList.toggle('bold')
+        break;
+}
+
 // setTimeout(function() {
 //     switch(today){
 //         case 0:
