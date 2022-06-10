@@ -119,7 +119,6 @@ let footerYear = document.getElementById('footer-year');
 
 function updateYear() {
     footerYear.innerText = year;
-    console.log(year);
 }
 updateYear();
 
@@ -130,12 +129,13 @@ updateYear();
 
 // CURRENT HOURS
 var sunday = '9:00AM - 4:00PM';
-var monday = '<TMPL_VAR ESCAPE=HTML NAME="m">';
-var tuesday = '<TMPL_VAR ESCAPE=HTML NAME="t">';
+var monday = 'CLOSED';
+var tuesday = '9:00AM - 4:00PM';
 var wednesday = '10:00AM - 6:00PM';
 var thursday = '10:00AM - 6:00PM';
 var friday = '10:00AM - 6:00PM';
 var saturday = '9:00AM - 4:00PM';
+var hoursPlaceholder = document.getElementById('current-storeHours');
 var timeString;
 var startHours;
 var endHours;
@@ -147,106 +147,87 @@ var today = date.getDay();
 switch(today){
     case 0:
         document.querySelector('.sunday').classList.toggle('bold')
-        console.log(today)
+        timeString = sunday.split('-');
         break;
     case 1:
         document.querySelector('.monday').classList.toggle('bold')
+        // timeString = monday.split('-');
+        timeString = 'Store Closed';
+        hoursPlaceholder = 'Store Closed';
         break;
     case 2:
         document.querySelector('.tuesday').classList.toggle('bold')
+        timeString = tuesday.split('-');
         break;
     case 3:
         document.querySelector('.wednesday').classList.toggle('bold')
+        timeString = wednesday.split('-');
         break;
     case 4:
         document.querySelector('.thursday').classList.toggle('bold')
+        timeString = thursday.split('-');
         break;
     case 5:
         document.querySelector('.friday').classList.toggle('bold')
+        timeString = friday.split('-');
         break;
     case 6:
         document.querySelector('.saturday').classList.toggle('bold')
+        timeString = saturday.split('-');
         break;
 }
+if (timeString[0].search('AM') > -1 || timeString[0].search('am') > -1){
+    startHours = parseInt(timeString[0].substr(0,2), 10);
+    if (startHours == '12') {
+        startHours = 0;
+    }
+    startMinutes = parseInt(timeString[0].substr(3,2), 10)
+} else {
+    startHours = parseInt(timeString[0].substr(0,2), 10) + 12;
+    if (startHours == '24') {
+        startHours = 12;
+    }
+    startMinutes = parseInt(timeString[0].substr(3,2), 10)
+}
 
-// setTimeout(function() {
-//     switch(today){
-//         case 0:
-//             timeString = sunday.split('-');
-//             break;
-//         case 1:
-//             timeString = monday.split('-');
-//             break;
-//         case 2:
-//             timeString = tuesday.split('-');
-//             break;
-//         case 3:
-//             timeString = wednesday.split('-');
-//             break;
-//         case 4:
-//             timeString = thursday.split('-');
-//             break;
-//         case 5:
-//             timeString = friday.split('-');
-//             break;
-//         case 6:
-//             timeString = saturday.split('-');
-//             break;
-//     }
-//     if (timeString[0].search('AM') > -1 || timeString[0].search('am') > -1){
-//         startHours = parseInt(timeString[0].substr(0,2), 10);
-//         if (startHours == '12') {
-//             startHours = 0;
-//         }
-//         startMinutes = parseInt(timeString[0].substr(3,2), 10)
-//     } else {
-//         startHours = parseInt(timeString[0].substr(0,2), 10) + 12;
-//         if (startHours == '24') {
-//             startHours = 12;
-//         }
-//         startMinutes = parseInt(timeString[0].substr(3,2), 10)
-//     }
+if (timeString[1].search('AM') > -1 || timeString[1].search('am') > -1) {
+    endHours = parseInt(timeString[1].substr(0,2), 10);
+    if (endHours == '12') {
+        endHours = 0;
+    }
+    endMinutes = parseInt(timeString[1].substr(3,2), 10)
+}
+else {
+    endHours = parseInt(timeString[1].substr(0,2), 10) + 12;
+    if (endHours == '24') {
+        endHours = 12;
+    }
+    endMinutes = parseInt(timeString[1].substr(3,2), 10)
+}
 
-//     if (timeString[1].search('AM') > -1 || timeString[1].search('am') > -1) {
-//         endHours = parseInt(timeString[1].substr(0,2), 10);
-//         if (endHours == '12') {
-//             endHours = 0;
-//         }
-//         endMinutes = parseInt(timeString[1].substr(3,2), 10)
-//     }
-//     else {
-//         endHours = parseInt(timeString[1].substr(0,2), 10) + 12;
-//         if (endHours == '24') {
-//             endHours = 12;
-//         }
-//         endMinutes = parseInt(timeString[1].substr(3,2), 10)
-//     }
+var startDate = new Date(date.getFullYear(), date.getMonth(), date.getDate(),startHours, startMinutes);
+var endDate = new Date(date.getFullYear(), date.getMonth(), date.getDate(),endHours, endMinutes);
 
-//     var startDate = new Date(date.getFullYear(), date.getMonth(), date.getDate(),startHours, startMinutes);
-//     var endDate = new Date(date.getFullYear(), date.getMonth(), date.getDate(),endHours, endMinutes);
+function formatAMPM(date) {
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var ampm = hours >= 12 ? 'PM' : 'AM';
+    hours = hours % 12;
+    hours = hours ? hours : 12;
+    minutes = minutes < 10 ? '0'+minutes : minutes;
+    var strTime = hours + ':' + minutes + ' ' + ampm;
+    return strTime;
+}
 
-//     function formatAMPM(date) {
-//         var hours = date.getHours();
-//         var minutes = date.getMinutes();
-//         var ampm = hours >= 12 ? 'PM' : 'AM';
-//         hours = hours % 12;
-//         hours = hours ? hours : 12;
-//         minutes = minutes < 10 ? '0'+minutes : minutes;
-//         var strTime = hours + ':' + minutes + ' ' + ampm;
-//         return strTime;
-//     }
-
-//     var hoursPlaceholder = document.getElementById('current-storeHours');
-//     if (date < startDate) {
-//         hoursPlaceholder.innerHTML = "closed, open at " + formatAMPM(startDate);
-//     }
-//     else if (date > startDate && date < endDate) {
-//         hoursPlaceholder.innerHTML = "Open until " + formatAMPM(endDate);
-//     }
-//     else if (date > startDate && date > endDate && startDate > endDate) {
-//         hoursPlaceholder.innerHTML = "Open until " + formatAMPM(endDate);
-//     }
-//     else if (date > endDate) {
-//         hoursPlaceholder.innerHTML = "Closed now";
-//     }
-// }, 1000)
+if (date < startDate) {
+    hoursPlaceholder.innerHTML = "closed, open at " + formatAMPM(startDate);
+}
+else if (date > startDate && date < endDate) {
+    hoursPlaceholder.innerHTML = "Open until " + formatAMPM(endDate);
+}
+else if (date > startDate && date > endDate && startDate > endDate) {
+    hoursPlaceholder.innerHTML = "Open until " + formatAMPM(endDate);
+}
+else if (date > endDate) {
+    hoursPlaceholder.innerHTML = "Closed now";
+}
