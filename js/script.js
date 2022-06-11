@@ -221,13 +221,17 @@ function formatAMPM(date) {
 
 if (date < startDate) {
     hoursPlaceholder.innerHTML = "closed, open at " + formatAMPM(startDate);
+    hoursPlaceholder.style.color = 'red';
 }
 else if (date > startDate && date < endDate) {
     hoursPlaceholder.innerHTML = "Open until " + formatAMPM(endDate);
+    hoursPlaceholder.style.color = 'rgb(48, 160, 48)';
 }
 else if (date > startDate && date > endDate && startDate > endDate) {
     hoursPlaceholder.innerHTML = "Open until " + formatAMPM(endDate);
+    hoursPlaceholder.style.color = 'rgb(48, 160, 48)';
 }
 else if (date > endDate) {
     hoursPlaceholder.innerHTML = "Closed now";
+    hoursPlaceholder.style.color = 'red';
 }
