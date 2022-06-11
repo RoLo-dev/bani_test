@@ -220,7 +220,7 @@ function formatAMPM(date) {
 }
 
 if (date < startDate) {
-    hoursPlaceholder.innerHTML = "closed, open at " + formatAMPM(startDate);
+    hoursPlaceholder.innerHTML = "Closed, open at " + formatAMPM(startDate);
     hoursPlaceholder.style.color = 'red';
 }
 else if (date > startDate && date < endDate) {
