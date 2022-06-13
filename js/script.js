@@ -153,7 +153,8 @@ switch(today){
         document.querySelector('.monday').classList.toggle('bold')
         // timeString = monday.split('-');
         timeString = 'Store Closed';
-        hoursPlaceholder = 'Store Closed';
+        hoursPlaceholder.innerHTML = 'Currently Closed';
+        hoursPlaceholder.style.color = 'red';
         break;
     case 2:
         document.querySelector('.tuesday').classList.toggle('bold')
