@@ -79,6 +79,12 @@ header{
 #mobile-nav ul li{ margin-bottom: 1.25rem; }
 #mobile-nav ul li a{ color: #FFF;text-decoration: none;font-size: 2rem; }
 #mobile-nav ul li:last-child{ margin-bottom: 0; }
+#mobile-nav ul li:last-child a{
+    display: inline-block;
+    margin-right: 2rem;
+    font-size: 2rem;
+}
+#mobile-nav ul li:last-child a:last-of-type{margin-right: 0;}
 #mobile-openBtn{
     position: fixed;
     display: block;
