@@ -694,6 +694,7 @@ h2{ margin-bottom: 2rem; }
     .reviewGrid-container div a img{ object-position: top; }
 }
 @media only screen and (max-width: 580px){
+    #mobile-nav ul{margin-bottom: 2rem;}
     .specialTxt ul li{width: 100%;}
     .logo{ width: 43%; }
     .banner, .gallery-banner{ height: 450px; }
