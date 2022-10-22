@@ -49,32 +49,12 @@ const timeErrorMsg = document.getElementById('time-errorMsg')
 const servingsErrorMsg = document.getElementById('servings-errorMsg')
 
 function validateForm() {
-    // if (nameInput.value == '') {
-    //     nameErrorMsg.style.display = "block";
-    //     console.log("*** Error message: Name field empty ***");
-    // }
-    // if (phoneInput.value == '') {
-    //     phoneErrorMsg.style.display = "block";
-    //     console.log("*** Error message: Phone field empty ***");
-    // }
     if (emailInput.value == '') {
         emailErrorMsg.style.display = 'block';
     }
     if (emailConfirm.value != emailInput.value) {
         emailConfirmErrorMsg.style.display = 'block';
     }
-    // if (dateInput.value == '') {
-    //     dateErrorMsg.style.display = "block";
-    //     console.log("*** Error message: Date field empty ***");
-    // }
-    // if (timeInput.value == '') {
-    //     timeErrorMsg.style.display = "block";
-    //     console.log("*** Error message: Time field empty ***");
-    // }
-    // if (servingsInput.value == '') {
-    //     servingsErrorMsg.style.display = "block";
-    //     console.log("*** Error message: Servings field empty ***");
-    // }
     else {
         subject.setAttribute('value', 'New email from ' + nameValue.value)
         document.getElementById('validation-complete').click()
@@ -151,7 +131,6 @@ switch(today){
         break;
     case 1:
         document.querySelector('.monday').classList.toggle('bold')
-        // timeString = monday.split('-');
         timeString = 'Store Closed';
         hoursPlaceholder.innerHTML = 'Currently Closed';
         hoursPlaceholder.style.color = 'red';
