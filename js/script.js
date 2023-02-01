@@ -110,7 +110,8 @@ updateYear();
 // CURRENT HOURS
 var sunday = '9:00AM - 4:00PM';
 var monday = 'CLOSED';
-var tuesday = '9:00AM - 4:00PM';
+// var tuesday = '9:00AM - 4:00PM';
+var tuesday = 'CLOSED';
 var wednesday = '10:00AM - 6:00PM';
 var thursday = '10:00AM - 6:00PM';
 var friday = '10:00AM - 6:00PM';
@@ -137,7 +138,10 @@ switch(today){
         break;
     case 2:
         document.querySelector('.tuesday').classList.toggle('bold')
-        timeString = tuesday.split('-');
+        // timeString = tuesday.split('-');
+        timeString = 'Store Closed';
+        hoursPlaceholder.innerHTML = 'Currently Closed';
+        hoursPlaceholder.style.color = 'red';
         break;
     case 3:
         document.querySelector('.wednesday').classList.toggle('bold')
