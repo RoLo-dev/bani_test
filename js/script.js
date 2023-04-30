@@ -125,6 +125,7 @@ var endMinutes;
 var date = new Date();
 var today = date.getDay();
 
+/*
 switch(today){
     case 0:
         document.querySelector('.sunday').classList.toggle('bold')
@@ -219,3 +220,4 @@ else if (date > endDate) {
     hoursPlaceholder.innerHTML = "Closed now";
     hoursPlaceholder.style.color = 'red';
 }
+*/
