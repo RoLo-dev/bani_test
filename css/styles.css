@@ -30,6 +30,7 @@ ul li{ list-style: none; }
 #special{margin: 2rem 0;color: #814d3b; }
 .special-topRow{display: flex;justify-content: space-between;}
 .store-info{width: 45%;}
+.store-info h3{margin-bottom: 5px;font-size: 1.25rem;font-weight: 800;}
 .specialTxt h2{ font-size:1.5rem;margin-bottom: 1rem; }
 .specialTxt ul{ margin-bottom: 1rem;}
 .specialTxt ul li{
