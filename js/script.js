@@ -125,7 +125,7 @@ var endMinutes;
 var date = new Date();
 var today = date.getDay();
 
-/*
+
 switch(today){
     case 0:
         document.querySelector('.sunday').classList.toggle('bold')
@@ -141,7 +141,8 @@ switch(today){
         document.querySelector('.tuesday').classList.toggle('bold')
         // timeString = tuesday.split('-');
         timeString = 'Store Closed';
-        hoursPlaceholder.innerHTML = 'Appointment Only';
+        // hoursPlaceholder.innerHTML = 'Appointment Only';
+        hoursPlaceholder.innerHTML = 'Currently Closed';
         hoursPlaceholder.style.color = 'red';
         break;
     case 3:
@@ -220,4 +221,3 @@ else if (date > endDate) {
     hoursPlaceholder.innerHTML = "Closed now";
     hoursPlaceholder.style.color = 'red';
 }
-*/

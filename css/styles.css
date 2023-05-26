@@ -43,7 +43,7 @@ ul li{ list-style: none; }
 .special-topRow p:last-of-type{margin-bottom: 0;}
 .special-topRow a{color: #814d3b;}
 .directions-link{display: block;margin-bottom: 1rem;}
-.map-one{width: 45%;height: 500px;}
+.map-one{width: 50%;height: 500px;}
 .map-one iframe{height: 100%;width: 100%;}
 
 /* HEADER */
