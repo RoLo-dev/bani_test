@@ -151,10 +151,10 @@ header{
     flex-direction: column;
 }
 .bannerTxt h1{
-    font-size: 3.85rem;
+    font-size: 3.75rem;
     line-height: 1;
     font-family: 'DM Serif Text', serif;
-    margin-bottom: 7px;
+    margin-bottom: 1rem;
 }
 .bannerTxt p{ font-size: 1.15rem; }
 .banner-btn{
