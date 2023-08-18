@@ -30,7 +30,7 @@ ul li{ list-style: none; }
 #special{margin: 2rem 0;color: #814d3b; }
 .special-topRow{display: flex;justify-content: space-between;}
 .store-info{width: 45%;}
-.store-info h3{margin-bottom: 5px;font-size: 1.25rem;font-weight: 800;}
+.store-info h3{margin-bottom: 1.15rem;font-size: 1.25rem;font-weight: 800;}
 .specialTxt h2{ font-size:1.5rem;margin-bottom: 1rem; }
 .specialTxt ul{ margin-bottom: 1rem;}
 .specialTxt ul li{
@@ -95,7 +95,7 @@ header{
     z-index: 15;
     border-radius: 35px;
     padding: 1.75rem 0.95rem;
-    box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 3px 8px 2px rgba(0, 0, 0, 0.2);
 }
 #mobile-openBtn:hover{ cursor: pointer; }
 #mobile-openBtn:active{ transform: scale(0.95); }
@@ -194,8 +194,9 @@ header{
     width: 25%;
     height: 35%;
     position: absolute;
+    box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.2);
 }
-.secOneTxt{ background-color: #E1C5AC;color: #814d3b; }
+.secOneTxt{ background-color: #f7f0eb;color: #814d3b; }
 .theme-rightCol{
     display: flex;
     flex-direction: column;
@@ -265,12 +266,17 @@ header{
 .steps p{ line-height: 1.35; }
 /* CAKE & FILLINGS */
 .listTitle-btn, #flavorFill-mobile{ display: none; }
-#flavorFill{ width: 100%;height: auto;background-color: #E1C5AC;
+#flavorFill{
+    width: 100%;
+    height: auto;
     color: #fff;
+    background-color: #f7f0eb;
+    /* background-color: #E1C5AC; */
 }
 .list-container{
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
     padding: 3rem 0;
@@ -283,20 +289,26 @@ header{
     align-items: center;
 }
 .list .listTitle{ margin-bottom: 1rem;text-transform: uppercase; }
-.list ul li{ margin-bottom: 5px;color: #814d3b; }
-.list-container .secTitle{ color: #814d3b;width: 20%;height: 35%; }
-.secTitle h2{ padding: 0 1rem;text-align: center; }
+.list ul li{ margin-bottom: 7px;color: #814d3b; }
+.list-container .secTitle{ color: #814d3b;width: 100%;margin-bottom: 1rem; }
+.secTitle h2{text-align: center;}
 .list-container .warning{
-    width: 60%;
-    position: absolute;
-    bottom: 60px;
-    left: 0;
+    width: 100%;
     color: #814d3b;
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 1.15rem;
+    font-weight: 500;
 }
 .warning p{ margin-bottom: 5px; }
 .warning p:last-child{ margin-bottom: 0; }
 /* ABOUT */
-#about{ height: auto;display: flex;justify-content: space-between;padding: 2rem 0;}
+#about{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
 #about .baniImg{ width: 45%; }
 #about .aboutTxt{ width: 48%; }
 #about .baniImg{ padding: 2rem 0; }
@@ -313,7 +325,12 @@ header{
 #about .aboutTxt p{ line-height: 1.5; }
 /* CONTACT */
 .form-error{ color: firebrick;display: none; }
-#contact{ background-color: #E1C5AC;color: #814d3b;padding: 2rem 0; }
+#contact{
+    /* background-color: #E1C5AC; */
+    background-color: #f7f0eb;
+    color: #814d3b;
+    padding: 2rem 0;
+}
 #contact h2{ text-align: center;margin-bottom: 2rem; }
 #contact p{ line-height: 1.5;margin:0 auto 2rem auto; }
 #formMap{ display: flex;justify-content: space-between;width: 100%; }
@@ -343,7 +360,7 @@ form input, form textarea{
     transition: all 0.9s;
 }
 form input:focus, form textarea:focus{ background-color: transparent; }
-form input:hover, form textarea:hover{ border-color: #fff;transition: all 0.3s ease-in; }
+form input:hover, form textarea:hover{ border-color: #9e9e9e;transition: all 0.3s ease-in; }
 form input::placeholder,
 form textarea::placeholder{
     color: #814d3b;
@@ -477,7 +494,7 @@ h2{ margin-bottom: 2rem; }
     }
     .secTwoTxt{ height: 30%; }
     /* Cake & Fillings */
-    .list-container .secTitle{ width: 30%;left: 35%; }
+    /* .list-container .secTitle{ width: 30%;left: 35%; } */
     /* Footer */
     .award{ width: 12%; }
     /*** --- STYLING FOR Gallery page --- ***/
@@ -514,7 +531,7 @@ h2{ margin-bottom: 2rem; }
     .secOneTxt,
     .secThreeTxt{ height: 42%;top: 29%;width: 37%;left: 31.5%; }
     /* Cake & Fillings */
-    .list-container .secTitle{ width: 27%;height: 30%;right: 34%;top: 35%; }
+    /* .list-container .secTitle{ width: 27%;height: 30%;right: 34%;top: 35%; } */
     /* Footer */
     .ftLogo { width: 20%; }
     .award{ width: 15%; }
@@ -607,10 +624,11 @@ h2{ margin-bottom: 2rem; }
     p{ line-height: 1.3 }
     h3{ font-size: 1.35rem; }
     /* Header */
-    .main-head .logo{ width: 45%; }
+    .main-head .logo{ width: 185px; }
     /* Banner */
     .banner, .gallery-banner{ height: 555px; }
     .bannerTxt{ padding-top: 2.5rem;width: 70%; }
+    .bannerTxt .text-container{margin-top: 3rem;}
     .banner-btn{ width: 65%;padding: 9px; }
     /* Introduction */
     .introSections-styles{ height: auto; }
@@ -642,7 +660,13 @@ h2{ margin-bottom: 2rem; }
     .listTitle-btn, #flavorFill-mobile{ display: block; }
     #flavorFill-desktop, .listTitle{ display: none; }
     .list-container{ padding: 2rem 0;flex-direction: column; }
-    .list-container #flavorFill-mobile{ margin-bottom: 2rem;color: #814d3b; }
+    .list-container #flavorFill-mobile{
+        margin-bottom: 2rem;
+        color: #814d3b;
+        width: 100%;
+        text-align: center;
+    }
+    .list-container .warning{margin-top: 3rem;font-size: 1.25rem;}
     #listBox2{ align-items: flex-start; }
     .listTitle-btn{
         background-color: #814d3b;
@@ -650,10 +674,10 @@ h2{ margin-bottom: 2rem; }
         padding: 0.75rem 0;
         border-radius: 30px;
         margin-bottom: 1rem;
-        transition: all 0.5s ease-out;
+        transition: all 0.3s ease-out;
     }
     .active{ background-color: #F7ACBB;color: #FFF; }
-    .listTitle-btn:hover{
+    .listTitle-btn:active{
         cursor: pointer;
         background-color: #F7ACBB;
         color: #FFF;
@@ -695,6 +719,8 @@ h2{ margin-bottom: 2rem; }
     .reviewGrid-container div a img{ object-position: top; }
 }
 @media only screen and (max-width: 580px){
+    .main-head{justify-content: center;}
+
     #mobile-nav ul{margin-bottom: 2rem;}
     .specialTxt ul li{width: 100%;}
     .logo{ width: 43%; }
@@ -706,4 +732,7 @@ h2{ margin-bottom: 2rem; }
     .ftContent .ftLogo{ width: 48%; }
     .file-upload{ padding-top: 2rem; }
     .termsConditions-container, #reviews{ margin-top: 7rem; }
+
+    .formSimplify{flex-direction: column;}
+    .formSimplify div{width: 100%;}
 }
