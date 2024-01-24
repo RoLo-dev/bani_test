@@ -108,7 +108,7 @@ updateYear();
 // });
 
 // CURRENT HOURS
-/*
+
 var sunday = '9:00AM - 4:00PM';
 var monday = 'CLOSED';
 // var tuesday = '9:00AM - 4:00PM';
@@ -222,4 +222,3 @@ else if (date > endDate) {
     hoursPlaceholder.innerHTML = "Closed now";
     hoursPlaceholder.style.color = 'red';
 }
-*/
