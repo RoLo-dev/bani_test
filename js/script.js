@@ -56,7 +56,7 @@ function validateForm() {
         emailConfirmErrorMsg.style.display = 'block';
     }
     else {
-        subject.setAttribute('value', 'New email from ' + nameValue.value)
+        // subject.setAttribute('value', 'New email from ' + nameValue.value)
         document.getElementById('validation-complete').click()
     }
 }

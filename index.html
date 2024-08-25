@@ -359,10 +359,17 @@
 
             <div id="formMap">
                 <div class="col contactForm">
-                    <form action="https://formsubmit.co/banibakery@gmail.com" enctype="multipart/form-data" method="POST" id="contact-form">
-                        <input type="hidden" name="_template" value="table">
-                        <input type="hidden" id="subject" name="_subject" value="Contact form submission!">
+                    <!-- <form action="https://formsubmit.co/banibakery@gmail.com" enctype="multipart/form-data" method="POST" id="contact-form"> -->
+                    <form name="contact"
+                        enctype="multipart/form-data"
+                        data-netlify="true" 
+                        method="POST" 
+                        data-netlify-recaptcha="true" id="contact-form">
+                        <!-- <input type="hidden" name="_template" value="table">
                         <input type="text" name="_honey" style="display:none">
+                        <input type="hidden" id="subject" name="_subject" value="Contact form submission!"> -->
+                        <input type="hidden" name="subject" value="New subject from %{formName} (%{submissionId})" />
+                        <input type="hidden" name="form-name" value="contact">
 
                         <div class="formSimplify">
                             <div>
@@ -416,6 +423,8 @@
 
                         <label for="message">Message:</label>
                         <textarea name="message"></textarea>
+
+                        <div data-netlify-recaptcha="true"></div>
 
                         <div class="submit-btn" onclick="validateForm()">SUBMIT</div>
                         <input id="validation-complete" type="submit" value="submit" style="display: none;">
