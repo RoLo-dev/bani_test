@@ -102,10 +102,10 @@ function updateYear() {
 }
 updateYear();
 
-// AOS.init({
-//     offset: 150,
-//     duration: 650
-// });
+AOS.init({
+    offset: 150,
+    duration: 650
+});
 
 // CURRENT HOURS
 
