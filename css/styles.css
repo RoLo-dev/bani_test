@@ -90,6 +90,8 @@ header{
     position: fixed;
     display: block;
     background: #fff;
+    border: 0;
+    /* outline: 0; */
     top: 20px;
     right: 20px;
     z-index: 15;

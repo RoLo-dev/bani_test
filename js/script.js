@@ -81,16 +81,26 @@ const listTitle = document.querySelectorAll('.listTitle-btn');
 
 // mobileOnly.addListener(screenSize);
 swtBtnMobile.addEventListener('click', openModal);
+swtBtnMobile.addEventListener('keydown', () =>{
+    if(e.keyCode == 13){
+        openModal();
+    }
+});
 openNavBtn.addEventListener('click', openNavMenu);
+openNavBtn.addEventListener('keydown', () =>{
+    if(e.keyCode == 13){
+        openNavMenu();
+    }
+});
 
 function openNavMenu(){
     openIcon.classList.toggle('animate');
     mobileNav.classList.toggle('show-nav');
 }
-document.getElementById('mobile-nav').addEventListener('click', function() {
-    mobileNav.classList.remove('show-nav')
-    openIcon.classList.toggle('animate')
-})
+// mobileNav.addEventListener('click', function() {
+//     mobileNav.classList.remove('show-nav')
+//     openIcon.classList.toggle('animate')
+// })
 
 // Footer
 let currentDay = new Date();
