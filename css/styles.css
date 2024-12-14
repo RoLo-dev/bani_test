@@ -32,7 +32,7 @@ ul li{ list-style: none; }
 .store-info{width: 45%;}
 .store-info h3{margin-bottom: 1.15rem;font-size: 1.25rem;font-weight: 800;}
 .specialTxt h2{ font-size:1.5rem;margin-bottom: 1rem; }
-.specialTxt ul{ margin-bottom: 1rem;}
+.specialTxt ul{ margin: 1rem 0;}
 .specialTxt ul li{
     margin-bottom: 5px;
     display: flex;
