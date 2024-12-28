@@ -76,20 +76,29 @@ const mobileOnly = window.matchMedia('(max-width: 900px)');
 const swtBtnMobile = document.getElementById('swtBtn-mobile');
 const openNavBtn = document.getElementById('mobile-openBtn');
 const mobileNav = document.getElementById('mobile-nav');
+const yelpLink = document.getElementById('nav-yelp-link');
 const openIcon = document.querySelector('.openIcon');
 const listTitle = document.querySelectorAll('.listTitle-btn');
 
 // mobileOnly.addListener(screenSize);
 swtBtnMobile.addEventListener('click', openModal);
-swtBtnMobile.addEventListener('keydown', () =>{
-    if(e.keyCode == 13){
+swtBtnMobile.addEventListener('keydown', (event) =>{
+    if(event.key == 13){
         openModal();
     }
 });
 openNavBtn.addEventListener('click', openNavMenu);
-openNavBtn.addEventListener('keydown', () =>{
-    if(e.keyCode == 13){
+openNavBtn.addEventListener('keydown', (event) =>{
+    if(event.key == 13){
         openNavMenu();
+    }
+});
+yelpLink.addEventListener('keydown', (event) => {
+    if (event.key == 'Tab') {
+        event.preventDefault();
+        if (openNavBtn) {
+            openNavBtn.focus();
+        }
     }
 });
 
