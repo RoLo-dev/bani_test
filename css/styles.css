@@ -162,6 +162,7 @@ header{
     margin-bottom: 2.75rem;
     color: #814d3b;
 }
+.bannerTxt .gallery-h1{color: #fff;}
 .bannerTxt p{ font-size: 1.15rem;line-height: 1.6; }
 .banner-btn{
     display: block;
