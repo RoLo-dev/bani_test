@@ -50,7 +50,7 @@
             </div>
         </div>
     </header>
-    <div id="mobile-nav">
+    <!-- <div id="mobile-nav">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="gallery.html">Gallery</a></li>
@@ -60,6 +60,26 @@
             <li><a href="index.html#contact">Contact</a></li>
             <li><a href="reviews.html">Reviews</a></li>
             <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+        </ul>
+    </div> -->
+
+    <div id="mobile-nav">
+        <ul>
+            <li><a href="index.html" title="Homepage link" aria-label="Link to homepage">Home</a></li>
+            <li><a href="gallery.html" title="Gallery link" aria-label="Link to gallery page">Gallery</a></li>
+            <li><a href="index.html#sweetTable" class="navLink" title="Sweet Table link" aria-label="Link to sweet table">Sweet Table</a></li>
+            <li><a href="index.html#flavorFill" class="navLink" title="Flavors & Fillings" aria-label="Link to flavors and fillings section">Flavors & Fillings</a></li>
+            <li><a href="index.html#about" title="About link" class="navLink" aria-label="Link to about section">About</a></li>
+            <li><a href="index.html#contact" title="Contact" aria-label="Link to contact section">Contact</a></li>
+            <li><a href="reviews.html" title="Reviews link" aria-label="Link to reviews page">Reviews</a></li>
+            <li><a href="terms-conditions.html" title="Terms & Conditions link" aria-label="Link to terms and conditions pages">Terms & Conditions</a></li>
+            <li>
+                <a href="https://www.facebook.com/banibakery/" aria-label="Link to facebook page" target="_blank"><i class="fab fa-facebook-square"></i></a>
+
+                <a href="https://www.instagram.com/banihouseofcakes/" aria-label="Link to instagram page" target="_blank"><i class="fab fa-instagram"></i></a>
+
+                <a id="nav-yelp-link" href="https://www.yelp.com/biz/bani-bakery-santa-ana" aria-label="Link to yelp page" target="_blank"><i class="fab fa-yelp"></i></a>
+            </li>
         </ul>
     </div>
 
@@ -181,6 +201,7 @@
         const mobileNav = document.getElementById('mobile-nav');
         const openIcon = document.querySelector('.openIcon');
         const openNavBtn = document.getElementById('mobile-openBtn');
+        const yelpLink = document.getElementById('nav-yelp-link');
 
         openNavBtn.addEventListener('click', openNavMenu);
 
@@ -188,6 +209,19 @@
             openIcon.classList.toggle('animate');
             mobileNav.classList.toggle('show-nav');
         }
+        openNavBtn.addEventListener('keydown', (event) =>{
+            if(event.key == 13){
+                openNavMenu();
+            }
+        });
+        yelpLink.addEventListener('keydown', (event) => {
+            if (event.key == 'Tab') {
+                event.preventDefault();
+                if (openNavBtn) {
+                    openNavBtn.focus();
+                }
+            }
+        });
 
         // Footer
         let today = new Date();

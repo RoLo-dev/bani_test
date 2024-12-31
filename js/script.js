@@ -106,10 +106,6 @@ function openNavMenu(){
     openIcon.classList.toggle('animate');
     mobileNav.classList.toggle('show-nav');
 }
-// mobileNav.addEventListener('click', function() {
-//     mobileNav.classList.remove('show-nav')
-//     openIcon.classList.toggle('animate')
-// })
 
 // Footer
 let currentDay = new Date();
