@@ -12,6 +12,18 @@ openNavBtn.addEventListener('click', openNavMenu);
 function openNavMenu(){
     openIcon.classList.toggle('animate');
     mobileNav.classList.toggle('show-nav');
+
+    const navAnchorTag = document.querySelectorAll('.nav-link-anchor')
+
+    if(mobileNav.classList.contains('show-nav')){
+        navAnchorTag.forEach((el) => {
+            el.setAttribute('tabindex', '0')
+        })
+    } else{
+        navAnchorTag.forEach((el) => {
+            el.setAttribute('tabindex', '-1')
+        })
+    }
 }
 document.getElementById('mobile-nav').addEventListener('click', function() {
     mobileNav.classList.remove('show-nav')
