@@ -47,6 +47,7 @@ const emailConfirmErrorMsg = document.getElementById('emailConfirm-errorMsg');
 const dateErrorMsg = document.getElementById('date-errorMsg')
 const timeErrorMsg = document.getElementById('time-errorMsg')
 const servingsErrorMsg = document.getElementById('servings-errorMsg')
+let subject = document.getElementById("subject")
 
 function validateForm() {
     if (emailInput.value == '') {
@@ -62,7 +63,6 @@ function validateForm() {
 }
 // FORM SUBMISSION VALUE FROM NAME INPUT
 // let nameValue = document.getElementById("name")
-// let subject = document.getElementById("subject")
 // let submitBtn = document.querySelector(".submit-btn")
 
 // submitBtn.addEventListener('click', addNameOfSender)
